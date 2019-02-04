@@ -821,3 +821,6 @@ hr{
 .produto_inputs{
   width:100%;
 }
+.no_float {
+    float:none;
+}

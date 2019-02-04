@@ -18,6 +18,8 @@
   <script src="../js/jspdf.plugin.autotable.src.js"></script>
   <script src="../js/require.js"></script>
 
+
+
 </head>
 
 <body>
@@ -79,10 +81,13 @@
             <div class="left clear margintop30">
               <div class="sub bottom20">
                 <h5>Paquetes</h5>
-                <div class="left margintop20">
+                <div class="left margintop20 no_float">
                   <input type="checkbox" id="total" name="produto_premium" value="2" class="left radio_prod" data-labelauty="Flex Total"/>
+                </div>
+                <div class="left margintop20">
                   <input type="checkbox" name="produto_premium" value="3" class="left radio_prod" data-labelauty="Flex Desempeño"/>
                   <input type="checkbox" name="produto_premium" value="9" class="left radio_prod" data-labelauty="Flex Desarrollo"/>
+                  <input type="checkbox" name="produto_premium" value="10" class="left radio_prod" data-labelauty="Flex Engagement"/>
                 </div>
                 <h5 class="left clear margintop20">Módulos</h5>
                 <div class="left margintop20 clear">
@@ -90,6 +95,7 @@
                   <input type="checkbox" name="produto" value="0" class="left prod" data-labelauty="Competencias"/>
                   <input type="checkbox" name="produto" value="5" class="left prod" data-labelauty="PID"/>
                   <input type="checkbox" name="produto" value="6" class="left prod" data-labelauty="Reconocimiento"/>
+                  <input type="checkbox" name="produto" value="11" class="left prod" data-labelauty="Plan de Sucesión"/>
                 </div>
               </div>
               <h5 class="left clear ">Evaluación Única</h5>
@@ -110,7 +116,15 @@
                 <h5>Moneda</h5>
                 <div class="left margintop20">
                   <input type="radio" name="currency" value="cop" class="left left20" checked="true" data-labelauty="COP"/>
-                  <!--<input type="radio" name="currency" value="usd" class="left" data-labelauty="USD"/>-->
+                  <!--<input type="radio" name="currency" value="eur" class="left left20 bottom10 curr" data-labelauty="EUR"/>
+                  <input type="radio" name="currency" value="crc" class="left left20 bottom10 curr" data-labelauty="CRC"/>
+                  <input type="radio" name="currency" value="dop" class="left left20 bottom10 curr" data-labelauty="DOP"/>
+                  <input type="radio" name="currency" value="ecs" class="left left20 bottom10 curr" data-labelauty="ECS"/>
+                  <input type="radio" name="currency" value="svc" class="left left20 bottom10 curr" data-labelauty="SVC"/>
+                  <input type="radio" name="currency" value="gtq" class="left left20 bottom10 curr" data-labelauty="GTQ"/>
+                  <input type="radio" name="currency" value="hnl" class="left left20 bottom10 curr" data-labelauty="HNL"/>
+                  <input type="radio" name="currency" value="nio" class="left left20 bottom10 curr" data-labelauty="NIO"/>
+                  <input type="radio" name="currency" value="pab" class="left left20 bottom10 curr" data-labelauty="PAB"/>-->
                 </div>
               </div>
 
@@ -136,30 +150,27 @@
 
 
           </div>
-          <div class="width100 left">
-              <a href="#" download="Cotización.xls" onclick="return ExcellentExport.excel(this, 'dvData', 'Precio');" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Descargar Tabla</a>
+          <a href="#" download="precio.xls" onclick="return ExcellentExport.excel(this, 'dvData', 'Precio');" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Descargar Tabla</a>
 
-              <a href="javascript:propuesta()" class="exp_button left left20 margintop30" role='button'><i class="fa fa-file-text-o right5" aria-hidden="true"></i>Generar Propuesta</a>
+          <a href="javascript:propuesta()" class="exp_button left left20 margintop30" role='button'><i class="fa fa-file-text-o right5" aria-hidden="true"></i>Generar Propuesta</a>
 
-              <a href="#" class="clear_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Borrar datos</a>
-          </div>
+          <a href="#" class="clear_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Borrar datos</a>
 
         </div>
 
         <div class="form_propuesta" style="display:none">
         	<h3 class="margintop30 left">Propuesta Comercial</h3>
         	<div class="container2">
-
                 <div class="left clear margintop30 width100">
-	        	  <select class="" id="comercial">
-                      <option value="1">Carlos Santana</option>
-                      <option value="2">Carlos Valderrama</option>
-                      <option value="3">Cesar Suarez</option>
-                      <option value="0">Eliana Rubio</option>
-                      <option value="4">Farley Guarin</option>
-                      <option selected value="5">Catalina Fernandez</option>
-                      <option value="6">Paula Segovia</option>
-                  </select>
+                  <select class="" id="comercial">
+                          <option value="1">Carlos Santana</option>
+                          <option value="2">Nathalia Ramirez</option>
+                          <option value="3">Cesar Suarez</option>
+                          <option value="0">Eliana Rubio</option>
+                          <option value="4">Farley Guarin</option>
+                          <option selected value="5">Christian Rodriguez</option>
+                          <option value="6">Francisco Toledo</option>
+                      </select>
 	        	</div>
 	        	<div class="left clear margintop30 width100">
 	        	  <h5>Nombre de la Empresa</h5>
@@ -215,7 +226,7 @@ Acsendo realizara un incremento de precios anual del 3%.</textarea>
 
 	        	<a href="javascript:volver()" class="back_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Volver</a>
 
-        	</div>
+          </div>
         </div>
       </div>
 
@@ -235,9 +246,10 @@ Acsendo realizara un incremento de precios anual del 3%.</textarea>
 </body>
 
 <script>
-    
+
 var deretchoAClima;
-    
+var produtos = [];
+
 $(document).ready(function(){
   $(":radio").labelauty();
   $(":checkbox").labelauty();
@@ -254,7 +266,12 @@ $(document).ready(function(){
   $('.input_emp').bind('input', function() {
     var nr=$(this).val();
     $(".emp_div").html(nr+" empleados");
-    calculate_price();
+    if (nr <= 5000){
+        calculate_price();
+    } else {
+        alert("mais de 5000 empleados. Debe hacer una propuesta a la medida");
+        $(".price").html("ERROR!")
+    }
   });
 
   $("input[name='tipo']").change(function(){
@@ -275,55 +292,117 @@ $(document).ready(function(){
     reset();
   });
 
-  $("input[name='produto_premium']").change(function(){
-    $("input[name='produto_premium']").not(this).prop('checked', false);
+  $("input[name='produto_premium']").click(function(){
+    //$("input[name='produto_premium']").not(this).prop('checked', false);
 
-    var produto = $("input[name='produto_premium']:checked").val();
+    var produto_clicked = $(this).val();
 
+    for(var i = 0; i < $("input[name='produto_premium']").length; i++){
+        var temp = $("input[name='produto_premium']").eq(i);
+
+        if (temp.is(":checked")){
+            produtos[i] = true;
+        } else {
+            produtos[i] = false;
+        }
+    }
+
+    console.log("produto  " + produtos + "   " + produto_clicked);
+
+    if (produto_clicked == 2) {
+        if (produtos[0]) {
+            $("input[name='produto_premium']").attr('checked', true);
+            $("input[name='produto']").attr('disabled', true);
+            produtos[1] = true; produtos[2] = true; produtos[3] = true;
+        } else {
+            $("input[name='produto_premium']").attr('checked', false);
+            $("input[name='produto']").attr('disabled', false);
+            produtos[1] = false; produtos[2] = false; produtos[3] = false;
+        }
+    } else {
+
+        if ((produtos[1] && produtos[2] && produtos[3])) {
+            produtos[0] = true;
+            $("input[name='produto_premium']").eq(0).attr('checked', true);
+        } else {
+            produtos[0] = false;
+            $("input[name='produto_premium'][value='2']").attr('checked', false);
+        }
+
+    }
+    if (produtos[1]){ //3 — DESEMPEÑO
+        $("input[name='produto'][value='4'], input[name='produto'][value='0']").attr('disabled', true).attr('checked', false);
+    } else {
+        $("input[name='produto'][value='4'], input[name='produto'][value='0']").attr('disabled', false);
+    }
+    if (produtos[2]){ //9 — DESARROLLO
+        $("input[name='produto'][value='5'], input[name='produto'][value='11']").attr('disabled', true).attr('checked', false);
+    } else {
+        $("input[name='produto'][value='5'], input[name='produto'][value='11']").attr('disabled', false);
+    }
+    if (produtos[3]){ //10— ENGAGEMENT
+        $("input[name='produto'][value='6']").attr('disabled', true).attr('checked', false);
+        //Engagement = RECON + CLIMA
+    } else {
+        $("input[name='produto'][value='6']").attr('disabled', false);
+    }
+    /*
     if(produto=="2"){
-      $("input[name='produto']").attr('disabled', true);
-      $("input[name='produto']").attr('checked', false);
+      //$("input[name='produto']").attr('disabled', true);
+      //$("input[name='produto']").attr('checked', false);
+      $("input[name='produto_premium']").attr('checked', true);
     }
     else if(produto=="3"){
-      $("input[name='produto']").attr('checked', false);
-      $("input[name='produto']").attr('disabled', false);
+      //$("input[name='produto']").attr('checked', false);
+      //$("input[name='produto']").attr('disabled', false);
       $("input[name='produto'][value='4']").attr('disabled', true);
       $("input[name='produto'][value='0']").attr('disabled', true);
     }
     else if(produto=="9"){
-      $("input[name='produto']").attr('checked', false);
-      $("input[name='produto']").attr('disabled', false);
+      //$("input[name='produto']").attr('checked', false);
+      //$("input[name='produto']").attr('disabled', false);
       $("input[name='produto'][value='5']").attr('disabled', true);
-      $("input[name='produto'][value='0']").attr('disabled', true);
+      $("input[name='produto'][value='11']").attr('disabled', true);
+    }
+    else if(produto=="10"){
+      //$("input[name='produto']").attr('checked', false);
+      //$("input[name='produto']").attr('disabled', false);
+      $("input[name='produto'][value='6']").attr('disabled', true);
+      //Engagement = RECON + CLIMA
+      //$("input[name='produto'][value='11']").attr('disabled', true);
     }
     else{
       $("input[name='produto']").attr('disabled', false);
     }
+    */
     calculate_price();
   });
 
   $("input[name='produto']").change(function(){
-    var produto = $("input[name='produto_premium']:checked").val();
-    if(produto=="2"){
+    //var produto = $("input[name='produto_premium']:checked").val();
+    if(produtos[0]){
       $("input[name='produto_premium']").attr('checked', false);
-    }else if(produto=="3"){
+    }
+    if(produtos[1]){
       $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competencias, </div>');
-    }else if(produto=="9"){
+    }
+    if(produtos[2]){
       $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Competencias, PID, </div>');
     }
+
+
     calculate_price();
   });
-  
-    
-    
-    
-    
-    
+
+
+
+
+
+
   $("input[name='produto'], input[name='produto_premium'], input[name='tipo']").change(function(){
-      console.log("CHANGE!");
-      
+
       var type = $("input[name='tipo']:checked").val();
-      
+
       var productos_seleccionados = $("input[name='produto']:checked, input[name='produto_premium']:checked").length;
       if (productos_seleccionados == 0 && type == 0) {
           deretchoAClima = false;
@@ -336,13 +415,13 @@ $(document).ready(function(){
           deretchoAClima = true;
       }
   });
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 
   $("#plus_clima").click(function(){
     if (deretchoAClima) {
@@ -406,7 +485,6 @@ $(document).ready(function(){
   $("input[name='currency']").change(function(){
     converter();
   });
-
 });
 
 var json = [];
@@ -415,14 +493,1265 @@ function calculate_price(){
 
   json = [];
   var type = $("input[name='tipo']:checked").val();
-  var produto_pr = $("input[name='produto_premium']:checked").val();
+
+  var produto_pr = produtos;//$("input[name='produto_premium']:checked").val();
+
+    console.log("PRODUTO_PR    " + produto_pr);
+
   var nr=$(".input_emp").val();
   var selected = [];
   var clima=$("#nr_clima").html();
   var competencias=$("#nr_comp").html();
   var evaluacion2636=$("#nr_2646").html();
-  
-  var rangos=[{min:0,max:20},{min:21,max:50},{min:51,max:75},{min:76,max:100},{min:101,max:150},{min:151,max:200},{min:201,max:250},{min:251,max:300},{min:301,max:400},{min:401,max:500},{min:501,max:600},{min:601,max:700},{min:701,max:800},{min:801,max:900},{min:901,max:1e3},{min:1001,max:1100},{min:1101,max:1200},{min:1201,max:1300},{min:1301,max:1400},{min:1401,max:1500},{min:1501,max:3e3},{min:3001,max:5e3}],prices=[{type:"anual",produto:[{produto:"Competencias",price:[{rango:0,price:112320},{rango:1,price:74880},{rango:2,price:70560},{rango:3,price:66240},{rango:4,price:59040},{rango:5,price:51840},{rango:6,price:48240},{rango:7,price:44640},{rango:8,price:41040},{rango:9,price:37440},{rango:10,price:36360},{rango:11,price:35640},{rango:12,price:34560},{rango:13,price:33840},{rango:14,price:33120},{rango:15,price:32040},{rango:16,price:31320},{rango:17,price:30240},{rango:18,price:29520},{rango:19,price:28800},{rango:20,price:25920},{rango:21,price:20160}]},{produto:"Clima",price:[{rango:0,price:37450},{rango:1,price:21210},{rango:2,price:20160},{rango:3,price:18900},{rango:4,price:16800},{rango:5,price:14700},{rango:6,price:13650},{rango:7,price:12600},{rango:8,price:11550},{rango:9,price:10500},{rango:10,price:10080},{rango:11,price:9870},{rango:12,price:9660},{rango:13,price:9450},{rango:14,price:9240},{rango:15,price:8820},{rango:16,price:8610},{rango:17,price:8400},{rango:18,price:8190},{rango:19,price:7980},{rango:20,price:7350},{rango:21,price:5670}]},{produto:"total",price:[{rango:0,price:249300},{rango:1,price:166200},{rango:2,price:154800},{rango:3,price:143700},{rango:4,price:126300},{rango:5,price:108900},{rango:6,price:102e3},{rango:7,price:95400},{rango:8,price:88800},{rango:9,price:82200},{rango:10,price:80100},{rango:11,price:78300},{rango:12,price:76200},{rango:13,price:74400},{rango:14,price:72600},{rango:15,price:70500},{rango:16,price:68700},{rango:17,price:66600},{rango:18,price:64800},{rango:19,price:63e3},{rango:20,price:52500},{rango:21,price:40500}]},{produto:"desempeno",price:[{rango:0,price:194400},{rango:1,price:129600},{rango:2,price:119520},{rango:3,price:109440},{rango:4,price:95040},{rango:5,price:80640},{rango:6,price:76320},{rango:7,price:72e3},{rango:8,price:67680},{rango:9,price:63360},{rango:10,price:61920},{rango:11,price:60480},{rango:12,price:59040},{rango:13,price:57600},{rango:14,price:56160},{rango:15,price:54720},{rango:16,price:53280},{rango:17,price:51840},{rango:18,price:50400},{rango:19,price:48960},{rango:20,price:37440},{rango:21,price:28800}]},{produto:"Metas",price:[{rango:0,price:112320},{rango:1,price:74880},{rango:2,price:70560},{rango:3,price:66240},{rango:4,price:59040},{rango:5,price:51840},{rango:6,price:48240},{rango:7,price:44640},{rango:8,price:41040},{rango:9,price:37440},{rango:10,price:36360},{rango:11,price:35640},{rango:12,price:34560},{rango:13,price:33840},{rango:14,price:33120},{rango:15,price:32040},{rango:16,price:31320},{rango:17,price:30240},{rango:18,price:29520},{rango:19,price:28800},{rango:20,price:25920},{rango:21,price:20160}]},{produto:"PID",price:[{rango:0,price:70200},{rango:1,price:46800},{rango:2,price:44280},{rango:3,price:41400},{rango:4,price:37080},{rango:5,price:32400},{rango:6,price:29880},{rango:7,price:27720},{rango:8,price:25560},{rango:9,price:23400},{rango:10,price:22680},{rango:11,price:22320},{rango:12,price:21600},{rango:13,price:21240},{rango:14,price:20520},{rango:15,price:20160},{rango:16,price:19440},{rango:17,price:19080},{rango:18,price:18360},{rango:19,price:18e3},{rango:20,price:16200},{rango:21,price:12600}]},{produto:"Reconocimiento",price:[{rango:0,price:22500},{rango:1,price:15e3},{rango:2,price:14100},{rango:3,price:13200},{rango:4,price:11700},{rango:5,price:10200},{rango:6,price:9300},{rango:7,price:8700},{rango:8,price:7800},{rango:9,price:7200},{rango:10,price:6900},{rango:11,price:6600},{rango:12,price:6600},{rango:13,price:6300},{rango:14,price:6300},{rango:15,price:6e3},{rango:16,price:5700},{rango:17,price:5700},{rango:18,price:5400},{rango:19,price:5400},{rango:20,price:4800},{rango:21,price:3600}]},{produto:"Clima",price:[{rango:0,price:34500},{rango:1,price:18900},{rango:2,price:18060},{rango:3,price:17010},{rango:4,price:15120},{rango:5,price:13230},{rango:6,price:12180},{rango:7,price:11340},{rango:8,price:10290},{rango:9,price:9450},{rango:10,price:9030},{rango:11,price:8820},{rango:12,price:8610},{rango:13,price:8400},{rango:14,price:8190},{rango:15,price:7980},{rango:16,price:7770},{rango:17,price:7560},{rango:18,price:7350},{rango:19,price:7140},{rango:20,price:6510},{rango:21,price:5040}]},{produto:"Clima",price:[{rango:0,price:23400},{rango:1,price:15120},{rango:2,price:14280},{rango:3,price:13440},{rango:4,price:11970},{rango:5,price:10500},{rango:6,price:9660},{rango:7,price:9030},{rango:8,price:8190},{rango:9,price:7560},{rango:10,price:7350},{rango:11,price:7140},{rango:12,price:6930},{rango:13,price:6720},{rango:14,price:6510},{rango:15,price:6300},{rango:16,price:6090},{rango:17,price:5880},{rango:18,price:5670},{rango:19,price:5670},{rango:20,price:5040},{rango:21,price:3990}]},{produto:"desarrollo",price:[{rango:0,price:157950},{rango:1,price:105300},{rango:2,price:97262},{rango:3,price:88920},{rango:4,price:77364},{rango:5,price:65520},{rango:6,price:61796},{rango:7,price:58355},{rango:8,price:54915},{rango:9,price:51480},{rango:10,price:50271},{rango:11,price:49178},{rango:12,price:47970},{rango:13,price:46876},{rango:14,price:45477},{rango:15,price:44575},{rango:16,price:43175},{rango:17,price:42274},{rango:18,price:40873},{rango:19,price:39780},{rango:20,price:30420},{rango:21,price:23400}]}]},{type:"unico",produto:[{produto:"Competencias",price:[{rango:0,price:87750},{rango:1,price:58500},{rango:2,price:55200},{rango:3,price:51900},{rango:4,price:46200},{rango:5,price:40500},{rango:6,price:37500},{rango:7,price:34800},{rango:8,price:32100},{rango:9,price:29400},{rango:10,price:28500},{rango:11,price:27900},{rango:12,price:27300},{rango:13,price:26400},{rango:14,price:25800},{rango:15,price:25200},{rango:16,price:24300},{rango:17,price:23700},{rango:18,price:23100},{rango:19,price:22500},{rango:20,price:20400},{rango:21,price:15900}]},{produto:"Clima",price:[{rango:0,price:41700},{rango:1,price:30660},{rango:2,price:28770},{rango:3,price:27090},{rango:4,price:24150},{rango:5,price:21210},{rango:6,price:19740},{rango:7,price:18270},{rango:8,price:16800},{rango:9,price:15330},{rango:10,price:14910},{rango:11,price:14490},{rango:12,price:14070},{rango:13,price:13860},{rango:14,price:13440},{rango:15,price:13020},{rango:16,price:12810},{rango:17,price:12390},{rango:18,price:11970},{rango:19,price:11760},{rango:20,price:10710},{rango:21,price:8190}]},{produto:"Clima",price:[{rango:0,price:43750},{rango:1,price:27510},{rango:2,price:25830},{rango:3,price:24360},{rango:4,price:21630},{rango:5,price:18900},{rango:6,price:17430},{rango:7,price:16170},{rango:8,price:14910},{rango:9,price:13650},{rango:10,price:13230},{rango:11,price:13020},{rango:12,price:12600},{rango:13,price:12390},{rango:14,price:11970},{rango:15,price:11760},{rango:16,price:11340},{rango:17,price:11130},{rango:18,price:10710},{rango:19,price:10500},{rango:20,price:9450},{rango:21,price:7350}]},{produto:"Clima",price:[{rango:0,price:31800},{rango:1,price:21840},{rango:2,price:20580},{rango:3,price:19320},{rango:4,price:17220},{rango:5,price:15120},{rango:6,price:14070},{rango:7,price:13020},{rango:8,price:11970},{rango:9,price:10920},{rango:10,price:10500},{rango:11,price:10290},{rango:12,price:10080},{rango:13,price:9870},{rango:14,price:9660},{rango:15,price:9240},{rango:16,price:9030},{rango:17,price:8820},{rango:18,price:8610},{rango:19,price:8400},{rango:20,price:7560},{rango:21,price:5880}]},{produto:"2646",price:[{rango:0,price:15e3},{rango:1,price:1e4},{rango:2,price:9e3},{rango:3,price:8e3},{rango:4,price:7500},{rango:5,price:7e3},{rango:6,price:6500},{rango:7,price:6e3},{rango:8,price:5500},{rango:9,price:5e3},{rango:10,price:4900},{rango:11,price:4800},{rango:12,price:4700},{rango:13,price:4600},{rango:14,price:4500},{rango:15,price:4400},{rango:16,price:4300},{rango:17,price:4200},{rango:18,price:4100},{rango:19,price:4e3},{rango:20,price:3500},{rango:21,price:3e3}]}]}];
+
+
+  var rangos = [{
+          min: 0,
+          max: 20
+      }, {
+          min: 21,
+          max: 50
+      }, {
+          min: 51,
+          max: 75
+      }, {
+          min: 76,
+          max: 100
+      }, {
+          min: 101,
+          max: 150
+      }, {
+          min: 151,
+          max: 200
+      }, {
+          min: 201,
+          max: 250
+      }, {
+          min: 251,
+          max: 300
+      }, {
+          min: 301,
+          max: 400
+      }, {
+          min: 401,
+          max: 500
+      }, {
+          min: 501,
+          max: 600
+      }, {
+          min: 601,
+          max: 700
+      }, {
+          min: 701,
+          max: 800
+      }, {
+          min: 801,
+          max: 900
+      }, {
+          min: 901,
+          max: 1e3
+      }, {
+          min: 1001,
+          max: 1100
+      }, {
+          min: 1101,
+          max: 1200
+      }, {
+          min: 1201,
+          max: 1300
+      }, {
+          min: 1301,
+          max: 1400
+      }, {
+          min: 1401,
+          max: 1500
+      }, {
+          min: 1501,
+          max: 3e3
+      }, {
+          min: 3001,
+          max: 5e3
+      }],
+      prices = [{
+          type: "anual",
+          produto: [{
+              produto: "Competencias",
+              price: [{
+                  rango: 0,
+                  price: 112320
+              }, {
+                  rango: 1,
+                  price: 74880
+              }, {
+                  rango: 2,
+                  price: 70560
+              }, {
+                  rango: 3,
+                  price: 66240
+              }, {
+                  rango: 4,
+                  price: 59040
+              }, {
+                  rango: 5,
+                  price: 51840
+              }, {
+                  rango: 6,
+                  price: 48240
+              }, {
+                  rango: 7,
+                  price: 44640
+              }, {
+                  rango: 8,
+                  price: 41040
+              }, {
+                  rango: 9,
+                  price: 37440
+              }, {
+                  rango: 10,
+                  price: 36360
+              }, {
+                  rango: 11,
+                  price: 35640
+              }, {
+                  rango: 12,
+                  price: 34560
+              }, {
+                  rango: 13,
+                  price: 33840
+              }, {
+                  rango: 14,
+                  price: 33120
+              }, {
+                  rango: 15,
+                  price: 32040
+              }, {
+                  rango: 16,
+                  price: 31320
+              }, {
+                  rango: 17,
+                  price: 30240
+              }, {
+                  rango: 18,
+                  price: 29520
+              }, {
+                  rango: 19,
+                  price: 28800
+              }, {
+                  rango: 20,
+                  price: 25920
+              }, {
+                  rango: 21,
+                  price: 20160
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 37450
+              }, {
+                  rango: 1,
+                  price: 21210
+              }, {
+                  rango: 2,
+                  price: 20160
+              }, {
+                  rango: 3,
+                  price: 18900
+              }, {
+                  rango: 4,
+                  price: 16800
+              }, {
+                  rango: 5,
+                  price: 14700
+              }, {
+                  rango: 6,
+                  price: 13650
+              }, {
+                  rango: 7,
+                  price: 12600
+              }, {
+                  rango: 8,
+                  price: 11550
+              }, {
+                  rango: 9,
+                  price: 10500
+              }, {
+                  rango: 10,
+                  price: 10080
+              }, {
+                  rango: 11,
+                  price: 9870
+              }, {
+                  rango: 12,
+                  price: 9660
+              }, {
+                  rango: 13,
+                  price: 9450
+              }, {
+                  rango: 14,
+                  price: 9240
+              }, {
+                  rango: 15,
+                  price: 8820
+              }, {
+                  rango: 16,
+                  price: 8610
+              }, {
+                  rango: 17,
+                  price: 8400
+              }, {
+                  rango: 18,
+                  price: 8190
+              }, {
+                  rango: 19,
+                  price: 7980
+              }, {
+                  rango: 20,
+                  price: 7350
+              }, {
+                  rango: 21,
+                  price: 5670
+              }]
+          }, {
+              produto: "total",
+              price: [{
+                  rango: 0,
+                  price: 286695
+              }, {
+                  rango: 1,
+                  price: 191130
+              }, {
+                  rango: 2,
+                  price: 178020
+              }, {
+                  rango: 3,
+                  price: 165255
+              }, {
+                  rango: 4,
+                  price: 145245
+              }, {
+                  rango: 5,
+                  price: 125235
+              }, {
+                  rango: 6,
+                  price: 117300
+              }, {
+                  rango: 7,
+                  price: 109710
+              }, {
+                  rango: 8,
+                  price: 102120
+              }, {
+                  rango: 9,
+                  price: 94530
+              }, {
+                  rango: 10,
+                  price: 92115
+              }, {
+                  rango: 11,
+                  price: 90045
+              }, {
+                  rango: 12,
+                  price: 87630
+              }, {
+                  rango: 13,
+                  price: 85560
+              }, {
+                  rango: 14,
+                  price: 83490
+              }, {
+                  rango: 15,
+                  price: 81075
+              }, {
+                  rango: 16,
+                  price: 79005
+              }, {
+                  rango: 17,
+                  price: 76590
+              }, {
+                  rango: 18,
+                  price: 74520
+              }, {
+                  rango: 19,
+                  price: 72450
+              }, {
+                  rango: 20,
+                  price: 60375
+              }, {
+                  rango: 21,
+                  price: 46575
+              }]
+          }, {
+              produto: "desempeño",
+              price: [{
+                  rango: 0,
+                  price: 194400
+              }, {
+                  rango: 1,
+                  price: 129600
+              }, {
+                  rango: 2,
+                  price: 119520
+              }, {
+                  rango: 3,
+                  price: 109440
+              }, {
+                  rango: 4,
+                  price: 95040
+              }, {
+                  rango: 5,
+                  price: 80640
+              }, {
+                  rango: 6,
+                  price: 76320
+              }, {
+                  rango: 7,
+                  price: 72e3
+              }, {
+                  rango: 8,
+                  price: 67680
+              }, {
+                  rango: 9,
+                  price: 63360
+              }, {
+                  rango: 10,
+                  price: 61920
+              }, {
+                  rango: 11,
+                  price: 60480
+              }, {
+                  rango: 12,
+                  price: 59040
+              }, {
+                  rango: 13,
+                  price: 57600
+              }, {
+                  rango: 14,
+                  price: 56160
+              }, {
+                  rango: 15,
+                  price: 54720
+              }, {
+                  rango: 16,
+                  price: 53280
+              }, {
+                  rango: 17,
+                  price: 51840
+              }, {
+                  rango: 18,
+                  price: 50400
+              }, {
+                  rango: 19,
+                  price: 48960
+              }, {
+                  rango: 20,
+                  price: 37440
+              }, {
+                  rango: 21,
+                  price: 28800
+              }]
+          }, {
+              produto: "Metas",
+              price: [{
+                  rango: 0,
+                  price: 112320
+              }, {
+                  rango: 1,
+                  price: 74880
+              }, {
+                  rango: 2,
+                  price: 70560
+              }, {
+                  rango: 3,
+                  price: 66240
+              }, {
+                  rango: 4,
+                  price: 59040
+              }, {
+                  rango: 5,
+                  price: 51840
+              }, {
+                  rango: 6,
+                  price: 48240
+              }, {
+                  rango: 7,
+                  price: 44640
+              }, {
+                  rango: 8,
+                  price: 41040
+              }, {
+                  rango: 9,
+                  price: 37440
+              }, {
+                  rango: 10,
+                  price: 36360
+              }, {
+                  rango: 11,
+                  price: 35640
+              }, {
+                  rango: 12,
+                  price: 34560
+              }, {
+                  rango: 13,
+                  price: 33840
+              }, {
+                  rango: 14,
+                  price: 33120
+              }, {
+                  rango: 15,
+                  price: 32040
+              }, {
+                  rango: 16,
+                  price: 31320
+              }, {
+                  rango: 17,
+                  price: 30240
+              }, {
+                  rango: 18,
+                  price: 29520
+              }, {
+                  rango: 19,
+                  price: 28800
+              }, {
+                  rango: 20,
+                  price: 25920
+              }, {
+                  rango: 21,
+                  price: 20160
+              }]
+          }, {
+              produto: "PID",
+              price: [{
+                  rango: 0,
+                  price: 70200
+              }, {
+                  rango: 1,
+                  price: 46800
+              }, {
+                  rango: 2,
+                  price: 44280
+              }, {
+                  rango: 3,
+                  price: 41400
+              }, {
+                  rango: 4,
+                  price: 37080
+              }, {
+                  rango: 5,
+                  price: 32400
+              }, {
+                  rango: 6,
+                  price: 29880
+              }, {
+                  rango: 7,
+                  price: 27720
+              }, {
+                  rango: 8,
+                  price: 25560
+              }, {
+                  rango: 9,
+                  price: 23400
+              }, {
+                  rango: 10,
+                  price: 22680
+              }, {
+                  rango: 11,
+                  price: 22320
+              }, {
+                  rango: 12,
+                  price: 21600
+              }, {
+                  rango: 13,
+                  price: 21240
+              }, {
+                  rango: 14,
+                  price: 20520
+              }, {
+                  rango: 15,
+                  price: 20160
+              }, {
+                  rango: 16,
+                  price: 19440
+              }, {
+                  rango: 17,
+                  price: 19080
+              }, {
+                  rango: 18,
+                  price: 18360
+              }, {
+                  rango: 19,
+                  price: 18e3
+              }, {
+                  rango: 20,
+                  price: 16200
+              }, {
+                  rango: 21,
+                  price: 12600
+              }]
+          }, {
+              produto: "Reconocimiento",
+              price: [{
+                  rango: 0,
+                  price: 22500
+              }, {
+                  rango: 1,
+                  price: 15e3
+              }, {
+                  rango: 2,
+                  price: 14100
+              }, {
+                  rango: 3,
+                  price: 13200
+              }, {
+                  rango: 4,
+                  price: 11700
+              }, {
+                  rango: 5,
+                  price: 10200
+              }, {
+                  rango: 6,
+                  price: 9300
+              }, {
+                  rango: 7,
+                  price: 8700
+              }, {
+                  rango: 8,
+                  price: 7800
+              }, {
+                  rango: 9,
+                  price: 7200
+              }, {
+                  rango: 10,
+                  price: 6900
+              }, {
+                  rango: 11,
+                  price: 6600
+              }, {
+                  rango: 12,
+                  price: 6600
+              }, {
+                  rango: 13,
+                  price: 6300
+              }, {
+                  rango: 14,
+                  price: 6300
+              }, {
+                  rango: 15,
+                  price: 6e3
+              }, {
+                  rango: 16,
+                  price: 5700
+              }, {
+                  rango: 17,
+                  price: 5700
+              }, {
+                  rango: 18,
+                  price: 5400
+              }, {
+                  rango: 19,
+                  price: 5400
+              }, {
+                  rango: 20,
+                  price: 4800
+              }, {
+                  rango: 21,
+                  price: 3600
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 34500
+              }, {
+                  rango: 1,
+                  price: 18900
+              }, {
+                  rango: 2,
+                  price: 18060
+              }, {
+                  rango: 3,
+                  price: 17010
+              }, {
+                  rango: 4,
+                  price: 15120
+              }, {
+                  rango: 5,
+                  price: 13230
+              }, {
+                  rango: 6,
+                  price: 12180
+              }, {
+                  rango: 7,
+                  price: 11340
+              }, {
+                  rango: 8,
+                  price: 10290
+              }, {
+                  rango: 9,
+                  price: 9450
+              }, {
+                  rango: 10,
+                  price: 9030
+              }, {
+                  rango: 11,
+                  price: 8820
+              }, {
+                  rango: 12,
+                  price: 8610
+              }, {
+                  rango: 13,
+                  price: 8400
+              }, {
+                  rango: 14,
+                  price: 8190
+              }, {
+                  rango: 15,
+                  price: 7980
+              }, {
+                  rango: 16,
+                  price: 7770
+              }, {
+                  rango: 17,
+                  price: 7560
+              }, {
+                  rango: 18,
+                  price: 7350
+              }, {
+                  rango: 19,
+                  price: 7140
+              }, {
+                  rango: 20,
+                  price: 6510
+              }, {
+                  rango: 21,
+                  price: 5040
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 23400
+              }, {
+                  rango: 1,
+                  price: 15120
+              }, {
+                  rango: 2,
+                  price: 14280
+              }, {
+                  rango: 3,
+                  price: 13440
+              }, {
+                  rango: 4,
+                  price: 11970
+              }, {
+                  rango: 5,
+                  price: 10500
+              }, {
+                  rango: 6,
+                  price: 9660
+              }, {
+                  rango: 7,
+                  price: 9030
+              }, {
+                  rango: 8,
+                  price: 8190
+              }, {
+                  rango: 9,
+                  price: 7560
+              }, {
+                  rango: 10,
+                  price: 7350
+              }, {
+                  rango: 11,
+                  price: 7140
+              }, {
+                  rango: 12,
+                  price: 6930
+              }, {
+                  rango: 13,
+                  price: 6720
+              }, {
+                  rango: 14,
+                  price: 6510
+              }, {
+                  rango: 15,
+                  price: 6300
+              }, {
+                  rango: 16,
+                  price: 6090
+              }, {
+                  rango: 17,
+                  price: 5880
+              }, {
+                  rango: 18,
+                  price: 5670
+              }, {
+                  rango: 19,
+                  price: 5670
+              }, {
+                  rango: 20,
+                  price: 5040
+              }, {
+                  rango: 21,
+                  price: 3990
+              }]
+          }, {
+              produto: "desarrollo",
+              price: [{
+                  rango: 0,
+                  price: 110565
+              }, {
+                  rango: 1,
+                  price: 73710
+              }, {
+                  rango: 2,
+                  price: 68083
+              }, {
+                  rango: 3,
+                  price: 62244
+              }, {
+                  rango: 4,
+                  price: 54155
+              }, {
+                  rango: 5,
+                  price: 45864
+              }, {
+                  rango: 6,
+                  price: 43257
+              }, {
+                  rango: 7,
+                  price: 40849
+              }, {
+                  rango: 8,
+                  price: 38441
+              }, {
+                  rango: 9,
+                  price: 36036
+              }, {
+                  rango: 10,
+                  price: 35190
+              }, {
+                  rango: 11,
+                  price: 34425
+              }, {
+                  rango: 12,
+                  price: 33579
+              }, {
+                  rango: 13,
+                  price: 32813
+              }, {
+                  rango: 14,
+                  price: 31834
+              }, {
+                  rango: 15,
+                  price: 31203
+              }, {
+                  rango: 16,
+                  price: 30223
+              }, {
+                  rango: 17,
+                  price: 29592
+              }, {
+                  rango: 18,
+                  price: 28611
+              }, {
+                  rango: 19,
+                  price: 27846
+              }, {
+                  rango: 20,
+                  price: 21294
+              }, {
+                  rango: 21,
+                  price: 16380
+              }]
+          }, {
+              produto: "engagement",
+              price: [{
+                  rango: 0,
+                  price: 71674
+              }, {
+                  rango: 1,
+                  price: 47783
+              }, {
+                  rango: 2,
+                  price: 44505
+              }, {
+                  rango: 3,
+                  price: 41314
+              }, {
+                  rango: 4,
+                  price: 36311
+              }, {
+                  rango: 5,
+                  price: 31309
+              }, {
+                  rango: 6,
+                  price: 29325
+              }, {
+                  rango: 7,
+                  price: 27428
+              }, {
+                  rango: 8,
+                  price: 25530
+              }, {
+                  rango: 9,
+                  price: 23633
+              }, {
+                  rango: 10,
+                  price: 23029
+              }, {
+                  rango: 11,
+                  price: 22511
+              }, {
+                  rango: 12,
+                  price: 21908
+              }, {
+                  rango: 13,
+                  price: 21390
+              }, {
+                  rango: 14,
+                  price: 208723
+              }, {
+                  rango: 15,
+                  price: 20269
+              }, {
+                  rango: 16,
+                  price: 19751
+              }, {
+                  rango: 17,
+                  price: 19148
+              }, {
+                  rango: 18,
+                  price: 18630
+              }, {
+                  rango: 19,
+                  price: 18113
+              }, {
+                  rango: 20,
+                  price: 15094
+              }, {
+                  rango: 21,
+                  price: 11644
+              }]
+          }, {
+              produto: "Plan de Sucesión",
+              price: [{
+                  rango: 0,
+                  price: 56160
+              }, {
+                  rango: 1,
+                  price: 37440
+              }, {
+                  rango: 2,
+                  price: 35280
+              }, {
+                  rango: 3,
+                  price: 33120
+              }, {
+                  rango: 4,
+                  price: 29520
+              }, {
+                  rango: 5,
+                  price: 25920
+              }, {
+                  rango: 6,
+                  price: 24120
+              }, {
+                  rango: 7,
+                  price: 22320
+              }, {
+                  rango: 8,
+                  price: 20520
+              }, {
+                  rango: 9,
+                  price: 18720
+              }, {
+                  rango: 10,
+                  price: 18180
+              }, {
+                  rango: 11,
+                  price: 17820
+              }, {
+                  rango: 12,
+                  price: 17280
+              }, {
+                  rango: 13,
+                  price: 16920
+              }, {
+                  rango: 14,
+                  price: 16560
+              }, {
+                  rango: 15,
+                  price: 16020
+              }, {
+                  rango: 16,
+                  price: 15660
+              }, {
+                  rango: 17,
+                  price: 15120
+              }, {
+                  rango: 18,
+                  price: 14760
+              }, {
+                  rango: 19,
+                  price: 14400
+              }, {
+                  rango: 20,
+                  price: 12960
+              }, {
+                  rango: 21,
+                  price: 10080
+              }]
+          }]
+      }, {
+          type: "unico",
+          produto: [{
+              produto: "Competencias",
+              price: [{
+                  rango: 0,
+                  price: 87750
+              }, {
+                  rango: 1,
+                  price: 58500
+              }, {
+                  rango: 2,
+                  price: 55200
+              }, {
+                  rango: 3,
+                  price: 51900
+              }, {
+                  rango: 4,
+                  price: 46200
+              }, {
+                  rango: 5,
+                  price: 40500
+              }, {
+                  rango: 6,
+                  price: 37500
+              }, {
+                  rango: 7,
+                  price: 34800
+              }, {
+                  rango: 8,
+                  price: 32100
+              }, {
+                  rango: 9,
+                  price: 29400
+              }, {
+                  rango: 10,
+                  price: 28500
+              }, {
+                  rango: 11,
+                  price: 27900
+              }, {
+                  rango: 12,
+                  price: 27300
+              }, {
+                  rango: 13,
+                  price: 26400
+              }, {
+                  rango: 14,
+                  price: 25800
+              }, {
+                  rango: 15,
+                  price: 25200
+              }, {
+                  rango: 16,
+                  price: 24300
+              }, {
+                  rango: 17,
+                  price: 23700
+              }, {
+                  rango: 18,
+                  price: 23100
+              }, {
+                  rango: 19,
+                  price: 22500
+              }, {
+                  rango: 20,
+                  price: 20400
+              }, {
+                  rango: 21,
+                  price: 15900
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 41700
+              }, {
+                  rango: 1,
+                  price: 30660
+              }, {
+                  rango: 2,
+                  price: 28770
+              }, {
+                  rango: 3,
+                  price: 27090
+              }, {
+                  rango: 4,
+                  price: 24150
+              }, {
+                  rango: 5,
+                  price: 21210
+              }, {
+                  rango: 6,
+                  price: 19740
+              }, {
+                  rango: 7,
+                  price: 18270
+              }, {
+                  rango: 8,
+                  price: 16800
+              }, {
+                  rango: 9,
+                  price: 15330
+              }, {
+                  rango: 10,
+                  price: 14910
+              }, {
+                  rango: 11,
+                  price: 14490
+              }, {
+                  rango: 12,
+                  price: 14070
+              }, {
+                  rango: 13,
+                  price: 13860
+              }, {
+                  rango: 14,
+                  price: 13440
+              }, {
+                  rango: 15,
+                  price: 13020
+              }, {
+                  rango: 16,
+                  price: 12810
+              }, {
+                  rango: 17,
+                  price: 12390
+              }, {
+                  rango: 18,
+                  price: 11970
+              }, {
+                  rango: 19,
+                  price: 11760
+              }, {
+                  rango: 20,
+                  price: 10710
+              }, {
+                  rango: 21,
+                  price: 8190
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 43750
+              }, {
+                  rango: 1,
+                  price: 27510
+              }, {
+                  rango: 2,
+                  price: 25830
+              }, {
+                  rango: 3,
+                  price: 24360
+              }, {
+                  rango: 4,
+                  price: 21630
+              }, {
+                  rango: 5,
+                  price: 18900
+              }, {
+                  rango: 6,
+                  price: 17430
+              }, {
+                  rango: 7,
+                  price: 16170
+              }, {
+                  rango: 8,
+                  price: 14910
+              }, {
+                  rango: 9,
+                  price: 13650
+              }, {
+                  rango: 10,
+                  price: 13230
+              }, {
+                  rango: 11,
+                  price: 13020
+              }, {
+                  rango: 12,
+                  price: 12600
+              }, {
+                  rango: 13,
+                  price: 12390
+              }, {
+                  rango: 14,
+                  price: 11970
+              }, {
+                  rango: 15,
+                  price: 11760
+              }, {
+                  rango: 16,
+                  price: 11340
+              }, {
+                  rango: 17,
+                  price: 11130
+              }, {
+                  rango: 18,
+                  price: 10710
+              }, {
+                  rango: 19,
+                  price: 10500
+              }, {
+                  rango: 20,
+                  price: 9450
+              }, {
+                  rango: 21,
+                  price: 7350
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 31800
+              }, {
+                  rango: 1,
+                  price: 21840
+              }, {
+                  rango: 2,
+                  price: 20580
+              }, {
+                  rango: 3,
+                  price: 19320
+              }, {
+                  rango: 4,
+                  price: 17220
+              }, {
+                  rango: 5,
+                  price: 15120
+              }, {
+                  rango: 6,
+                  price: 14070
+              }, {
+                  rango: 7,
+                  price: 13020
+              }, {
+                  rango: 8,
+                  price: 11970
+              }, {
+                  rango: 9,
+                  price: 10920
+              }, {
+                  rango: 10,
+                  price: 10500
+              }, {
+                  rango: 11,
+                  price: 10290
+              }, {
+                  rango: 12,
+                  price: 10080
+              }, {
+                  rango: 13,
+                  price: 9870
+              }, {
+                  rango: 14,
+                  price: 9660
+              }, {
+                  rango: 15,
+                  price: 9240
+              }, {
+                  rango: 16,
+                  price: 9030
+              }, {
+                  rango: 17,
+                  price: 8820
+              }, {
+                  rango: 18,
+                  price: 8610
+              }, {
+                  rango: 19,
+                  price: 8400
+              }, {
+                  rango: 20,
+                  price: 7560
+              }, {
+                  rango: 21,
+                  price: 5880
+              }]
+          }, {
+              produto: "2646",
+              price: [{
+                  rango: 0,
+                  price: 15e3
+              }, {
+                  rango: 1,
+                  price: 1e4
+              }, {
+                  rango: 2,
+                  price: 9e3
+              }, {
+                  rango: 3,
+                  price: 8e3
+              }, {
+                  rango: 4,
+                  price: 7500
+              }, {
+                  rango: 5,
+                  price: 7e3
+              }, {
+                  rango: 6,
+                  price: 6500
+              }, {
+                  rango: 7,
+                  price: 6e3
+              }, {
+                  rango: 8,
+                  price: 5500
+              }, {
+                  rango: 9,
+                  price: 5e3
+              }, {
+                  rango: 10,
+                  price: 4900
+              }, {
+                  rango: 11,
+                  price: 4800
+              }, {
+                  rango: 12,
+                  price: 4700
+              }, {
+                  rango: 13,
+                  price: 4600
+              }, {
+                  rango: 14,
+                  price: 4500
+              }, {
+                  rango: 15,
+                  price: 4400
+              }, {
+                  rango: 16,
+                  price: 4300
+              }, {
+                  rango: 17,
+                  price: 4200
+              }, {
+                  rango: 18,
+                  price: 4100
+              }, {
+                  rango: 19,
+                  price: 4e3
+              }, {
+                  rango: 20,
+                  price: 3500
+              }, {
+                  rango: 21,
+                  price: 3e3
+              }]
+          }]
+      }];
 
   var rango_nr;
   price_total=0;
@@ -445,26 +1774,85 @@ function calculate_price(){
 
 
   if(produto_pr != null){
-    var price=price=prices[type].produto[produto_pr].price[rango_nr].price * 1.05;
+    //var price=price=prices[type].produto[produto_pr].price[rango_nr].price * 1.05;
+    var price = 0;
+
+      //for loop sum to >> price
+      if (produto_pr[0]){
+          price+=(prices[type].produto[2].price[rango_nr].price * 1.05) * 1.05;
+      } else {
+          for(var i = 1; i < produto_pr.length; i++){
+              if (produto_pr[i]){
+                  var loopToVal = 0;
+                  if (i == 1){
+                      loopToVal = 3;
+                  } else if (i == 2) {
+                      loopToVal = 9;
+                  } else if (i == 3) {
+                      loopToVal = 10;
+                  }
+                  price+=(prices[type].produto[loopToVal].price[rango_nr].price * 1.05) * 1.05;
+              }
+          }
+      }
+
+      console.log("PRICE   " + price);
     var price_un=price*nr;
     price_total=price_total+(price*nr);
+      console.log("PRICE_TOTAL   " + price_total);
     price_persona=price_persona+price;
-    if(produto_pr=="2"){
-      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competencias, PID, 2x Clima, Reconocimiento + Implementacion Gratis</div>');
-      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementacion Gratis)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
+    if(produto_pr[0]){
+      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competencias, PID, 2x Clima, Reconocimiento Plan de Sucesión + Implementación Gratis</div>');
+      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementación Gratis)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
 
-      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementacion Gratis)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementación Gratis)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+    }else{
+        var tempSideText = "";
+        //FLEX DESEMPEÑO
+        if(produto_pr[1]){
+          if (tempSideText == ""){
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+          } else {
+              tempSideText = tempSideText + " + ";
+          }
+          tempSideText = tempSideText + 'Metas, Competencias ';
+
+          $(".table_precios").append("<tr class='p3'><td>Flex Desempeño(Metas; Competencias + Implementación(20%))</td><td>"+((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+
+          json.push({produto : 'Flex Desempeño', produto2 : 'Flex Desempeño (Metas; Competencias; + Implementación(20%)', precio_u:((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+        }
+        //FLEX DESARROLLO
+        if(produto_pr[2]){
+          if (tempSideText == ""){
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+          } else {
+              tempSideText = tempSideText + " + ";
+          }
+          tempSideText = tempSideText + 'PID, Plan de Sucesión ';
+
+          $(".table_precios").append("<tr class='p3'><td>Flex Desarrollo(PID; Plan de Sucesión; + Implementación(20%))</td><td>"+((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+
+          json.push({produto : 'Flex Derarrollo', produto2 : 'Flex Desarrollo (PID; Plan de Sucesión; + Implementación(20%)', precio_u:((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+        }
+        //FLEX ENGAGEMENT
+        if(produto_pr[3]){
+          if (tempSideText == ""){
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+          } else {
+              tempSideText = tempSideText + " + ";
+          }
+          tempSideText = tempSideText + 'Reconocimiento, Clima ';
+
+          $(".table_precios").append("<tr class='p3'><td>Flex Desarrollo(Reconocimiento; Clima + Implementación(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+
+          json.push({produto : 'Flex Derarrollo', produto2 : 'Flex Desarrollo (Reconocimiento; Clima; + Implementación(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+        }
+        if (tempSideText != ""){
+              tempSideText = tempSideText + "+ Implementación(20%)</div>";
+        }
+        $(".incl").html(tempSideText);
     }
-    else if(produto_pr=="3"){
-      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competencias  + Implementacion(20%)</div>');
-      $(".table_precios").append("<tr class='p3'><td>Flex Desempeno(Metas; Competencias  + Implementacion(20%))</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
-      json.push({produto : 'Flex Desempeño', produto2 : 'Flex Desempeño (Metas; Competencias; + Implementacion(20%)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
-    }
-    else if(produto_pr=="9"){
-      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Competencias, PID, + Implementacion(20%)</div>');
-      $(".table_precios").append("<tr class='p3'><td>Flex Desarrollo(Competencias; PID + Implementacion(20%))</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
-      json.push({produto : 'Flex Derarrollo', produto2 : 'Flex Desarrollo (Competencias; PID; + Implementacion(20%)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
-    }
+
   }
   else{
     $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names"></div>');
@@ -476,12 +1864,13 @@ function calculate_price(){
   } else if(total>0 && produto_pr==9){
     $(".names").html("Competencias, PID, ");
   }
+
   $("input[name='produto']:checked").each(function(index) {
-    var price=prices[type].produto[$(this).attr('value')].price[rango_nr].price * 1.05;
+    var price=(prices[type].produto[$(this).attr('value')].price[rango_nr].price * 1.05) * 1.05;
 
     if (index === total - 1) {
       $(".names").append(prices[type].produto[$(this).attr('value')].produto);
-      $(".names").append(" + Implementacion(20%)");
+      $(".names").append(" + Implementación(20%)");
     }else{
       $(".names").append(prices[type].produto[$(this).attr('value')].produto + ", ");
     }
@@ -490,30 +1879,32 @@ function calculate_price(){
 
     json.push({produto : prices[type].produto[$(this).attr('value')].produto, produto2 : prices[type].produto[$(this).attr('value')].produto, precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
 
-
     price_total=price_total+(price*nr);
     price_persona=price_persona+price;
 
+      console.log("PRODUTO");
+
   });
 
+
   if(competencias>0){
-    var price=prices[1].produto[0].price[rango_nr].price * 1.05;
+    var price=(prices[1].produto[0].price[rango_nr].price * 1.05) * 1.05;
     price_total=price_total+(price*nr*competencias);
     price_persona=price_persona+(price*competencias);
     var price_un=price*nr*competencias;
     var price_un2=price*competencias;
 
     $(".table_precios").append("<tr class='comp'><td>"+competencias+"x Competencias</td><td>"+price_un2.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
-    $(".name_competencias").html(competencias+ "x Competencias ");
 
     json.push({produto :+competencias+"x Competencias",produto2 :+competencias+"x Competencias", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
 
+    $(".name_competencias").html(competencias+ "x Competencias ");
   }else{
     $(".name_competencias").html("");
   }
 
   if(evaluacion2636>0){
-    var price=prices[1].produto[4].price[rango_nr].price * 1.05;
+    var price=(prices[1].produto[4].price[rango_nr].price * 1.05) * 1.05;
     price_total=price_total+(price*nr*evaluacion2636);
     price_persona=price_persona+(price*evaluacion2636);
     var price_un=price*nr*evaluacion2636;
@@ -532,31 +1923,33 @@ function calculate_price(){
     var price_un2=0;
     if(type==0){
 
-      if(produto_pr==2){
-        var price=prices[0].produto[8].price[rango_nr].price * 1.05;
+      if( produto_pr[0] ){
+        var price=(prices[0].produto[8].price[rango_nr].price * 1.05) * 1.05;
         price_total=price_total+(price*nr*clima);
         price_persona=price_persona+(price*clima);
         price_un1=price*nr*clima;
         price_un2=price*clima;
+
+          console.log("CLIMAA     " + price_total);
       }else{
         if(clima==1){
-          var price=prices[0].produto[1].price[rango_nr].price * 1.05;
+          var price=(prices[0].produto[1].price[rango_nr].price * 1.05) * 1.05;
           price_total=price_total+(price*nr*clima);
           price_persona=price_persona+(price*clima);
           price_un1=price*nr*clima;
           price_un2=price*clima;
         }
         else if(clima==2){
-          var price1=prices[0].produto[1].price[rango_nr].price * 1.05;
-          var price2=prices[0].produto[7].price[rango_nr].price * 1.05;
+          var price1=(prices[0].produto[1].price[rango_nr].price * 1.05) * 1.05;
+          var price2=(prices[0].produto[7].price[rango_nr].price * 1.05) * 1.05;
           price_total=price_total+(price1*nr)+(price2*nr);
           price_persona=price_persona+price1+price2;
           price_un1=(price1*nr)+(price2*nr);
           price_un2=price1+price2;
         }else{
-          var price1=prices[0].produto[1].price[rango_nr].price * 1.05;
-          var price2=prices[0].produto[7].price[rango_nr].price * 1.05;
-          var price3=prices[0].produto[8].price[rango_nr].price * 1.05;
+          var price1=(prices[0].produto[1].price[rango_nr].price * 1.05) * 1.05;
+          var price2=(prices[0].produto[7].price[rango_nr].price * 1.05) * 1.05;
+          var price3=(prices[0].produto[8].price[rango_nr].price * 1.05) * 1.05;
           var price3_nr=clima-2;
           price_total=price_total+(price1*nr)+(price2*nr)+(price3*nr*price3_nr);
           price_persona=price_persona+price1+price2+(price3*price3_nr);
@@ -567,23 +1960,23 @@ function calculate_price(){
     }
     else{
       if(clima==1){
-        var price=prices[1].produto[1].price[rango_nr].price * 1.05;
+        var price=(prices[1].produto[1].price[rango_nr].price * 1.05) * 1.05;
         price_total=price_total+(price*nr*clima);
         price_persona=price_persona+(price*clima);
         price_un1=price*nr*clima;
         price_un2=price*clima;
       }
       else if(clima==2){
-        var price1=prices[1].produto[1].price[rango_nr].price * 1.05;
-        var price2=prices[1].produto[2].price[rango_nr].price * 1.05;
+        var price1=(prices[1].produto[1].price[rango_nr].price * 1.05) * 1.05;
+        var price2=(prices[1].produto[2].price[rango_nr].price * 1.05) * 1.05;
         price_total=price_total+(price1*nr)+(price2*nr);
         price_persona=price_persona+price1+price2;
         price_un1=(price1*nr)+(price2*nr);
         price_un2=price1+price2;
       }else{
-        var price1=prices[1].produto[1].price[rango_nr].price * 1.05;
-        var price2=prices[1].produto[2].price[rango_nr].price * 1.05;
-        var price3=prices[1].produto[3].price[rango_nr].price * 1.05;
+        var price1=(prices[1].produto[1].price[rango_nr].price * 1.05) * 1.05;
+        var price2=(prices[1].produto[2].price[rango_nr].price * 1.05) * 1.05;
+        var price3=(prices[1].produto[3].price[rango_nr].price * 1.05) * 1.05;
         var price3_nr=clima-2;
         price_total=price_total+(price1*nr)+(price2*nr)+(price3*nr*price3_nr);
         price_persona=price_persona+price1+price2+(price3*price3_nr);
@@ -604,12 +1997,15 @@ function calculate_price(){
 
   json.push({produto :"TOTAL", produto2 :"TOTAL", precio_u:"", nr: "",precio_t:price_total.toFixed(2)});
 
+
   var price_new=addCommas(price_total.toFixed(2));
   var price_new2=addCommas(price_persona.toFixed(4));
   $(".price").html(price_new);
+  console.log("PRICEEEEEE : " + price_new);
   $(".emp_div_price").html("("+price_new2 + "$ por empleado)");
   converter();
 }
+
 
 function reset(){
   price_total=0;
@@ -718,7 +2114,6 @@ function isNumber(e){
 
 </script>
 <script>
-
 function httpGet(theUrl)
 {
   var xmlHttp = null;
@@ -740,31 +2135,90 @@ function currencyConverter(currency_from,currency_to,currency_input){
 var moneda;
 
 var currency_input = 1;
-var currency_from_usd = "COP"; // currency codes : http://en.wikipedia.org/wiki/ISO_4217
-var currency_to_usd = "USD";
-var rate_usd = 1//currencyConverter(currency_from_usd,currency_to_usd,currency_input);
+var currency_from_usd = "USD"; // currency codes : http://en.wikipedia.org/wiki/ISO_4217
+var currency_to_eur = "EUR";
+var rate_eur = 1;//currencyConverter(currency_from_usd,currency_to_eur,currency_input);
+var currency_to_crc = "CRC";
+var rate_crc = 1;//currencyConverter(currency_from_usd,currency_to_crc,currency_input);
+var currency_to_dop = "DOP";
+var rate_dop = 1;//currencyConverter(currency_from_usd,currency_to_dop,currency_input);
+var currency_to_ecs = "ECS";
+var rate_ecs = 1;//currencyConverter(currency_from_usd,currency_to_ecs,currency_input);
+var currency_to_svc = "SVC";
+var rate_svc = 1;//currencyConverter(currency_from_usd,currency_to_svc,currency_input);
+var currency_to_gtq = "GTQ";
+var rate_gtq = 1;//currencyConverter(currency_from_usd,currency_to_gtq,currency_input);
+var currency_to_hnl = "HNL";
+var rate_hnl = 1;//currencyConverter(currency_from_usd,currency_to_hnl,currency_input);
+var currency_to_nio = "NIO";
+var rate_nio = 1;//currencyConverter(currency_from_usd,currency_to_nio,currency_input);
+var currency_to_pab = "PAB";
+var rate_pab = 1;//currencyConverter(currency_from_usd,currency_to_pab,currency_input);
+
 
 function converter(){
   moneda = $("input[name='currency']:checked").val();
   var price=0;
   var price_per=0;
   var symbol="$";
+  var moneda = "usd"
   if(moneda == "usd"){
-    price=rate_usd*price_total;
-    price_per=rate_usd*price_persona;
-    symbol="$"
-  }
-  else if(moneda == "cop"){
     price=price_total;
     price_per=price_persona;
     symbol="$"
+  }else if(moneda == "eur"){
+    price=rate_eur*price_total;
+    price_per=rate_eur*price_persona;
+    symbol="€"
+  }
+  else if(moneda == "crc"){
+    price=rate_crc*price_total;
+    price_per=rate_crc*price_persona;
+    symbol="₡"
+  }
+  else if(moneda == "dop"){
+    price=rate_dop*price_total;
+    price_per=rate_dop*price_persona;
+    symbol="RD$"
+  }
+  else if(moneda == "ecs"){
+    price=rate_ecs*price_total;
+    price_per=rate_ecs*price_persona;
+    symbol="S/."
+  }
+  else if(moneda == "svc"){
+    price=rate_svc*price_total;
+    price_per=rate_svc*price_persona;
+    symbol="‎₡"
+  }
+  else if(moneda == "gtq"){
+    price=rate_gtq*price_total;
+    price_per=rate_gtq*price_persona;
+    symbol="‎Q"
+  }
+  else if(moneda == "hnl"){
+    price=rate_hnl*price_total;
+    price_per=rate_hnl*price_persona;
+    symbol="‎L"
+  }
+  else if(moneda == "nio"){
+    price=rate_nio*price_total;
+    price_per=rate_nio*price_persona;
+    symbol="‎C$"
+  }
+  else if(moneda == "pab"){
+    price=rate_pab*price_total;
+    price_per=rate_pab*price_persona;
+    symbol="‎PAB"
   }
   var price_new=addCommas(price.toFixed(2));
   var price_new2=addCommas(price_per.toFixed(4));
   $(".price").html(price_new);
+  console.log("asoidhaosd  " + moneda);
   $(".price_moeda").html(symbol);
   $(".emp_div_price").html("(" + price_new2 + symbol + " por empleado)");
 }
+
 function addCommas(nStr){
         nStr += '';
         x = nStr.split('.');
