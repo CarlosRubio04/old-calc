@@ -1285,15 +1285,15 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[1].produto2, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
 		];
 
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,120, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,130, text6_split);
-		}
+		// if(obs.length > 0){
+		// 	doc.setFontStyle("bold");
+		// 	doc.setTextColor(59, 190, 194);
+		// 	//doc.text(30,120, "OBSERVACIONES");
+		//
+		// 	doc.setFontStyle("normal");
+		// 	doc.setTextColor(50, 50, 50);
+		// 	doc.text(30,130, text6_split);
+		// }
 	}
 	else if(length==3){
 		var data = [
@@ -1478,7 +1478,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	doc.setTextColor(50, 50, 50);
 
     var text5='La forma de pago es por medio de tarjeta de crédito usando la plataforma de PayU.\n\nAcsendo realizara un incremento de precios anual del 3%.';
-	var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+	var text5_split=doc.splitTextToSize(text6, doc.internal.pageSize.width - 60);
     doc.text(30,255, text5_split);
 
 
@@ -1540,9 +1540,12 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 var id_com=0;
 var codigo;
 function propuesta() {
-    $.getJSON('script.php', function(e) {
-        codigo = e.result;
-    });
+    // $.getJSON('script.php', function(e) {
+    //     codigo = e.result;
+    // });
+
+		codigo = 'PRUEBA';
+
 
 	$(".calculator_box .container").css("display","none");
 	$(".form_propuesta").css("display","block");
