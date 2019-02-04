@@ -1540,11 +1540,9 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 var id_com=0;
 var codigo;
 function propuesta() {
-    // $.getJSON('script.php', function(e) {
-    //     codigo = e.result;
-    // });
-
-		codigo = 'PRUEBA';
+    $.getJSON('script.php', function(e) {
+        codigo = e.result;
+    });
 
 
 	$(".calculator_box .container").css("display","none");
