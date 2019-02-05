@@ -1544,7 +1544,6 @@ function propuesta() {
         codigo = e.result;
     });
 
-
 	$(".calculator_box .container").css("display","none");
 	$(".form_propuesta").css("display","block");
     $(".produto_inputs").html("");
