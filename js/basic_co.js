@@ -155,6 +155,7 @@ function generarp() {
 
 	doc.setFontType("bold");
 	doc.text(30, 210,name_com+"\n\n"+cargo_com);
+	doc.text(150, 210,"Julian Coso"+"\n\n"+"El cargo del man");
 
 	doc.setFontType("normal");
 	doc.text(30, 240, "Bogotá,\n\nACSENDO SAS");
