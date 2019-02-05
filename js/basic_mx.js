@@ -1276,15 +1276,16 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[1].produto2, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
 		];
 
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,120, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,130, text6_split);
-		}
+		// Comento parte del cogigo para que el texto no aparesca en un lugar equivocado
+		// if(obs.length > 0){
+		// 	doc.setFontStyle("bold");
+		// 	doc.setTextColor(59, 190, 194);
+		// 	//doc.text(30,120, "OBSERVACIONES");
+		//
+		// 	doc.setFontStyle("normal");
+		// 	doc.setTextColor(50, 50, 50);
+		// 	doc.text(30,130, text6_split);
+		// }
 	}
 	else if(length==3){
 		var data = [
@@ -1469,8 +1470,8 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	doc.setTextColor(50, 50, 50);
 
     var text5='La forma de pago es por medio de tarjeta de crédito usando la plataforma de PayU.\n\nAcsendo realizara un incremento de precios anual del 3%.';
-	var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-    doc.text(30,255, text5_split);
+	var text5_split=doc.splitTextToSize(text6, doc.internal.pageSize.width - 60);
+    doc.text(30,255, text5_split); 
 
 
 
