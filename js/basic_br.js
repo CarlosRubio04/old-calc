@@ -1451,18 +1451,20 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 	    }
 	});
 
-    doc.setFontSize(9.5);
-    doc.setFontStyle("bold");
-	doc.setTextColor(59, 190, 194);
-	doc.text(30,245, "OBSERVAÇÕES");
 
-	var text6_split=doc.splitTextToSize(obs, doc.internal.pageSize.width - 60);
+	if (obs.length > 1) {
+		doc.setFontSize(9.5);
+		doc.setFontStyle("bold");
+		doc.setTextColor(59, 190, 194);
+		doc.text(30,245, "OBSERVAÇÕES");
 
-	doc.setFontStyle("normal");
-	doc.setTextColor(50, 50, 50);
-	doc.text(30,255, text6_split);
+		doc.setFontStyle("normal");
+		doc.setTextColor(50, 50, 50);
 
-
+		// var text5='La forma de pago es por medio de tarjeta de crédito usando la plataforma de PayU.\n\nAcsendo realizara un incremento de precios anual del 3%.';
+		var text5_split=doc.splitTextToSize(obs, doc.internal.pageSize.width - 60);
+		doc.text(30,255, text5_split);
+	}
 
     //var text5='A forma de pagamento é através de boleto bancário, cartão de crédito através da plataforma PayPal ou PayU ou uma outra que acordem as partes.';
 	//var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
