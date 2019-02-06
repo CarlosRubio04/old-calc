@@ -202,7 +202,7 @@ function generarp() {
 	doc.setFontSize(11);
 	doc.text(30, 70, 'Aos cuidados de:');
 	doc.setFontType("normal")
-	doc.text(49, 70, nombre_cliente);
+	doc.text(64, 70, nombre_cliente);
 	doc.setFontType("bold");
 	doc.text(30, 82, 'Empresa:');
 	doc.setFontType("normal")
@@ -369,28 +369,28 @@ function generarp() {
 	doc.text(50,69, text4_split);
 
     doc.setFontType("bold");
-	doc.text(35,77, "Passo 3:");
+	doc.text(35,85, "Passo 3:");
 	doc.setFontType("italic");
-	doc.text(50,77, "Implementação das avaliações");
+	doc.text(50,85, "Implementação das avaliações");
 	doc.setFontType("normal");
 	var text4='Acsendo oferece a opção de que o cliente faça o processo de forma independente ou  usando o formato de implementação assistida: \n\nApós a revisão detalhada de todos os arquivos e modelos de avaliação do cliente a Acsendo passa à implementação no sistema num prazo máximo de 5 dias úteis. Depois, o cliente revisa e fazemos todos os testes das avaliações e suas configurações, após as quais se pode configurar o envio das mesmas.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
-	doc.text(50,84, text4_split);
+	doc.text(50,90, text4_split);
 
     doc.setFontType("bold");
-	doc.text(35,116, "Passo 4:");
+	doc.text(35,122, "Passo 4:");
 	doc.setFontType("italic");
-	doc.text(50,116, "Geração e entrega de relatórios");
+	doc.text(50,122, "Geração e entrega de relatórios");
 	doc.setFontType("normal");
 	var text4='Uma vez terminadas as avaliações, os resultados estarão disponíveis no sistema, incluindo a versão em PDF que pode ser baixada. No entanto, dependendo da complexidade do modelo escolhido e das suas configurações, pode ser que os relatórios em PDF tenham que ser ajustados antes de estarem disponíveis, nesse caso, o prazo de entrega é de até 5 dias úteis. Independente dos relatórios, a planilha geral de resultados sempre estará disponível no sistema e pode ser baixada a qualquer momento.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
-	doc.text(50,123, text4_split);
+	doc.text(50,128, text4_split);
 
     doc.setFontStyle("bold");
 	doc.setTextColor(59, 190, 194);
-	doc.text(30,157, "REQUERIMENTOS TÉCNICOS PARA A IMPLEMENTAÇÃO");
+	doc.text(30,162, "REQUERIMENTOS TÉCNICOS PARA A IMPLEMENTAÇÃO");
 
 	doc.setTextColor(50, 50, 50);
 	doc.setFontType("normal");
@@ -398,7 +398,7 @@ function generarp() {
 	var text3='Para que o sistema e as avaliações funcionem sem nenhum inconveniente é preciso respeitar as seguintes condições:';
 
 	var text3_split=doc.splitTextToSize(text3, doc.internal.pageSize.width - 60);
-	doc.text(30,167, text3_split);
+	doc.text(30,170, text3_split);
 
     doc.setFontType("bold");
 	doc.text(37,181, "1.");
@@ -1003,13 +1003,13 @@ function generarp() {
 				doc.text(30,192, text5_split);
 
 				doc.setFontStyle("bold");
-				doc.text(30,210, "Resultados");
+				doc.text(30,220, "Resultados");
 
 				doc.setFontStyle("normal");
 				var text5='1. Mapa mostrando as opções de sucessão para cada cargo do organograma\n\n2. Planilha de dados com toda a informação do plano de sucessão.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-				doc.text(40,220, text5_split);
+				doc.text(40,230, text5_split);
 
 
 
