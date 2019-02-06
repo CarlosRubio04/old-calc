@@ -53,56 +53,135 @@ function generarp() {
 
 	// Vendedor
 
-    var name_com,cargo_com,numero_com,mail_com,skype_com;
-		if(id_com==0){
-        name_com="Mauricio Chavez";
-        cargo_com="Sales Manager";
-        numero_com="(55) 2865 0251";
-        mail_com="mchavez@acsendo.com";
-        skype_com="skype:mchavez@acsendo.com";
-    }
-    else if(id_com==1){
-        name_com="Carlos Alberto Santana";
-        cargo_com="CEO";
-        numero_com="(57) 314 293 76 02";
-        mail_com="csantana@acsendo.com";
-        skype_com="skype:carlos_alberto_santana";
-    }
-    else if(id_com==2){
-        name_com="Nathalia Ramirez";
-        cargo_com="Channels Executive LATAM";
-        numero_com="(57) 310 423 7893";
-        mail_com="nramirez@acsendo.com";
-        skype_com="skype:nramirez_170";
-    }
-    else if(id_com==3){
-        name_com="Cesar Suarez";
-        cargo_com="Country Manager México";
-        numero_com="(+52) 5573405439";
-        mail_com="csuarez@acsendo.com";
-        skype_com="skype:cesar-acsendo";
-    }
-    else if(id_com==4){
-        name_com="Farley Guarín";
-        cargo_com="Customer Success Manager";
-        numero_com="(57) 320 801 35 24";
-        mail_com="fguarin@acsendo.com";
-        skype_com="skype:acsendohcm";
-    }
-    else if(id_com==5){
-        name_com="Francisco Toledo";
-        cargo_com="Business Development Manager";
-        numero_com="+51992968391";
-        mail_com="ftoledo1@yahoo.com";
-        skype_com="skype:francisco77j";
-    }
-    else if(id_com==6){
-        name_com="Maria Camila Murcia";
-        cargo_com="Channels Executive LATAM";
-        numero_com="+57 3107907746";
-        mail_com="mcmurcia@acsendo.com";
-        skype_com="skype:camimurcia";
-    }
+	var name_com,cargo_com,numero_com,mail_com,skype_com,name_com_sup,cargo_com_sup,mail_com_sup,numero_com_sup;
+	if(id_com==1){
+			name_com="Carlos Alberto Santana";
+			cargo_com="CEO";
+			numero_com="(+57) 314 293 76 02";
+			mail_com="csantana@acsendo.com";
+			skype_com="skype:carlos_alberto_santana";
+	}
+	else if(id_com==2){
+			name_com="Francisco Mendes";
+			cargo_com="Director de Mercadeo";
+			numero_com="(+351) 916 772 019";
+			mail_com="fvieira@acsendo.com";
+			skype_com="skype:franciscoscm";
+	}
+	else if(id_com==3){
+		name_com="Farley Guarín";
+		cargo_com="Ejecutivo de Comercial América Latina";
+		numero_com="(+57) 320 801 35 24";
+		mail_com="fguarin@acsendo.com";
+		skype_com="skype:acsendohcm";
+	}
+	else if(id_com==4){
+		name_com="Andréia Pereira";
+		cargo_com="Executiva de Vendas - Brasil ";
+		numero_com="(+55) 11 4949-5006";
+		mail_com="apereira@acsendo.com";
+		skype_com="skype:apereira@acsendo.com";
+	}
+	else if(id_com==5){
+			name_com="Eliana Rubio";
+			cargo_com="Gerente Regional Cono Sur";
+			numero_com="(+57) 318 297 28 02";
+			mail_com="erubio@acsendo.com";
+			skype_com="skype:eliana.rubio.acsendo";
+	}
+	else if(id_com==6){
+			name_com="Nathalia Ramirez";
+			cargo_com="Channels Executive LATAM";
+			numero_com="(+57) 310 423 7893";
+			mail_com="nramirez@acsendo.com";
+			skype_com="skype:nramirez_170";
+	}
+	else if(id_com==7){
+			name_com="Ana Maria Martinez";
+			cargo_com="Country Manager México";
+			numero_com="(+52) 1 55 3896 8934";
+			mail_com="amartinez@acsendo.com";
+			skype_com="skype: amartinez@acsendo.com";
+	}
+	else if(id_com==8){
+			name_com="Mauricio Chavez";
+			cargo_com="Sales Manager";
+			numero_com="(+52) 55 2865 0251";
+			mail_com="mchavez@acsendo.com";
+			skype_com="skype:mchavez@acsendo.com";
+	}
+	else if(id_com==9){
+			name_com="Christian Rodriguez";
+			cargo_com="Director Comercial Colombia";
+			numero_com="(+571) 466 0529 ";
+			mail_com="crodriguez@acsendo.com";
+			skype_com="skype:crodriguez_608";
+	}
+	else if(id_com==10){
+			name_com="Camila Diaz";
+			cargo_com="Customer Success Representative";
+			mail_com="cdiaz@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			name_com_sup="Ivan Manosalva";
+			cargo_com_sup="Customer Success Manager";
+			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==11){
+			name_com="Carlos Rojas";
+			cargo_com="Customer Success Representative";
+			mail_com="soporte@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			name_com_sup="Ivan Manosalva";
+			cargo_com_sup="Customer Success Manager";
+			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==12){
+			name_com="Paola Riaño";
+			cargo_com="Customer Success Representative";
+			mail_com="priano@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			name_com_sup="Ivan Manosalva";
+			cargo_com_sup="Customer Success Manager";
+			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==13){
+			name_com="Sebastián Linares";
+			cargo_com="Customer Success Representative";
+			mail_com="jlinares@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			name_com_sup="Ivan Manosalva";
+			cargo_com_sup="Customer Success Manager";
+			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==14){
+			name_com="Astrid Niño";
+			cargo_com="Customer Success Representative";
+			mail_com="anino@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			name_com_sup="Ivan Manosalva";
+			cargo_com_sup="Customer Success Manager";
+			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==15){
+			name_com="Ivan Manosalva";
+			cargo_com="Customer Success Manager";
+			mail_com="imanosalva@acsendo.com";
+			numero_com="(+52) 55 5351 4466";
+			numero_com_sup="(+52) 55 5351 4466";
+	}
+	else if(id_com==16){
+			name_com="Francisco Toledo";
+			cargo_com="Business Development Manager";
+			numero_com="(+51) 9 9296 8391 3";
+			mail_com="francisco.toledo@acsendo.com";
+			skype_com="skype:francisco77j";
+	}
+
 
 
     // Folha de Rosto
@@ -154,13 +233,13 @@ function generarp() {
 	doc.setFontType("bold");
 	doc.text(30, 210,name_com+"\n\n"+cargo_com);
 
+	if (name_com_sup) {
+		doc.text(120, 210,name_com_sup+"\n\n"+cargo_com_sup);
+	}
+
 	doc.setFontType("normal");
-	if(id_com==3){
-			doc.text(30, 240, "Ciudad de México,\n\nACSENDO SAPI DE CV");
-	}
-	else{
-			doc.text(30, 240, "Bogotá,\n\nACSENDO SAS");
-	}
+	doc.text(30, 240, "Ciudad de México,\n\nACSENDO SAPI DE CV");
+
 
 	// Apresentação Empresa
 
@@ -1509,24 +1588,58 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	var title1=cargo_com;
 	var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
 	var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
 	doc.text(textOffset_title1, 65, title1);
 
-	var title1=numero_com;
-	var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-	var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-	doc.text(textOffset_title1, 78, title1);
 	var title1=mail_com;
 	var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
 	var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+	doc.text(textOffset_title1, 70, title1);
 
-	doc.text(textOffset_title1, 83, title1);
-	var title1=skype_com;
-	var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-	var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
 
-	doc.text(textOffset_title1, 88, title1);
+	if (numero_com) {
+		var title1=numero_com;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 75, title1);
+	}
+
+	if (skype_com) {
+		var title1=skype_com;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+		doc.text(textOffset_title1, 80, title1);
+	}
+
+	if (name_com_sup) {
+
+		doc.setFontSize(12);
+		doc.setFontStyle("bold");
+		doc.setTextColor(255,255,255);
+		var title1=name_com_sup;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 100, title1);
+
+		doc.setFontSize(10);
+		doc.setFontStyle("normal");
+		doc.setTextColor(255,255,255);
+		var title1=cargo_com_sup;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 108, title1);
+
+		var title1=mail_com_sup;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 113, title1);
+
+		var title1=numero_com_sup;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 118, title1);
+
+	}
 
 	// Save the PDF
 	doc.save(arch + '- ' + codigo + '.pdf');
