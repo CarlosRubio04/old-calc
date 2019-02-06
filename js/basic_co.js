@@ -55,7 +55,7 @@ function generarp() {
 
 	// Vendedor
 
-	var name_com,cargo_com,numero_com,mail_com,skype_com,name_com_sup,cargo_com_sup,mail_com_sup;
+	var name_com,cargo_com,numero_com,mail_com,skype_com,name_com_sup,cargo_com_sup,mail_com_sup,numero_com_sup;
 	if(id_com==1){
 			name_com="Carlos Alberto Santana";
 			cargo_com="CEO";
@@ -123,46 +123,57 @@ function generarp() {
 			name_com="Camila Diaz";
 			cargo_com="Customer Success Representative";
 			mail_com="cdiaz@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 			name_com_sup="Ivan Manosalva";
 			cargo_com_sup="Customer Success Manager";
 			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+57) 1 508 8868";
 	}
 	else if(id_com==11){
 			name_com="Carlos Rojas";
 			cargo_com="Customer Success Representative";
 			mail_com="soporte@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 			name_com_sup="Ivan Manosalva";
 			cargo_com_sup="Customer Success Manager";
 			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+57) 1 508 8868";
 	}
 	else if(id_com==12){
 			name_com="Paola Riaño";
 			cargo_com="Customer Success Representative";
 			mail_com="priano@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 			name_com_sup="Ivan Manosalva";
 			cargo_com_sup="Customer Success Manager";
 			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+57) 1 508 8868";
 	}
 	else if(id_com==13){
 			name_com="Sebastián Linares";
 			cargo_com="Customer Success Representative";
 			mail_com="jlinares@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 			name_com_sup="Ivan Manosalva";
 			cargo_com_sup="Customer Success Manager";
 			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+57) 1 508 8868";
 	}
 	else if(id_com==14){
 			name_com="Astrid Niño";
 			cargo_com="Customer Success Representative";
 			mail_com="anino@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 			name_com_sup="Ivan Manosalva";
 			cargo_com_sup="Customer Success Manager";
 			mail_com_sup="imanosalva@acsendo.com";
+			numero_com_sup="(+57) 1 508 8868";
 	}
 	else if(id_com==15){
 			name_com="Ivan Manosalva";
 			cargo_com="Customer Success Manager";
 			mail_com="imanosalva@acsendo.com";
+			numero_com="(+57) 1 508 8868";
 	}
 	else if(id_com==16){
 			name_com="Francisco Toledo";
@@ -171,7 +182,6 @@ function generarp() {
 			mail_com="francisco.toledo@acsendo.com";
 			skype_com="skype:francisco77j";
 	}
-
 
 
     // Folha de Rosto
@@ -1670,6 +1680,11 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
 		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
 		doc.text(textOffset_title1, 113, title1);
+
+		var title1=numero_com_sup;
+		var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+		var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+		doc.text(textOffset_title1, 118, title1);
 
 	}
 

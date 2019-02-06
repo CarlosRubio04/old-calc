@@ -172,7 +172,6 @@ function generarp() {
 			cargo_com="Customer Success Manager";
 			mail_com="imanosalva@acsendo.com";
 			numero_com="(+52) 55 5351 4466";
-			numero_com_sup="(+52) 55 5351 4466";
 	}
 	else if(id_com==16){
 			name_com="Francisco Toledo";
