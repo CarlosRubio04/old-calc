@@ -200,7 +200,7 @@ function generarp() {
 	doc.setTextColor(0, 0, 0);
 	doc.setFontType("bold");
 	doc.setFontSize(11);
-	doc.text(30, 70, 'Senhores:');
+	doc.text(30, 70, 'Aos cuidados de:');
 	doc.setFontType("normal")
 	doc.text(49, 70, nombre_cliente);
 	doc.setFontType("bold");
@@ -215,7 +215,7 @@ function generarp() {
 	doc.setFontType("bold");
 	doc.text(30, 132, 'Prezados senhores:');
 	doc.setFontType("normal");
-    var text1='Em resposta a vossa solicitação de orçamento, vimos dar-lhe a conhecer os detalhes da proposta para aquisição de nosso software de avaliação e gestão de talento humano.\n\n\nCordialmente,';
+    var text1='Em resposta à vossa solicitação de orçamento, segue nossa proposta detalhada para aquisição do nosso software de avaliação e gestão de talento humano.\n\n\nCordialmente,';
 
 	var text1_split=doc.splitTextToSize(text1, doc.internal.pageSize.width - 60);
 	doc.text(30,142, text1_split);
@@ -267,7 +267,7 @@ function generarp() {
 	doc.setTextColor(50, 50, 50);
 
 	doc.setFontType("normal");
-	var text2='Desde 2008 a Acsendo ajuda as empresas a otimizar os seus processos de gestão de pessoas para reduzir custos, poupar tempo e alcançar melhores resultados. O caminho que percorremos vem sendo de constante inovação e que nos leva hoje a estar com nosso sistema tecnológico em mais de 300 empresas de 15 países diferentes.\n\nO software de talento humano da Acsendo conta com três módulos: Desempenho, Engagement e Desenvolvimento. Cada um desses módulos é composto por ferramentas que permitem executar os seus processos de avaliação e desenvolvimento com base em dados concretos que facilitam a tomada de decisão como promoções, bónus, aumentos salariais e etc.';
+	var text2='Desde 2008 a Acsendo ajuda as empresas a otimizar os processos de gestão de pessoas para reduzir custos, poupar tempo e alcançar melhores resultados. O caminho que percorremos vem sendo de constante inovação e que nos leva hoje a estar com nosso sistema tecnológico em mais de 300 empresas de 15 países diferentes.\n\nO software de talento humano da Acsendo conta com três módulos: Desempenho, Engagement e Desenvolvimento. Cada um desses módulos é composto por ferramentas que permitem executar os seus processos de avaliação e desenvolvimento com base em dados concretos que facilitam a tomada de decisão, como promoções, bônus, aumentos salariais, entre outros.';
 
 	var text2_split=doc.splitTextToSize(text2, doc.internal.pageSize.width - 60);
 	doc.text(30,55, text2_split);
@@ -287,10 +287,10 @@ function generarp() {
 
 	doc.setFontType("normal");
 	doc.text(66,132, "É o responsável por configurar e administrar a ferramenta: ");
-	doc.text(37,137, "a informação dos colaboradores, as opções e permissões das avaliações e o lançamento ");
+	doc.text(37,137, "as informações dos colaboradores, as opções e permissões das avaliações e o lançamento ");
     doc.text(37,142, "e ativação dos diferentes processos.");
 	doc.text(50,152, "Participa das avaliações e demais processos e pode visualizar a informação e ");
-	doc.text(37,157, "resultados das avaliações de sua equipe de trabalho.");
+	doc.text(37,157, "e resultados das avaliações de sua equipe de trabalho.");
 	doc.text(64,167, "Pode visualizar a informação e avaliações que lhe foram designadas, avaliar ");
 	doc.text(37,172, "as pessoas definidas pelo administrador e consultar seus próprios resultados.");
 
@@ -301,7 +301,7 @@ function generarp() {
 	doc.setTextColor(50, 50, 50);
 	doc.setFontType("normal");
 
-	var text3='No início do processo, a Acsendo realiza uma reunião de kick-off com o administrador designado pelo cliente para administrar a plataforma. Durante essa reunião é criado um cronograma para listar todos os processos necessários para a implementação do sistema e dos diferentes módulos que serão utilizados e a ordem em que se pretendem lançar os processos.\n\nO administrador receberá uma formação à distância sobre o uso e configuração dos diferentes parâmetros do sistema. Estas formações acontecem todas as quartas-feiras. \n\nSe depois das formações surgir alguma dúvida ou inconveniente a Acsendo conta com uma plataforma online de suporte (http://suporte.acsendo.com) onde você pode colocar qualquer pergunta sobre o uso do sistema ou sobre os seus processos de avaliação e criar um ticket de suporte ou fazer sugestões de melhoria. ';
+	var text3='No início do processo, a Acsendo realiza uma reunião de kick-off com o administrador designado pelo cliente para administrar a plataforma. Durante essa reunião é criado um cronograma para listar todos os processos necessários para a implementação do sistema e dos diferentes módulos que serão utilizados e a ordem em que se pretendem lançar os processos.\n\nO administrador receberá um treinamento à distância sobre o uso e configuração dos diferentes parâmetros do sistema. \n\nSe depois do treinamento surgir alguma dúvida ou inconveniente a Acsendo conta com uma plataforma online de suporte (http://suporte.acsendo.com) onde você pode colocar qualquer pergunta sobre o uso do sistema ou sobre os seus processos de avaliação e criar um ticket de suporte ou fazer sugestões de melhoria. ';
 
 	var text3_split=doc.splitTextToSize(text3, doc.internal.pageSize.width - 60);
 	doc.text(30,197, text3_split);
@@ -363,7 +363,7 @@ function generarp() {
 	doc.setFontType("italic");
 	doc.text(50,62, "Treinamento da Plataforma");
 	doc.setFontType("normal");
-	var text4='Acsendo oferece um treinamento online aos administradores do sistema.';
+	var text4='Acsendo oferecemanuais da plataforma e vídeos explicativos de cada um dos módulos. Caso seja necessário, a área de Customer Success da Acsendo pode acompanhar o administrador do sistema remotamente em suas primeiras interações com a plataforma.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
 	doc.text(50,69, text4_split);
@@ -373,7 +373,7 @@ function generarp() {
 	doc.setFontType("italic");
 	doc.text(50,77, "Implementação das avaliações");
 	doc.setFontType("normal");
-	var text4='Acsendo oferece a opção de o cliente fazer o processo de forma independente ou então usando o formato de implementação assistida: \n\nApós a revisão detalhada de todos os arquivos e modelos de avaliação do cliente a Acsendo passa à implementação no sistema num prazo máximo de 5 dias úteis. Depois o cliente revisa e fazem-se todos os testes às avaliações e suas configurações, após as quais se pode configurar o envio das mesmas.';
+	var text4='Acsendo oferece a opção de que o cliente faça o processo de forma independente ou  usando o formato de implementação assistida: \n\nApós a revisão detalhada de todos os arquivos e modelos de avaliação do cliente a Acsendo passa à implementação no sistema num prazo máximo de 5 dias úteis. Depois, o cliente revisa e fazemos todos os testes das avaliações e suas configurações, após as quais se pode configurar o envio das mesmas.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
 	doc.text(50,84, text4_split);
@@ -383,7 +383,7 @@ function generarp() {
 	doc.setFontType("italic");
 	doc.text(50,116, "Geração e entrega de relatórios");
 	doc.setFontType("normal");
-	var text4='Uma vez terminadas as avaliações os seus resultados estarão disponíveis no sistema, incluindo a versão em PDF que você pode baixar. No entanto, dependendo da complexidade do modelo escolhido e de suas configurações, pode ser que os relatórios em PDF tenham que ser ajustados antes de estarem disponíveis, nesse caso, o prazo de entrega é de até 5 dias úteis. Independente dos relatórios, sempre estará disponível a planilha geral de resultados que você poderá baixar em qualquer momento.';
+	var text4='Uma vez terminadas as avaliações, os resultados estarão disponíveis no sistema, incluindo a versão em PDF que pode ser baixada. No entanto, dependendo da complexidade do modelo escolhido e das suas configurações, pode ser que os relatórios em PDF tenham que ser ajustados antes de estarem disponíveis, nesse caso, o prazo de entrega é de até 5 dias úteis. Independente dos relatórios, a planilha geral de resultados sempre estará disponível no sistema e pode ser baixada a qualquer momento.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
 	doc.text(50,123, text4_split);
@@ -395,7 +395,7 @@ function generarp() {
 	doc.setTextColor(50, 50, 50);
 	doc.setFontType("normal");
 
-	var text3='Para que o sistema e as avaliações funcionem sem nenhum inconveniente devem-se respeitar as seguintes condições:';
+	var text3='Para que o sistema e as avaliações funcionem sem nenhum inconveniente é preciso respeitar as seguintes condições:';
 
 	var text3_split=doc.splitTextToSize(text3, doc.internal.pageSize.width - 60);
 	doc.text(30,167, text3_split);
@@ -419,13 +419,13 @@ function generarp() {
     doc.text(50,205, "- sendgrid.info");
     doc.text(50,210, "- sendgrid.com");
     doc.text(50,215, "- sendgrid.net");
-    doc.text(50,220, "- Dominio Acsendo: 50.31.40.103");
+    doc.text(50,220, "- Domínio Acsendo: 50.31.40.103");
     doc.text(50,225, "- support.acsendo.com");
 
     doc.setFontType("bold");
 	doc.text(37,231, "3.");
 	doc.setFontType("normal");
-	var text4='Os colaboradores devem contar para acesso à plataforma, com navegadores tais como: Mozilla Firefox, Internet Explorer (versão 10 ou superior), Microsoft Edge e Google Chrome que é o que mais recomendamos.';
+	var text4='Para ter acesso à plataforma, os colaboradores devem ter um desses navegadores: Mozilla Firefox, Internet Explorer (versão 10 ou superior), Microsoft Edge e Google Chrome (sendo este o mais recomendado por nós).';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
 	doc.text(41,231, text4_split);
@@ -485,7 +485,7 @@ function generarp() {
             doc.setFontSize(9.5);
             doc.setFontStyle("normal");
             doc.setTextColor(50, 50, 50);
-            var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos-forte e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
+            var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos fortes e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
 
             var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
             doc.text(30,97, text5_split);
@@ -537,7 +537,7 @@ function generarp() {
             doc.setFontSize(9.5);
             doc.setFontStyle("normal");
             doc.setTextColor(50, 50, 50);
-            var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claro e rastreando o seu progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador o que facilitará toda a tomada de decisões estratégicas.';
+            var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claros e rastreando cada progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador, o que facilitará toda a tomada de decisões estratégicas.';
 
             var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
             doc.text(30,97, text5_split);
@@ -804,7 +804,7 @@ function generarp() {
             doc.setFontSize(9.5);
             doc.setFontStyle("normal");
             doc.setTextColor(240, 240, 240);
-            var text1='O módulo de desempenho é composto por ferramentas que ';
+            var text1='O módulo de desempenho é composto por ferramentas que  ';
             var text2='medem a performance do seu talento humano e ajudam você a encontrar ';
             var text3='as oportunidades de melhoria para aumentar o potencial de sua equipe.';
 
@@ -922,8 +922,8 @@ function generarp() {
         doc.setFontStyle("normal");
         doc.setTextColor(240, 240, 240);
         var text1='O módulo de desenvolvimento contém as ferramentas que vão ajudar você ';
-        var text2='a planejar e guiar o crescimento de seus colaboradores e dessa forma garantir que ';
-        var text3='estes chegam no seu potencial.';
+        var text2='a planejar e guiar o crescimento de seus colaboradores ';
+        var text3='garantindo que eles alcancem seu potencial.';
 
         var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
         var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
@@ -963,7 +963,7 @@ function generarp() {
 				doc.setFontSize(9.5);
 				doc.setFontStyle("normal");
 				doc.setTextColor(50, 50, 50);
-				var text5='A ferramenta do Plano de Desenvolvimento Individual permite a você criar e atribuir atividades de desenvolvimento aos colaboradores e trabalhar para fechar as gaps de competências e metas identificadas. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências, Clima para que os colaboradores saibam o quê e para que devem melhorar.';
+				var text5='A ferramenta do Plano de Desenvolvimento Individual permite que você criar e atribuir atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o quê e para qu devem melhorar.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 				doc.text(30,97, text5_split);
@@ -997,7 +997,7 @@ function generarp() {
 				doc.setFontSize(9.5);
 				doc.setFontStyle("normal");
 				doc.setTextColor(50, 50, 50);
-				var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir se antecipar às alterações de cargos de seus colaboradores e garantir que para cada potencial retirada você tem candidatos com as competências mais indicadas pronto para os substituir.';
+				var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir se antecipar às alterações de cargos de seus colaboradores. Desta maneira você pode garantir que quando um colaborador se desligue a empresa já tenha colaboradores mapeados  e garantir que para cada potencial retirada você tem candidatos com as competências mais indicadas pronto para os substituirnecessárias para substituição imeadiata.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 				doc.text(30,192, text5_split);
@@ -1006,7 +1006,7 @@ function generarp() {
 				doc.text(30,210, "Resultados");
 
 				doc.setFontStyle("normal");
-				var text5='1. Mapa de sucessão mostrando o esquema e prontidão de sucessão para cada cargo do organograma\n\n2. Planilha de dados com toda a informação do plano de sucessão.';
+				var text5='1. Mapa mostrando as opções de sucessão para cada cargo do organograma\n\n2. Planilha de dados com toda a informação do plano de sucessão.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
 				doc.text(40,220, text5_split);
@@ -1100,7 +1100,7 @@ function generarp() {
 				doc.text(30,114, "Resultados");
 
 				doc.setFontStyle("normal");
-				var text5='1. Relatório em PDF com os resultados gerais da empresa e de cada departamento.\n\n2. Planilha de dados com a informação e resultados do processo.';
+				var text5='1. Relatório em PDF com os resultados gerais da empresa e de cada departamento.\n\n2. Planilha de dados com todas as informações e resultados do processo.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
 				doc.text(40,124, text5_split);
@@ -1121,7 +1121,7 @@ function generarp() {
 				doc.setFontSize(9.5);
 				doc.setFontStyle("normal");
 				doc.setTextColor(50, 50, 50);
-				var text5='O reconhecimento através de medalhas de mérito com pontuação é uma ferramenta que permite aos colaboradores valorizar o bom trabalho de seus colegas. Com o sistema de reconhecimento você consegue oferecer uma forma imparcial e equitativa para medir o desempenho percebido pelos membros de suas equipes.';
+				var text5='O reconhecimento através de medalhas de mérito com pontuação é uma ferramenta que permite aos colaboradores valorizar o bom trabalho dos seus colegas. Com o sistema de reconhecimento você consegue oferecer uma forma imparcial e equitativa para medir o desempenho percebido pelos colegas entre si.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 				doc.text(30,192, text5_split);
@@ -1130,7 +1130,7 @@ function generarp() {
 				doc.text(30,213, "Resultados");
 
 				doc.setFontStyle("normal");
-				var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos e medalhas recebidas e quais as medalhas mais enviadas na empresa\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
+				var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, todas as  medalhas distribuídas enviadas na empresa.\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
 
 				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
 				doc.text(40,223, text5_split);
@@ -1171,18 +1171,18 @@ function generarp() {
 
     doc.setTextColor(50, 50, 50);
     doc.setFontStyle("normal");
-    var text5='Como especialistas em software de gestão e avaliação do talento humano, aqui na Acsendo contamos com uma grande rede de consultores aliados por toda América Latina. Se você o desejar, podemos ajudar você referindo um consultor aliado que se ajuste ao que está buscando. ';
+    var text5='Como especialistas em software de gestão e avaliação do talento humano, contamos com uma grande rede de consultores aliados na  América Latina. Desta forma, caso necessitem, podemos indicar consultores aliados para ajudá-los em temas específicos de Talento Humano.';
 
     var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
     doc.text(30,45, text5_split);
 
     doc.setFontStyle("bold");
     doc.setTextColor(59, 190, 194);
-    doc.text(30,70, "DESENVOLVIMENTOS À MEDIDA");
+    doc.text(30,70, "DESENVOLVIMENTOS PERSONALIZADOS");
 
     doc.setFontStyle("normal");
     doc.setTextColor(50, 50, 50);
-    var text5='Todas as modificações (desenvolvimento feito à medida) que se solicitem tanto nos relatórios em PDF, como nos resultados Web ou nas funcionalidades da plataforma podem ter um custo adicional.\n\nOs desenvolvimentos serão solicitados ao departamento comercial que coordenará uma reunião com o gerente de produto e tecnologia para fazer um levantamento formal dos requerimentos, estudar a viabilidade do desenvolvimento e orçamentar o mesmo, se for o caso.\n\nCom base nos requerimentos e no estudo feito será enviada uma proposta detalhada que se está orçamentando em número de horas de desenvolvimento e data proposta para a entrega. A hora de desenvolvimento tem um custo de setenta e cinco dólares. ';
+    var text5='Todas as modificações (desenvolvimentos feitos à medida) que sejam solicitados nos relatórios em PDF, os resultados Web ou nas funcionalidades da plataforma podem ter um custo adicional.\n\nOs desenvolvimentos serão solicitados ao departamento comercial que coordenará uma reunião com o gerente de produto e a área de tecnologia para fazer um levantamento formal dos requerimentos, estudar a viabilidade do desenvolvimento e orçar o mesmo, se for o caso.\n\nCom base nos requerimentos e no estudo feito será enviada uma proposta detalhada com o número de horas de desenvolvimento e a data proposta para a entrega\n\nObs: A hora de desenvolvimento tem um custo de setenta e cinco dólares.';
 
     var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
     doc.text(30,80, text5_split);
