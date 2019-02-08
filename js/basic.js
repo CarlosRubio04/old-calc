@@ -174,6 +174,7 @@ function generarp() {
 
     // Folha de Rosto
 
+		// Portada
 
 	doc.addPage();
 
@@ -1186,7 +1187,7 @@ function generarp() {
 
     doc.setFontStyle("normal");
     doc.setTextColor(50, 50, 50);
-    var text5='Todas las modificaciones (desarrollos hechos a la medida) que soliciten los clientes, tanto en los reportes en PDF que entrega Acsendo como en las funcionalidades de la plataforma, tienen un costo adicional dependiendo de cada caso.\n\nLos desarrollos hechos a la medida serán solicitados al departamento comercial, quien coordinará una reunión con las áreas de tecnología y soporte, para hacer un levantamiento formal de los requerimientos y evaluar la viabilidad del desarrollo solicitado.\n\nCon base en los requerimientos y la disponibilidad de tiempo del área de tecnología, se propone un caso de uso (propuesta) que se le envía al cliente con el número de horas que tarda el desarrollo y la fecha propuesta de entrega. La hora de desarrollo tiene un costo de setenta dólares ($70,00).';
+    var text5='Todas las modificaciones (desarrollos hechos a la medida) que soliciten los clientes, tanto en los reportes en PDF que entrega Acsendo como en las funcionalidades de la plataforma, tienen un costo adicional dependiendo de cada caso.\n\nLos desarrollos hechos a la medida serán solicitados al departamento comercial, quien coordinará una reunión con las áreas de tecnología y soporte, para hacer un levantamiento formal de los requerimientos y evaluar la viabilidad del desarrollo solicitado.\n\nCon base en los requerimientos y la disponibilidad de tiempo del área de tecnología, se propone un caso de uso (propuesta) que se le envía al cliente con el número de horas que tarda el desarrollo y la fecha propuesta de entrega. La hora de desarrollo tiene un costo de setenta dólares ($70,00) + impuestos.';
 
     var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
     doc.text(30,80, text5_split);
