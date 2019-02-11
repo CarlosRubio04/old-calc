@@ -1690,8 +1690,10 @@ function calculate_price(){
 
       //for loop sum to >> price
       if (produto_pr[0]){
+          // Precio para Flex total
           price+=(prices[type].produto[2].price[rango_nr].price * 1.05) * 1.05;
       } else {
+          // Precios para resto de paquetes
           for(var i = 1; i < produto_pr.length; i++){
               if (produto_pr[i]){
                   var loopToVal = 0;
@@ -1815,7 +1817,7 @@ function calculate_price(){
   }
 
 
-    console.log("CLIMAA     " + price_total);
+  // console.log("CLIMAA     " + price_total);
   if(clima>0){
     var price_un1=0;
     var price_un2=0;
