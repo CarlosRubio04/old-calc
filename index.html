@@ -101,9 +101,9 @@
               <h5 class="left clear ">Evaluación Única</h5>
               <div class="left margintop20 clear width100">
                 <div class="left bottom20 width100">
-                  <h6 class="left margintop5">Clima</h6>
-                  <div id="plus_clima" class=" left left20 bot-plus"></div>
+                  <input type="checkbox" name="climaInp" value="7" class="left prod" data-labelauty="Clima"/>
                   <div id="minus_clima" class=" left left10 bot-minus"></div>
+                  <div id="plus_clima" class=" left left20 bot-plus"></div>
                   <h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
                 </div>
                 <div id="comp_eval" class="left bottom20 width100">
@@ -416,16 +416,11 @@ $(document).ready(function(){
   });
 
 
-
-
-
-
-
-
   $("#plus_clima").click(function(){
     if (deretchoAClima) {
         clima=clima+1;
         $("#nr_clima").html(clima);
+        $("input[name='climaInp'][value='7']").attr('checked', true);
         calculate_price();
     }
   });
@@ -434,6 +429,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(clima>0){
           clima=clima-1;
+          if(clima==0) {
+            $("input[name='climaInp'][value='7']").attr('checked', false);
+          }
         }
         $("#nr_clima").html(clima);
         calculate_price();
@@ -1896,7 +1894,6 @@ function calculate_price(){
   $(".table_precios").append("<tr class='total'><td><b>TOTAL</b></td><td><b>"+price_persona.toFixed(2)+"</b></td><td><b>"+nr+"</b></td><td><b>"+price_total.toFixed(2)+"</b></td></tr>");
 
   json.push({produto :"TOTAL", produto2 :"TOTAL", precio_u:"", nr: "",precio_t:price_total.toFixed(2)});
-
 
   var price_new=addCommas(price_total.toFixed(2));
   var price_new2=addCommas(price_persona.toFixed(4));
