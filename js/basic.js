@@ -1321,32 +1321,12 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		var data = [
 		    [json[0].produto,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,120, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,130, text6_split);
-		}
 	}
 	else if(length==2){
 		var data = [
 		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
 		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
 		];
-
-		// if(obs.length > 0){
-		// 	doc.setFontStyle("bold");
-		// 	doc.setTextColor(59, 190, 194);
-		// 	//doc.text(30,120, "OBSERVACIONES");
-		//
-		// 	doc.setFontStyle("normal");
-		// 	doc.setTextColor(50, 50, 50);
-		// 	doc.text(30,130, text6_split);
-		// }
 	}
 	else if(length==3){
 		var data = [
@@ -1354,17 +1334,6 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
 		    [json[2].produto, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,130, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,140, text6_split);
-		}
-
 	}
 	else if(length==4){
 		var data = [
@@ -1373,16 +1342,6 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
 		    [json[3].produto, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,140, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,150, text6_split);
-		}
 	}
 	else if(length==5){
 		var data = [
@@ -1392,17 +1351,6 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
 		    [json[4].produto, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
 		];
-
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,145, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,155, text6_split);
-		}
 	}
 	else if(length==6){
 		var data = [
@@ -1413,17 +1361,6 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 		    [json[4].produto, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
 		    [json[5].produto, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
 		];
-
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,150, "OBSERVACIONES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,160, text6_split);
-		}
 	}
 
 
