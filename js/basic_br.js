@@ -433,6 +433,178 @@ function generarp() {
 
 
 
+	if (produtos[1]){
+					/*
+					DESEMPEÑO
+					*/
+					doc.addPage();
+
+					doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
+					doc.setDrawColor(37,162,171);
+					doc.setLineWidth(0.4);
+					doc.line(50, 273, 160, 273);
+
+					doc.setFontSize(7);
+					doc.setTextColor(100, 100, 100);
+					var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
+					var footer1="(571) 466 05 29  -  (571) 300 26 04";
+					var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
+					doc.text(textOffset1, 280, footer);
+					var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
+					doc.text(textOffset2, 285, footer1);
+
+					doc.setFillColor(13, 40, 61);
+					doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
+					doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
+
+					doc.setFontSize(14);
+					doc.setFontStyle("bold");
+					doc.setTextColor(59, 190, 194);
+					doc.text(90, 25, "DESEMPENHO");
+
+
+					doc.setFontSize(9.5);
+					doc.setFontStyle("normal");
+					doc.setTextColor(240, 240, 240);
+					var text1='O módulo de desempenho é composto por ferramentas que  ';
+					var text2='medem a performance do seu talento humano e ajudam você a encontrar ';
+					var text3='as oportunidades de melhoria para aumentar o potencial de sua equipe.';
+
+					var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+					doc.text(textOffset_title1, 35, text1);
+
+
+					var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
+
+					doc.text(textOffset_title2, 39, text2);
+
+
+					var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
+
+					doc.text(textOffset_title3, 43, text3);
+
+					doc.addImage(logo_comp, 'JPEG', 95, 60, 20, 20);
+					var title1 ="Competências";
+					doc.setFontSize(10);
+					doc.setFontStyle("bold");
+					doc.setTextColor(59, 190, 194);
+
+					var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+					doc.text(textOffset_title1, 87, title1);
+
+					doc.setFontSize(9.5);
+					doc.setFontStyle("normal");
+					doc.setTextColor(50, 50, 50);
+					var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos-forte e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
+
+					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+					doc.text(30,97, text5_split);
+
+					doc.setFontStyle("bold");
+					doc.text(30,118, "Resultados");
+
+					doc.setFontStyle("normal");
+					var text5='1. Relatório individual em PDF do resultado da avaliação de cada colaborador.\n\n2. Relatório geral em PDF dos resultados de cada um dos departamentos/área.\n\n3. Resultados web que podem ser consultados por colaboradores e administradores diretamente no sistema. \n\n4. Planilha de dados (arquivo Excel) com toda a informação do processo: e-mail do avaliador, e-mail do avaliado, tipo de relação, nome avaliado, área, cargo, resultado desta relação. ';
+
+					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+					doc.text(40,128, text5_split);
+
+
+					doc.addImage(logo_metas, 'JPEG', 95, 169, 20, 20);
+					var title1 ="Metas";
+					doc.setFontSize(10);
+					doc.setFontStyle("bold");
+					doc.setTextColor(55, 190, 194);
+
+					var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+					var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+					doc.text(textOffset_title1, 196, title1);
+
+					doc.setFontSize(9.5);
+					doc.setFontStyle("normal");
+					doc.setTextColor(50, 50, 50);
+					var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claro e rastreando o seu progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador o que facilitará toda a tomada de decisões estratégicas.';
+
+					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+					doc.text(30,206, text5_split);
+
+					doc.setFontStyle("bold");
+					doc.text(30,227, "Resultados");
+
+					doc.setFontStyle("normal");
+					var text5='1. Relatório PDF com o resultado de cada colaborador\n\n2. Resultados web que podem ser consultados por colaboradores e administradores diretamente no sistema.\n\n3. Planilha de dados (arquivo Excel) com toda a informação e resultados do processo.';
+
+					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+					doc.text(40,237, text5_split);
+
+
+
+	}
+
+	if (produtos[2]){
+			/*
+			DESARROLLO
+			*/
+			doc.addPage();
+
+			doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
+			doc.setDrawColor(37,162,171);
+			doc.setLineWidth(0.4);
+			doc.line(50, 273, 160, 273);
+
+			doc.setFontSize(7);
+			doc.setTextColor(100, 100, 100);
+			var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
+			var footer1="(571) 466 05 29  -  (571) 300 26 04";
+			var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
+			doc.text(textOffset1, 280, footer);
+			var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
+			doc.text(textOffset2, 285, footer1);
+
+			doc.setFillColor(13, 40, 61);
+			doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
+			doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
+
+			doc.setFontSize(14);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+			doc.text(90, 25, "Desenvolvimento");
+
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(240, 240, 240);
+			var text1='O módulo de desenvolvimento contém as ferramentas que vão ajudar você ';
+			var text2='a planejar e guiar o crescimento de seus colaboradores ';
+			var text3='garantindo que eles alcancem seu potencial.';
+
+			var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 35, text1);
+
+
+			var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
+
+			doc.text(textOffset_title2, 39, text2);
+
+
+			var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
+
+			doc.text(textOffset_title3, 43, text3);
 
 
 
@@ -441,12 +613,195 @@ function generarp() {
 
 
 
+			doc.addImage(logo_pid, 'JPEG', 95, 60, 20, 20);
+			var title1 ="PDI";
+			doc.setFontSize(10);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+
+			var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 87, title1);
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(50, 50, 50);
+			var text5='A ferramenta do Plano de Desenvolvimento Individual permite que você criar e atribuir atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o quê e para qu devem melhorar.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+			doc.text(30,97, text5_split);
+
+			doc.setFontStyle("bold");
+			doc.text(30,122, "Resultados");
+
+			doc.setFontStyle("normal");
+			var text5='1. Planilha Excel com toda a informação e resultados do processo';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+			doc.text(40,132, text5_split);
 
 
 
 
 
 
+
+			doc.addImage(logo_sucesion, 'JPEG', 95, 155, 20, 20);
+			var title1 ="Plano de sucessão";
+			doc.setFontSize(10);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+
+			var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 182, title1);
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(50, 50, 50);
+			var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir se antecipar às alterações de cargos de seus colaboradores. Desta maneira você pode garantir que quando um colaborador se desligue a empresa já tenha colaboradores mapeados  e garantir que para cada potencial retirada você tem candidatos com as competências mais indicadas pronto para os substituirnecessárias para substituição imeadiata.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+			doc.text(30,192, text5_split);
+
+			doc.setFontStyle("bold");
+			doc.text(30,220, "Resultados");
+
+			doc.setFontStyle("normal");
+			var text5='1. Mapa mostrando as opções de sucessão para cada cargo do organograma\n\n2. Planilha de dados com toda a informação do plano de sucessão.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+			doc.text(40,230, text5_split);
+
+
+
+
+	}
+
+	if (produtos[3]){
+			/*
+			ENGAGEMENT
+			*/
+			doc.addPage();
+
+			doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
+			doc.setDrawColor(37,162,171);
+			doc.setLineWidth(0.4);
+			doc.line(50, 273, 160, 273);
+
+			doc.setFontSize(7);
+			doc.setTextColor(100, 100, 100);
+			var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
+			var footer1="(571) 466 05 29  -  (571) 300 26 04";
+			var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
+			doc.text(textOffset1, 280, footer);
+			var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
+			doc.text(textOffset2, 285, footer1);
+
+			doc.setFillColor(13, 40, 61);
+			doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
+			doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
+
+			doc.setFontSize(14);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+			doc.text(90, 25, "Engagement");
+
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(240, 240, 240);
+			var text1='O módulo de Engagement contém ferramentas que ajudam a medir ';
+			var text2='e a promover o engajamento de seus colaboradores para conseguir uma cultura ';
+			var text3='organizacional onde se valoriza o desempenho e os comportamentos de excelência.';
+
+			var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 35, text1);
+
+
+			var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
+
+			doc.text(textOffset_title2, 39, text2);
+
+
+			var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
+
+			doc.text(textOffset_title3, 43, text3);
+
+
+
+
+
+
+			doc.addImage(logo_clima, 'JPEG', 95, 60, 20, 20);
+			var title1 ="Pesquisa de Clima Organizacional";
+			doc.setFontSize(10);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+
+			var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 87, title1);
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(50, 50, 50);
+			var text5='A ferramenta de Clima permite identificar o conjunto de percepções que os colaboradores têm sobre as condições de trabalho. Esta pesquisa permite a você identificar as áreas de melhoria que podem levar a aumentar a satisfação e produtividade de seu talento humano.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+			doc.text(30,97, text5_split);
+
+			doc.setFontStyle("bold");
+			doc.text(30,114, "Resultados");
+
+			doc.setFontStyle("normal");
+			var text5='1. Relatório em PDF com os resultados gerais da empresa e de cada departamento.\n\n2. Planilha de dados com todas as informações e resultados do processo.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+			doc.text(40,124, text5_split);
+
+
+
+			doc.addImage(img_recon, 'JPEG', 95, 155, 20, 20);
+			var title1 ="Medalhas de Mérito";
+			doc.setFontSize(10);
+			doc.setFontStyle("bold");
+			doc.setTextColor(59, 190, 194);
+
+			var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
+			var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
+
+			doc.text(textOffset_title1, 182, title1);
+
+			doc.setFontSize(9.5);
+			doc.setFontStyle("normal");
+			doc.setTextColor(50, 50, 50);
+			var text5='O reconhecimento através de medalhas de mérito com pontuação é uma ferramenta que permite aos colaboradores valorizar o bom trabalho dos seus colegas. Com o sistema de reconhecimento você consegue oferecer uma forma imparcial e equitativa para medir o desempenho percebido pelos colegas entre si.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
+			doc.text(30,192, text5_split);
+
+			doc.setFontStyle("bold");
+			doc.text(30,213, "Resultados");
+
+			doc.setFontStyle("normal");
+			var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, todas as  medalhas distribuídas enviadas na empresa.\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
+
+			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
+			doc.text(40,223, text5_split);
+
+
+
+	}
 
     if (!produtos[0]){
         if (!produtos[1] && ($("input[name='produto'][value='0']").is(":checked")) ) {
@@ -714,7 +1069,7 @@ function generarp() {
             doc.text(40,128, text5_split);
 
 
-        } else if (!produtos[3] && ($("input[name='produto'][value='7']").is(":checked")) ){
+        } else if (!produtos[3] && ($("input[name='climaInp'][value='7']").is(":checked")) ){
             /*
             CLIMA
             */
@@ -768,381 +1123,6 @@ function generarp() {
 
         }
     }
-
-    if (produtos[1]){
-            /*
-            DESEMPEÑO
-            */
-            doc.addPage();
-
-            doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
-            doc.setDrawColor(37,162,171);
-            doc.setLineWidth(0.4);
-            doc.line(50, 273, 160, 273);
-
-            doc.setFontSize(7);
-            doc.setTextColor(100, 100, 100);
-            var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
-            var footer1="(571) 466 05 29  -  (571) 300 26 04";
-            var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
-            doc.text(textOffset1, 280, footer);
-            var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
-            doc.text(textOffset2, 285, footer1);
-
-            doc.setFillColor(13, 40, 61);
-            doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
-            doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
-
-            doc.setFontSize(14);
-            doc.setFontStyle("bold");
-            doc.setTextColor(59, 190, 194);
-            doc.text(90, 25, "DESEMPENHO");
-
-
-            doc.setFontSize(9.5);
-            doc.setFontStyle("normal");
-            doc.setTextColor(240, 240, 240);
-            var text1='O módulo de desempenho é composto por ferramentas que  ';
-            var text2='medem a performance do seu talento humano e ajudam você a encontrar ';
-            var text3='as oportunidades de melhoria para aumentar o potencial de sua equipe.';
-
-            var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-            doc.text(textOffset_title1, 35, text1);
-
-
-            var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
-
-            doc.text(textOffset_title2, 39, text2);
-
-
-            var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
-
-            doc.text(textOffset_title3, 43, text3);
-
-						doc.addImage(logo_comp, 'JPEG', 95, 60, 20, 20);
-            var title1 ="Competências";
-            doc.setFontSize(10);
-            doc.setFontStyle("bold");
-            doc.setTextColor(59, 190, 194);
-
-            var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-            doc.text(textOffset_title1, 87, title1);
-
-            doc.setFontSize(9.5);
-            doc.setFontStyle("normal");
-            doc.setTextColor(50, 50, 50);
-            var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos-forte e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-            doc.text(30,97, text5_split);
-
-            doc.setFontStyle("bold");
-            doc.text(30,118, "Resultados");
-
-            doc.setFontStyle("normal");
-            var text5='1. Relatório individual em PDF do resultado da avaliação de cada colaborador.\n\n2. Relatório geral em PDF dos resultados de cada um dos departamentos/área.\n\n3. Resultados web que podem ser consultados por colaboradores e administradores diretamente no sistema. \n\n4. Planilha de dados (arquivo Excel) com toda a informação do processo: e-mail do avaliador, e-mail do avaliado, tipo de relação, nome avaliado, área, cargo, resultado desta relação. ';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-            doc.text(40,128, text5_split);
-
-
-						doc.addImage(logo_metas, 'JPEG', 95, 169, 20, 20);
-            var title1 ="Metas";
-            doc.setFontSize(10);
-            doc.setFontStyle("bold");
-            doc.setTextColor(55, 190, 194);
-
-            var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-            doc.text(textOffset_title1, 196, title1);
-
-            doc.setFontSize(9.5);
-            doc.setFontStyle("normal");
-            doc.setTextColor(50, 50, 50);
-            var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claro e rastreando o seu progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador o que facilitará toda a tomada de decisões estratégicas.';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-            doc.text(30,206, text5_split);
-
-            doc.setFontStyle("bold");
-            doc.text(30,227, "Resultados");
-
-            doc.setFontStyle("normal");
-            var text5='1. Relatório PDF com o resultado de cada colaborador\n\n2. Resultados web que podem ser consultados por colaboradores e administradores diretamente no sistema.\n\n3. Planilha de dados (arquivo Excel) com toda a informação e resultados do processo.';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-            doc.text(40,237, text5_split);
-
-
-
-    }
-
-    if (produtos[2]){
-        /*
-        DESARROLLO
-        */
-        doc.addPage();
-
-        doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
-        doc.setDrawColor(37,162,171);
-        doc.setLineWidth(0.4);
-        doc.line(50, 273, 160, 273);
-
-        doc.setFontSize(7);
-        doc.setTextColor(100, 100, 100);
-        var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
-        var footer1="(571) 466 05 29  -  (571) 300 26 04";
-        var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
-        doc.text(textOffset1, 280, footer);
-        var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
-        doc.text(textOffset2, 285, footer1);
-
-        doc.setFillColor(13, 40, 61);
-        doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
-        doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
-
-        doc.setFontSize(14);
-        doc.setFontStyle("bold");
-        doc.setTextColor(59, 190, 194);
-        doc.text(90, 25, "Desenvolvimento");
-
-
-        doc.setFontSize(9.5);
-        doc.setFontStyle("normal");
-        doc.setTextColor(240, 240, 240);
-        var text1='O módulo de desenvolvimento contém as ferramentas que vão ajudar você ';
-        var text2='a planejar e guiar o crescimento de seus colaboradores ';
-        var text3='garantindo que eles alcancem seu potencial.';
-
-        var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-        doc.text(textOffset_title1, 35, text1);
-
-
-        var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
-
-        doc.text(textOffset_title2, 39, text2);
-
-
-        var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
-
-        doc.text(textOffset_title3, 43, text3);
-
-
-
-
-
-
-
-
-				doc.addImage(logo_pid, 'JPEG', 95, 60, 20, 20);
-				var title1 ="PDI";
-				doc.setFontSize(10);
-				doc.setFontStyle("bold");
-				doc.setTextColor(59, 190, 194);
-
-				var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-				var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-				doc.text(textOffset_title1, 87, title1);
-
-				doc.setFontSize(9.5);
-				doc.setFontStyle("normal");
-				doc.setTextColor(50, 50, 50);
-				var text5='A ferramenta do Plano de Desenvolvimento Individual permite que você criar e atribuir atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o quê e para qu devem melhorar.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-				doc.text(30,97, text5_split);
-
-				doc.setFontStyle("bold");
-				doc.text(30,122, "Resultados");
-
-				doc.setFontStyle("normal");
-				var text5='1. Planilha Excel com toda a informação e resultados do processo';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-				doc.text(40,132, text5_split);
-
-
-
-
-
-
-
-				doc.addImage(logo_sucesion, 'JPEG', 95, 155, 20, 20);
-				var title1 ="Plano de sucessão";
-				doc.setFontSize(10);
-				doc.setFontStyle("bold");
-				doc.setTextColor(59, 190, 194);
-
-				var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-				var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-				doc.text(textOffset_title1, 182, title1);
-
-				doc.setFontSize(9.5);
-				doc.setFontStyle("normal");
-				doc.setTextColor(50, 50, 50);
-				var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir se antecipar às alterações de cargos de seus colaboradores. Desta maneira você pode garantir que quando um colaborador se desligue a empresa já tenha colaboradores mapeados  e garantir que para cada potencial retirada você tem candidatos com as competências mais indicadas pronto para os substituirnecessárias para substituição imeadiata.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-				doc.text(30,192, text5_split);
-
-				doc.setFontStyle("bold");
-				doc.text(30,220, "Resultados");
-
-				doc.setFontStyle("normal");
-				var text5='1. Mapa mostrando as opções de sucessão para cada cargo do organograma\n\n2. Planilha de dados com toda a informação do plano de sucessão.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-				doc.text(40,230, text5_split);
-
-
-
-
-    }
-
-    if (produtos[3]){
-        /*
-        ENGAGEMENT
-        */
-        doc.addPage();
-
-        doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
-        doc.setDrawColor(37,162,171);
-        doc.setLineWidth(0.4);
-        doc.line(50, 273, 160, 273);
-
-        doc.setFontSize(7);
-        doc.setTextColor(100, 100, 100);
-        var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
-        var footer1="(571) 466 05 29  -  (571) 300 26 04";
-        var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
-        doc.text(textOffset1, 280, footer);
-        var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
-        doc.text(textOffset2, 285, footer1);
-
-        doc.setFillColor(13, 40, 61);
-        doc.rect(0, 0, doc.internal.pageSize.width, 52, 'F');
-        doc.addImage(logo_negativo, 'JPEG', 165, 10, 31, 6);
-
-        doc.setFontSize(14);
-        doc.setFontStyle("bold");
-        doc.setTextColor(59, 190, 194);
-        doc.text(90, 25, "Engagement");
-
-
-        doc.setFontSize(9.5);
-        doc.setFontStyle("normal");
-        doc.setTextColor(240, 240, 240);
-        var text1='O módulo de Engagement contém ferramentas que ajudam a medir ';
-        var text2='e a promover o engajamento de seus colaboradores para conseguir uma cultura ';
-        var text3='organizacional onde se valoriza o desempenho e os comportamentos de excelência.';
-
-        var textWidth_title1 = doc.getStringUnitWidth(text1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-        doc.text(textOffset_title1, 35, text1);
-
-
-        var textWidth_title2 = doc.getStringUnitWidth(text2) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title2 = (doc.internal.pageSize.width - textWidth_title2) / 2;
-
-        doc.text(textOffset_title2, 39, text2);
-
-
-        var textWidth_title3 = doc.getStringUnitWidth(text3) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-        var textOffset_title3 = (doc.internal.pageSize.width - textWidth_title3) / 2;
-
-        doc.text(textOffset_title3, 43, text3);
-
-
-
-
-
-
-				doc.addImage(logo_clima, 'JPEG', 95, 60, 20, 20);
-				var title1 ="Pesquisa de Clima Organizacional";
-				doc.setFontSize(10);
-				doc.setFontStyle("bold");
-				doc.setTextColor(59, 190, 194);
-
-				var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-				var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-				doc.text(textOffset_title1, 87, title1);
-
-				doc.setFontSize(9.5);
-				doc.setFontStyle("normal");
-				doc.setTextColor(50, 50, 50);
-				var text5='A ferramenta de Clima permite identificar o conjunto de percepções que os colaboradores têm sobre as condições de trabalho. Esta pesquisa permite a você identificar as áreas de melhoria que podem levar a aumentar a satisfação e produtividade de seu talento humano.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-				doc.text(30,97, text5_split);
-
-				doc.setFontStyle("bold");
-				doc.text(30,114, "Resultados");
-
-				doc.setFontStyle("normal");
-				var text5='1. Relatório em PDF com os resultados gerais da empresa e de cada departamento.\n\n2. Planilha de dados com todas as informações e resultados do processo.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-				doc.text(40,124, text5_split);
-
-
-
-				doc.addImage(img_recon, 'JPEG', 95, 155, 20, 20);
-				var title1 ="Medalhas de Mérito";
-				doc.setFontSize(10);
-				doc.setFontStyle("bold");
-				doc.setTextColor(59, 190, 194);
-
-				var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-				var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-				doc.text(textOffset_title1, 182, title1);
-
-				doc.setFontSize(9.5);
-				doc.setFontStyle("normal");
-				doc.setTextColor(50, 50, 50);
-				var text5='O reconhecimento através de medalhas de mérito com pontuação é uma ferramenta que permite aos colaboradores valorizar o bom trabalho dos seus colegas. Com o sistema de reconhecimento você consegue oferecer uma forma imparcial e equitativa para medir o desempenho percebido pelos colegas entre si.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-				doc.text(30,192, text5_split);
-
-				doc.setFontStyle("bold");
-				doc.text(30,213, "Resultados");
-
-				doc.setFontStyle("normal");
-				var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, todas as  medalhas distribuídas enviadas na empresa.\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
-
-				var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-				doc.text(40,223, text5_split);
-
-
-
-    }
-
-
-
-
-
 
 
 
@@ -1312,117 +1292,51 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 
 	//var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 
-	if(obs.length > 0){
-		var text6=obs;
-		var text6_split=doc.splitTextToSize(text6, doc.internal.pageSize.width - 60);
-	}
+
 	if(length==1){
 		var data = [
-		    [json[0].produto2,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
+		    [json[0].produto,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,120, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,130, text6_split);
-		}
 	}
 	else if(length==2){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,120, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,130, text6_split);
-		}
 	}
 	else if(length==3){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,130, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,140, text6_split);
-		}
-
 	}
 	else if(length==4){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
 		];
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,140, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,150, text6_split);
-		}
 	}
 	else if(length==5){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto2, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
+		    [json[4].produto, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
 		];
-
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,145, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,155, text6_split);
-		}
 	}
 	else if(length==6){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto2, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
-		    [json[5].produto2, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
+		    [json[4].produto, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
+		    [json[5].produto, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
 		];
-
-
-		if(obs.length > 0){
-			doc.setFontStyle("bold");
-			doc.setTextColor(59, 190, 194);
-			//doc.text(30,150, "OBSERVAÇÕES");
-
-			doc.setFontStyle("normal");
-			doc.setTextColor(50, 50, 50);
-			doc.text(30,160, text6_split);
-		}
 	}
 
 
