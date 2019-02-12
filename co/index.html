@@ -103,10 +103,16 @@
               <h5 class="left clear ">Evaluación Única</h5>
               <div class="left margintop20 clear width100">
                 <div class="left bottom20 width100">
-                  <h6 class="left margintop5">Clima</h6><div id="plus_clima" class=" left left20 bot-plus"></div><div id="minus_clima" class=" left left10 bot-minus"></div><h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
+                  <input type="checkbox" name="climaInp" value="7" class="left prod" data-labelauty="Clima"/>
+                  <div id="minus_clima" class=" left left10 bot-minus"></div>
+                  <div id="plus_clima" class=" left left20 bot-plus"></div>
+                  <h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
                 </div>
                 <div class="left bottom20 width100">
-                  <h6 class="left margintop5">2646</h6><div id="plus_2646" class=" left left20 bot-plus"></div><div id="minus_2646" class=" left left10 bot-minus"></div><h4 class="left left20 color_nr_ind" id="nr_2646">0</h4>
+                  <h6 class="left margintop5">2646</h6>
+                  <div id="minus_2646" class=" left left10 bot-minus"></div>
+                  <div id="plus_2646" class=" left left20 bot-plus"></div>
+                  <h4 class="left left20 color_nr_ind" id="nr_2646">0</h4>
                 </div>
                 <div id="comp_eval" class="left bottom20 width100">
                   <h6 class="left margintop5">Competencias</h6><div id="plus_comp" class=" left left20 bot-plus"></div><div id="minus_comp" class=" left left10 bot-minus"></div><h4 class="left left20 color_nr_ind" id="nr_comp">0</h4>
@@ -433,6 +439,7 @@ $(document).ready(function(){
     if (deretchoAClima) {
         clima=clima+1;
         $("#nr_clima").html(clima);
+        $("input[name='climaInp'][value='7']").attr('checked', true);
         calculate_price();
     }
   });
@@ -450,6 +457,9 @@ $(document).ready(function(){
   $("#plus_comp").click(function(){
     if (deretchoAClima) {
         comp=comp+1;
+        if(clima==0) {
+            $("input[name='climaInp'][value='7']").attr('checked', false);
+          }
         $("#nr_comp").html(comp);
         calculate_price();
     }
