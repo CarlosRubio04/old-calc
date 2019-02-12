@@ -1319,7 +1319,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	if(length==1){
 		var data = [
-		    [json[0].produto2,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
+		    [json[0].produto,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
 		];
 
 		if(obs.length > 0){
@@ -1334,8 +1334,8 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	else if(length==2){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
 		];
 
 		// if(obs.length > 0){
@@ -1350,9 +1350,9 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	else if(length==3){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
 		];
 
 		if(obs.length > 0){
@@ -1368,10 +1368,10 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	else if(length==4){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
 		];
 
 		if(obs.length > 0){
@@ -1386,11 +1386,11 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	else if(length==5){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto2, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
+		    [json[4].produto, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
 		];
 
 
@@ -1406,12 +1406,12 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	}
 	else if(length==6){
 		var data = [
-		    [json[0].produto2, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto2, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto2, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto2, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto2, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
-		    [json[5].produto2, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
+		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
+		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
+		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
+		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
+		    [json[4].produto, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
+		    [json[5].produto, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
 		];
 
 
