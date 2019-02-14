@@ -6,7 +6,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="noindex"/>
-  <title>Precios Acsendo</title>
+  <title>Preços Acsendo</title>
   <link href="../css/style.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="../js/check/jquery-labelauty.css"/>
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -14,9 +14,11 @@
   <script src="../js/excellentexport.min.js"></script>
   <script src="../js/check/jquery-labelauty.js"></script>
   <script type="text/javascript" src="../js/jspdf.debug.js"></script>
-  <script type="text/javascript" src="../js/basic_co.js"></script>
+  <script type="text/javascript" src="../js/basic_br.js"></script>
   <script src="../js/jspdf.plugin.autotable.src.js"></script>
   <script src="../js/require.js"></script>
+
+
 
 </head>
 
@@ -27,7 +29,7 @@
       <div class="logo"></div>
       <div class="box_container">
         <div class="price_box left">
-          <h3 class="margintop30">Precio</h3>
+          <h3 class="margintop30">Preço</h3>
           <div class="box_price">
             <div class="header">
               <div class="centrar margintop20">
@@ -38,7 +40,7 @@
                   $
                 </div>
                 <p class="fontsize13 margintop20 font600 fontbranco descr_price">
-                  Precio en COP
+                  Preço em EUR
                 </p>
               </div>
 
@@ -51,11 +53,7 @@
 
               </div>
               <div class="incl2">
-                <div class="centrar margintop20 names2">
-                  <div class="name_clima font400 fontsize13 lineheight150 inlineblock"></div>
-                  <div class="name_2646 font400 fontsize13 lineheight150 inlineblock"></div>
-                  <div class="name_competencias font400 fontsize13 lineheight150 inlineblock"></div>
-                </div>
+                <div class="centrar margintop20 names2"><div class="name_clima font400 fontsize13 lineheight150 inlineblock"></div><div class="name_competencias font400 fontsize13 lineheight150 inlineblock"></div></div>
               </div>
             </div>
           </div>
@@ -63,44 +61,44 @@
         <div class="calculator_box right">
           <div class="container">
             <div class="left">
-              <h5>Modalidad de Productos</h5>
+              <h5>Modalidade de Compra</h5>
               <div class="left margintop20">
-                <input type="radio" name="tipo" value="0" class="left" checked="true" data-labelauty="Suscripción Anual"/>
-                <input type="radio" name="tipo" value="1" class="left left20" data-labelauty="Evaluación Única"/>
+                <input type="radio" name="tipo" value="0" class="left" checked="true" data-labelauty="Assinatura anual"/>
+                <input type="radio" name="tipo" value="1" class="left left20" data-labelauty="Avaliação única"/>
               </div>
             </div>
 
             <div class="left clear margintop30">
-              <h5>Número de empleados</h5>
+              <h5>Número de Colaboradores</h5>
               <div class="left margintop20">
                 <input class="input_emp" type="number" min="0" max="5000" onkeypress="return isNumber(event);"/>
               </div>
               <p class="left fontsize13 margintop30 left10">
-                Empleados
+                Colaboradores
               </p>
             </div>
 
             <div class="left clear margintop30">
               <div class="sub bottom20">
-                <h5>Paquetes</h5>
+                <h5>Pacotes Flex</h5>
                 <div class="left margintop20 no_float">
                   <input type="checkbox" id="total" name="produto_premium" value="2" class="left radio_prod" data-labelauty="Flex Total"/>
                 </div>
                 <div class="left margintop20">
-                  <input type="checkbox" name="produto_premium" value="3" class="left radio_prod" data-labelauty="Flex Desempeño"/>
-                  <input type="checkbox" name="produto_premium" value="9" class="left radio_prod" data-labelauty="Flex Desarrollo"/>
+                  <input type="checkbox" name="produto_premium" value="3" class="left radio_prod" data-labelauty="Flex Desempenho"/>
+                  <input type="checkbox" name="produto_premium" value="9" class="left radio_prod" data-labelauty="Flex Desenvolvimento"/>
                   <input type="checkbox" name="produto_premium" value="10" class="left radio_prod" data-labelauty="Flex Engagement"/>
                 </div>
                 <h5 class="left clear margintop20">Módulos</h5>
                 <div class="left margintop20 clear">
                   <input type="checkbox" name="produto" value="4" class="left prod" data-labelauty="Metas"/>
-                  <input type="checkbox" name="produto" value="0" class="left prod" data-labelauty="Competencias"/>
+                  <input type="checkbox" name="produto" value="0" class="left prod" data-labelauty="Competências"/>
                   <input type="checkbox" name="produto" value="5" class="left prod" data-labelauty="PID"/>
-                  <input type="checkbox" name="produto" value="6" class="left prod" data-labelauty="Reconocimiento"/>
-                  <input type="checkbox" name="produto" value="11" class="left prod" data-labelauty="Plan de Sucesión"/>
+                  <input type="checkbox" name="produto" value="6" class="left prod" data-labelauty="Reconhecimento"/>
+                  <input type="checkbox" name="produto" value="11" class="left prod" data-labelauty="Plano de sucessão"/>
                 </div>
               </div>
-              <h5 class="left clear ">Evaluación Única</h5>
+              <h5 class="left clear ">Avaliação Única</h5>
               <div class="left margintop20 clear width100">
                 <div class="left bottom20 width100">
                   <input type="checkbox" name="climaInp" value="7" class="left prod" data-labelauty="Clima"/>
@@ -108,14 +106,8 @@
                   <div id="plus_clima" class=" left left20 bot-plus"></div>
                   <h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
                 </div>
-                <div class="left bottom20 width100">
-                  <h6 class="left margintop5">2646</h6>
-                  <div id="minus_2646" class=" left left10 bot-minus"></div>
-                  <div id="plus_2646" class=" left left20 bot-plus"></div>
-                  <h4 class="left left20 color_nr_ind" id="nr_2646">0</h4>
-                </div>
                 <div id="comp_eval" class="left bottom20 width100">
-                  <h6 class="left margintop5">Competencias</h6>
+                  <h6 class="left margintop5">Competências</h6>
                   <div id="minus_comp" class=" left left10 bot-minus"></div>
                   <div id="plus_comp" class=" left left20 bot-plus"></div>
                   <h4 class="left left20 color_nr_ind" id="nr_comp">0</h4>
@@ -124,9 +116,9 @@
                 <h6 class="left margintop5">Cultura</h6><div id="plus_culture" class=" left left20 bot-plus"></div><div id="minus_culture" class=" left left10 bot-minus"></div><h4 class="left left20 color_nr_ind" id="nr_culture">0</h4>
               </div>-->
               <div class="left">
-                <h5>Moneda</h5>
+                <h5>Moeda</h5>
                 <div class="left margintop20">
-                  <input type="radio" name="currency" value="cop" class="left left20" checked="true" data-labelauty="COP"/>
+                  <input type="radio" name="currency" value="eur" class="left" checked="true" data-labelauty="EUR"/>
                   <!--<input type="radio" name="currency" value="eur" class="left left20 bottom10 curr" data-labelauty="EUR"/>
                   <input type="radio" name="currency" value="crc" class="left left20 bottom10 curr" data-labelauty="CRC"/>
                   <input type="radio" name="currency" value="dop" class="left left20 bottom10 curr" data-labelauty="DOP"/>
@@ -144,16 +136,16 @@
             <div id="dvData" class="left margintop20">
               <table class="table_precios">
                 <tr style="margin-bottom:30px">
-                  <th>Precio en COP</th>
+                  <th>Preço em Euros</th>
                   <th></th>
                   <th></th>
                   <th></th>
                 </tr>
                 <tr style="color:white; background-color:#2d363c;">
-                  <th>Modulo</th>
-                  <th>Precio por colaborador</th>
+                  <th>Módulo</th>
+                  <th>Preço por colaborador</th>
                   <th>Nr Colaboradores</th>
-                  <th>Precio total</th>
+                  <th>Preço total</th>
                 </tr>
 
               </table>
@@ -161,34 +153,28 @@
 
 
           </div>
-          <a href="#" download="precio.xls" onclick="return ExcellentExport.excel(this, 'dvData', 'Precio');" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Descargar Tabla</a>
+          <a href="#" download="precio.xls" onclick="return ExcellentExport.excel(this, 'dvData', 'Precio');" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Baixar tabela</a>
 
-          <a href="javascript:propuesta()" class="exp_button left left20 margintop30" role='button'><i class="fa fa-file-text-o right5" aria-hidden="true"></i>Generar Propuesta</a>
+          <a href="javascript:propuesta()" class="exp_button left left20 margintop30" role='button'><i class="fa fa-file-text-o right5" aria-hidden="true"></i>Gerar proposta</a>
 
-          <a href="#" class="clear_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Borrar datos</a>
+          <a href="#" class="clear_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Apagar dados</a>
 
         </div>
 
         <div class="form_propuesta" style="display:none">
-        	<h3 class="margintop30 left">Propuesta Comercial</h3>
+        	<h3 class="margintop30 left">Proposta Comercial</h3>
         	<div class="container2">
                 <div class="left clear margintop30 width100">
                   <select class="" id="comercial">
                     <option value="1">Carlos Santana</option>
                     <option value="2" selected>Francisco Mendes</option>
-                    <option value="6">Nathalia Ramirez</option>
-                    <option value="9">Christian Rodriguezz</option>
-                    <option value="10">Camila Diaz</option>
+                    <option value="4">Andréia Pereira</option>
                     <option value="11">Carlos Rojas</option>
-                    <option value="12">Paola Riañoz</option>
-                    <option value="13">Sebastián Linares</option>
-                    <option value="14">Astrid Niño</option>
                     <option value="15">Ivan Manosalva</option>
-                    <option value="16">Francisco Toledo</option>
                   </select>
 	        	</div>
 	        	<div class="left clear margintop30 width100">
-	        	  <h5>Nombre de la Empresa</h5>
+	        	  <h5>Nome da Empresa</h5>
 	        	  <div class="left margintop20 width100">
 	        	    <input class="input" id="nombre_emp" type="text"/>
 	        	  </div>
@@ -196,23 +182,21 @@
 	        	</div>
 
 	        	<div class="left clear margintop30 width100">
-	        		<h5>Persona de Contacto</h5>
+	        		<h5>Pessoa de contato</h5>
 	        		 <div class="left margintop20 width100">
 	        		   <input class="input" id="nombre_cliente" type="text"/>
 	        		 </div>
 	        	</div>
 
 	        	<div class="left clear margintop30 width100">
-	        		<h5>Observaciones <small>(opcional)</small></h5>
+	        		<h5>Observações <small>(opcional)</small></h5>
 	        		<div class="left margintop20 width100">
-                <textarea class="text_area" id="obs">La forma de pago es por medio de tarjeta de crédito usando la plataforma de PayU.
-
-Acsendo realizara un incremento de precios anual del 3%.</textarea>
+                <textarea class="text_area" id="obs">A forma de pagamento é através de cartão de crédito usando a plataforma PayPal ou PayU. Acsendo fará um incremento anual de preços de 3%.</textarea>
 	        		</div>
 	        	</div>
 
 	        	<div class="left clear margintop30 width100">
-	        		<h5>Nombre del Archivo</h5>
+	        		<h5>Nome do arquivo</h5>
 	        		<div class="left margintop20 width100">
 	        		   <input class="input" id="nombre_arch" type="text"/>
 	        		</div>
@@ -237,21 +221,21 @@ Acsendo realizara un incremento de precios anual del 3%.</textarea>
                 </div>
 
 
-	        	<a href="javascript:generarp()" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Descargar Propuesta</a>
+	        	<a href="javascript:generarp()" class="exp_button left margintop30" role='button'><i class="fa fa-download right5" aria-hidden="true"></i>Baixar proposta</a>
 
-	        	<a href="javascript:volver()" class="back_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Volver</a>
+	        	<a href="javascript:volver()" class="back_button left left20 margintop30" role='button'><i class="fa fa-undo right5" aria-hidden="true"></i>Voltar</a>
 
           </div>
-        </div>
+            </div>
       </div>
 
     </div>
     <div class="left width100">
-      <div class="centrar margintop20" style="width:155px;">
-        <div class="flag co left">
+      <div class="centrar margintop20" style="width:135px;">
+        <div class="flag br left">
         </div>
-        <div class="flag_text2 left fontsize13 font300 paddingtop3 left5 fontbranco">
-          <b style="font-weight:500">Acsendo</b>Colombia
+        <div class="flag_text left fontsize13 font300 paddingtop3 left5 fontbranco">
+          <b style="font-weight:500">Acsendo</b>Brasil
         </div>
 
       </div>
@@ -268,23 +252,22 @@ var produtos = [];
 $(document).ready(function(){
   $(":radio").labelauty();
   $(":checkbox").labelauty();
-  $(".tipo_div").html("Suscripción Anual");
-  $(".descr_price").html("Precio en COP al año");
+  $(".tipo_div").html("Assinatura anual");
+  $(".descr_price").html("Preço em EUR ao ano");
   $("#comp_eval").css("display","none");
   var clima=0;
   var comp=0;
-  var eval2646=0;
   var price_total=0;
   var price_persona=0;
 
 
   $('.input_emp').bind('input', function() {
     var nr=$(this).val();
-    $(".emp_div").html(nr+" empleados");
+    $(".emp_div").html(nr+" colaboradores");
     if (nr <= 5000){
         calculate_price();
     } else {
-        alert("mais de 5000 empleados. Debe hacer una propuesta a la medida");
+        alert("mais de 5000 empregados. Deve fazer uma proposta à medida");
         $(".price").html("ERROR!")
     }
   });
@@ -292,15 +275,15 @@ $(document).ready(function(){
   $("input[name='tipo']").change(function(){
     var type = $("input[name='tipo']:checked").val();
     if(type==0){
-      $(".descr_price").html("Precio en COP al año");
+      $(".descr_price").html("Preço em EUR ao ano");
       $(".sub").css("display","block");
       $("#comp_eval").css("display","none");
-      $(".tipo_div").html("Suscripción Anual");
+      $(".tipo_div").html("Subscrição Anual");
     }else{
-      $(".descr_price").html("Precio en COP");
+      $(".descr_price").html("Preço em EUR");
       $(".sub").css("display","none");
       $("#comp_eval").css("display","block");
-      $(".tipo_div").html("Evaluación Única");
+      $(".tipo_div").html("Avaliação Única");
     }
     clima=0;
     comp=0;
@@ -423,8 +406,6 @@ $(document).ready(function(){
           deretchoAClima = false;
           clima = 0;
           $("#nr_clima").html(clima);
-          eval2646 = 0;
-          $("#nr_2646").html(eval2646);
           calculate_price();
       } else {
           deretchoAClima = true;
@@ -451,6 +432,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(clima>0){
           clima=clima-1;
+          if(clima==0) {
+            $("input[name='climaInp'][value='7']").attr('checked', false);
+          }
         }
         $("#nr_clima").html(clima);
         calculate_price();
@@ -460,9 +444,6 @@ $(document).ready(function(){
   $("#plus_comp").click(function(){
     if (deretchoAClima) {
         comp=comp+1;
-        if(clima==0) {
-            $("input[name='climaInp'][value='7']").attr('checked', false);
-          }
         $("#nr_comp").html(comp);
         calculate_price();
     }
@@ -477,27 +458,9 @@ $(document).ready(function(){
         calculate_price();
     }
   });
-  $("#plus_2646").click(function(){
-    if (deretchoAClima) {
-        eval2646=eval2646+1;
-        $("#nr_2646").html(eval2646);
-        calculate_price();
-    }
-  });
-
-  $("#minus_2646").click(function(){
-    if (deretchoAClima) {
-        if(eval2646>0){
-          eval2646=eval2646-1;
-        }
-        $("#nr_2646").html(eval2646);
-        calculate_price();
-    }
-  });
   $(".clear_button").click(function(){
     clima=0;
     comp=0;
-    eval2646=0;
     reset();
   });
 
@@ -521,7 +484,6 @@ function calculate_price(){
   var selected = [];
   var clima=$("#nr_clima").html();
   var competencias=$("#nr_comp").html();
-  var evaluacion2636=$("#nr_2646").html();
 
 
   var rangos = [{
@@ -594,1180 +556,1111 @@ function calculate_price(){
       prices = [{
           type: "anual",
           produto: [{
-              produto: "Competencias",
+              produto: "Competências",
               price: [{
                   rango: 0,
-                  price: 112320
+                  price: 37.44
               }, {
                   rango: 1,
-                  price: 74880
+                  price: 24.96
               }, {
                   rango: 2,
-                  price: 70560
+                  price: 23.52
               }, {
                   rango: 3,
-                  price: 66240
+                  price: 22.08
               }, {
                   rango: 4,
-                  price: 59040
+                  price: 19.68
               }, {
                   rango: 5,
-                  price: 51840
+                  price: 17.28
               }, {
                   rango: 6,
-                  price: 48240
+                  price: 16.08
               }, {
                   rango: 7,
-                  price: 44640
+                  price: 14.88
               }, {
                   rango: 8,
-                  price: 41040
+                  price: 13.68
               }, {
                   rango: 9,
-                  price: 37440
+                  price: 12.48
               }, {
                   rango: 10,
-                  price: 36360
+                  price: 12.12
               }, {
                   rango: 11,
-                  price: 35640
+                  price: 11.88
               }, {
                   rango: 12,
-                  price: 34560
+                  price: 11.52
               }, {
                   rango: 13,
-                  price: 33840
+                  price: 11.28
               }, {
                   rango: 14,
-                  price: 33120
+                  price: 11.04
               }, {
                   rango: 15,
-                  price: 32040
+                  price: 10.68
               }, {
                   rango: 16,
-                  price: 31320
+                  price: 10.44
               }, {
                   rango: 17,
-                  price: 30240
+                  price: 10.08
               }, {
                   rango: 18,
-                  price: 29520
+                  price: 9.84
               }, {
                   rango: 19,
-                  price: 28800
+                  price: 9.6
               }, {
                   rango: 20,
-                  price: 25920
+                  price: 8.64
               }, {
                   rango: 21,
-                  price: 20160
+                  price: 6.72
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 37450
+                  price: 13.1
               }, {
                   rango: 1,
-                  price: 21210
+                  price: 7.1
               }, {
                   rango: 2,
-                  price: 20160
+                  price: 6.7
               }, {
                   rango: 3,
-                  price: 18900
+                  price: 6.3
               }, {
                   rango: 4,
-                  price: 16800
+                  price: 5.6
               }, {
                   rango: 5,
-                  price: 14700
+                  price: 4.9
               }, {
                   rango: 6,
-                  price: 13650
+                  price: 4.5
               }, {
                   rango: 7,
-                  price: 12600
+                  price: 4.2
               }, {
                   rango: 8,
-                  price: 11550
+                  price: 3.8
               }, {
                   rango: 9,
-                  price: 10500
+                  price: 3.5
               }, {
                   rango: 10,
-                  price: 10080
+                  price: 3.4
               }, {
                   rango: 11,
-                  price: 9870
+                  price: 3.3
               }, {
                   rango: 12,
-                  price: 9660
+                  price: 3.2
               }, {
                   rango: 13,
-                  price: 9450
+                  price: 3.2
               }, {
                   rango: 14,
-                  price: 9240
+                  price: 3.1
               }, {
                   rango: 15,
-                  price: 8820
+                  price: 2.9
               }, {
                   rango: 16,
-                  price: 8610
+                  price: 2.9
               }, {
                   rango: 17,
-                  price: 8400
+                  price: 2.8
               }, {
                   rango: 18,
-                  price: 8190
+                  price: 2.7
               }, {
                   rango: 19,
-                  price: 7980
+                  price: 2.7
               }, {
                   rango: 20,
-                  price: 7350
+                  price: 2.5
               }, {
                   rango: 21,
-                  price: 5670
+                  price: 1.9
               }]
           }, {
               produto: "total",
               price: [{
                   rango: 0,
-                  price: 286695
+                  price: 95.57
               }, {
                   rango: 1,
-                  price: 191130
+                  price: 63.71
               }, {
                   rango: 2,
-                  price: 178020
+                  price: 59.34
               }, {
                   rango: 3,
-                  price: 165255
+                  price: 55.09
               }, {
                   rango: 4,
-                  price: 145245
+                  price: 48.42
               }, {
                   rango: 5,
-                  price: 125235
+                  price: 41.75
               }, {
                   rango: 6,
-                  price: 117300
+                  price: 39.1
               }, {
                   rango: 7,
-                  price: 109710
+                  price: 36.57
               }, {
                   rango: 8,
-                  price: 102120
+                  price: 34.04
               }, {
                   rango: 9,
-                  price: 94530
+                  price: 31.51
               }, {
                   rango: 10,
-                  price: 92115
+                  price: 30.71
               }, {
                   rango: 11,
-                  price: 90045
+                  price: 30.02
               }, {
                   rango: 12,
-                  price: 87630
+                  price: 29.21
               }, {
                   rango: 13,
-                  price: 85560
+                  price: 28.52
               }, {
                   rango: 14,
-                  price: 83490
+                  price: 27.83
               }, {
                   rango: 15,
-                  price: 81075
+                  price: 27.03
               }, {
                   rango: 16,
-                  price: 79005
+                  price: 26.34
               }, {
                   rango: 17,
-                  price: 76590
+                  price: 25.53
               }, {
                   rango: 18,
-                  price: 74520
+                  price: 24.84
               }, {
                   rango: 19,
-                  price: 72450
+                  price: 24.15
               }, {
                   rango: 20,
-                  price: 60375
+                  price: 20.13
               }, {
                   rango: 21,
-                  price: 46575
+                  price: 15.53
               }]
           }, {
-              produto: "desempeño",
+              produto: "Desempenho",
               price: [{
                   rango: 0,
-                  price: 194400
+                  price: 64.8
               }, {
                   rango: 1,
-                  price: 129600
+                  price: 43.2
               }, {
                   rango: 2,
-                  price: 119520
+                  price: 39.84
               }, {
                   rango: 3,
-                  price: 109440
+                  price: 36.48
               }, {
                   rango: 4,
-                  price: 95040
+                  price: 31.68
               }, {
                   rango: 5,
-                  price: 80640
+                  price: 26.88
               }, {
                   rango: 6,
-                  price: 76320
+                  price: 25.44
               }, {
                   rango: 7,
-                  price: 72e3
+                  price: 24
               }, {
                   rango: 8,
-                  price: 67680
+                  price: 22.56
               }, {
                   rango: 9,
-                  price: 63360
+                  price: 21.12
               }, {
                   rango: 10,
-                  price: 61920
+                  price: 20.64
               }, {
                   rango: 11,
-                  price: 60480
+                  price: 20.16
               }, {
                   rango: 12,
-                  price: 59040
+                  price: 19.68
               }, {
                   rango: 13,
-                  price: 57600
+                  price: 19.2
               }, {
                   rango: 14,
-                  price: 56160
+                  price: 18.72
               }, {
                   rango: 15,
-                  price: 54720
+                  price: 18.24
               }, {
                   rango: 16,
-                  price: 53280
+                  price: 17.76
               }, {
                   rango: 17,
-                  price: 51840
+                  price: 17.28
               }, {
                   rango: 18,
-                  price: 50400
+                  price: 16.8
               }, {
                   rango: 19,
-                  price: 48960
+                  price: 16.32
               }, {
                   rango: 20,
-                  price: 37440
+                  price: 12.48
               }, {
                   rango: 21,
-                  price: 28800
+                  price: 9.6
               }]
           }, {
               produto: "Metas",
               price: [{
                   rango: 0,
-                  price: 112320
+                  price: 37.44
               }, {
                   rango: 1,
-                  price: 74880
+                  price: 24.96
               }, {
                   rango: 2,
-                  price: 70560
+                  price: 23.52
               }, {
                   rango: 3,
-                  price: 66240
+                  price: 22.08
               }, {
                   rango: 4,
-                  price: 59040
+                  price: 19.68
               }, {
                   rango: 5,
-                  price: 51840
+                  price: 17.28
               }, {
                   rango: 6,
-                  price: 48240
+                  price: 16.08
               }, {
                   rango: 7,
-                  price: 44640
+                  price: 14.88
               }, {
                   rango: 8,
-                  price: 41040
+                  price: 13.68
               }, {
                   rango: 9,
-                  price: 37440
+                  price: 12.48
               }, {
                   rango: 10,
-                  price: 36360
+                  price: 12.12
               }, {
                   rango: 11,
-                  price: 35640
+                  price: 11.88
               }, {
                   rango: 12,
-                  price: 34560
+                  price: 11.52
               }, {
                   rango: 13,
-                  price: 33840
+                  price: 11.28
               }, {
                   rango: 14,
-                  price: 33120
+                  price: 11.04
               }, {
                   rango: 15,
-                  price: 32040
+                  price: 10.68
               }, {
                   rango: 16,
-                  price: 31320
+                  price: 10.44
               }, {
                   rango: 17,
-                  price: 30240
+                  price: 10.08
               }, {
                   rango: 18,
-                  price: 29520
+                  price: 9.84
               }, {
                   rango: 19,
-                  price: 28800
+                  price: 9.6
               }, {
                   rango: 20,
-                  price: 25920
+                  price: 8.64
               }, {
                   rango: 21,
-                  price: 20160
+                  price: 6.72
               }]
           }, {
-              produto: "PID",
+              produto: "PDI",
               price: [{
                   rango: 0,
-                  price: 70200
+                  price: 23.4
               }, {
                   rango: 1,
-                  price: 46800
+                  price: 15.6
               }, {
                   rango: 2,
-                  price: 44280
+                  price: 14.76
               }, {
                   rango: 3,
-                  price: 41400
+                  price: 13.8
               }, {
                   rango: 4,
-                  price: 37080
+                  price: 12.36
               }, {
                   rango: 5,
-                  price: 32400
+                  price: 10.8
               }, {
                   rango: 6,
-                  price: 29880
+                  price: 9.96
               }, {
                   rango: 7,
-                  price: 27720
+                  price: 9.24
               }, {
                   rango: 8,
-                  price: 25560
+                  price: 8.52
               }, {
                   rango: 9,
-                  price: 23400
+                  price: 7.8
               }, {
                   rango: 10,
-                  price: 22680
+                  price: 7.56
               }, {
                   rango: 11,
-                  price: 22320
+                  price: 7.44
               }, {
                   rango: 12,
-                  price: 21600
+                  price: 7.2
               }, {
                   rango: 13,
-                  price: 21240
+                  price: 7.08
               }, {
                   rango: 14,
-                  price: 20520
+                  price: 6.84
               }, {
                   rango: 15,
-                  price: 20160
+                  price: 6.72
               }, {
                   rango: 16,
-                  price: 19440
+                  price: 6.48
               }, {
                   rango: 17,
-                  price: 19080
+                  price: 6.36
               }, {
                   rango: 18,
-                  price: 18360
+                  price: 6.12
               }, {
                   rango: 19,
-                  price: 18e3
+                  price: 6
               }, {
                   rango: 20,
-                  price: 16200
+                  price: 5.4
               }, {
                   rango: 21,
-                  price: 12600
+                  price: 4.2
               }]
           }, {
-              produto: "Reconocimiento",
+              produto: "Medalhas de Mérito",
               price: [{
                   rango: 0,
-                  price: 22500
+                  price: 7.5
               }, {
                   rango: 1,
-                  price: 15e3
+                  price: 5
               }, {
                   rango: 2,
-                  price: 14100
+                  price: 4.7
               }, {
                   rango: 3,
-                  price: 13200
+                  price: 4.4
               }, {
                   rango: 4,
-                  price: 11700
+                  price: 3.9
               }, {
                   rango: 5,
-                  price: 10200
+                  price: 3.4
               }, {
                   rango: 6,
-                  price: 9300
+                  price: 3.1
               }, {
                   rango: 7,
-                  price: 8700
+                  price: 2.9
               }, {
                   rango: 8,
-                  price: 7800
+                  price: 2.6
               }, {
                   rango: 9,
-                  price: 7200
+                  price: 2.4
               }, {
                   rango: 10,
-                  price: 6900
+                  price: 2.3
               }, {
                   rango: 11,
-                  price: 6600
+                  price: 2.2
               }, {
                   rango: 12,
-                  price: 6600
+                  price: 2.2
               }, {
                   rango: 13,
-                  price: 6300
+                  price: 2.1
               }, {
                   rango: 14,
-                  price: 6300
+                  price: 2.1
               }, {
                   rango: 15,
-                  price: 6e3
+                  price: 2
               }, {
                   rango: 16,
-                  price: 5700
+                  price: 1.9
               }, {
                   rango: 17,
-                  price: 5700
+                  price: 1.9
               }, {
                   rango: 18,
-                  price: 5400
+                  price: 1.8
               }, {
                   rango: 19,
-                  price: 5400
+                  price: 1.8
               }, {
                   rango: 20,
-                  price: 4800
+                  price: 1.6
               }, {
                   rango: 21,
-                  price: 3600
-              }]
-          }, {
-              produto: "Clima",
-              price: [{
-                  rango: 0,
-                  price: 34500
-              }, {
-                  rango: 1,
-                  price: 18900
-              }, {
-                  rango: 2,
-                  price: 18060
-              }, {
-                  rango: 3,
-                  price: 17010
-              }, {
-                  rango: 4,
-                  price: 15120
-              }, {
-                  rango: 5,
-                  price: 13230
-              }, {
-                  rango: 6,
-                  price: 12180
-              }, {
-                  rango: 7,
-                  price: 11340
-              }, {
-                  rango: 8,
-                  price: 10290
-              }, {
-                  rango: 9,
-                  price: 9450
-              }, {
-                  rango: 10,
-                  price: 9030
-              }, {
-                  rango: 11,
-                  price: 8820
-              }, {
-                  rango: 12,
-                  price: 8610
-              }, {
-                  rango: 13,
-                  price: 8400
-              }, {
-                  rango: 14,
-                  price: 8190
-              }, {
-                  rango: 15,
-                  price: 7980
-              }, {
-                  rango: 16,
-                  price: 7770
-              }, {
-                  rango: 17,
-                  price: 7560
-              }, {
-                  rango: 18,
-                  price: 7350
-              }, {
-                  rango: 19,
-                  price: 7140
-              }, {
-                  rango: 20,
-                  price: 6510
-              }, {
-                  rango: 21,
-                  price: 5040
+                  price: 1.2
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 23400
+                  price: 11.5
               }, {
                   rango: 1,
-                  price: 15120
+                  price: 6.3
               }, {
                   rango: 2,
-                  price: 14280
+                  price: 6
               }, {
                   rango: 3,
-                  price: 13440
+                  price: 5.7
               }, {
                   rango: 4,
-                  price: 11970
+                  price: 5
               }, {
                   rango: 5,
-                  price: 10500
+                  price: 4.4
               }, {
                   rango: 6,
-                  price: 9660
+                  price: 4.1
               }, {
                   rango: 7,
-                  price: 9030
+                  price: 3.8
               }, {
                   rango: 8,
-                  price: 8190
+                  price: 3.4
               }, {
                   rango: 9,
-                  price: 7560
+                  price: 3.2
               }, {
                   rango: 10,
-                  price: 7350
+                  price: 3
               }, {
                   rango: 11,
-                  price: 7140
+                  price: 2.9
               }, {
                   rango: 12,
-                  price: 6930
+                  price: 2.9
               }, {
                   rango: 13,
-                  price: 6720
+                  price: 2.8
               }, {
                   rango: 14,
-                  price: 6510
+                  price: 2.7
               }, {
                   rango: 15,
-                  price: 6300
+                  price: 2.7
               }, {
                   rango: 16,
-                  price: 6090
+                  price: 2.6
               }, {
                   rango: 17,
-                  price: 5880
+                  price: 2.5
               }, {
                   rango: 18,
-                  price: 5670
+                  price: 2.5
               }, {
                   rango: 19,
-                  price: 5670
+                  price: 2.4
               }, {
                   rango: 20,
-                  price: 5040
+                  price: 2.2
               }, {
                   rango: 21,
-                  price: 3990
+                  price: 1.7
+              }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 9.4
+              }, {
+                  rango: 1,
+                  price: 5
+              }, {
+                  rango: 2,
+                  price: 4.8
+              }, {
+                  rango: 3,
+                  price: 4.5
+              }, {
+                  rango: 4,
+                  price: 4
+              }, {
+                  rango: 5,
+                  price: 3.5
+              }, {
+                  rango: 6,
+                  price: 3.2
+              }, {
+                  rango: 7,
+                  price: 3
+              }, {
+                  rango: 8,
+                  price: 2.7
+              }, {
+                  rango: 9,
+                  price: 2.5
+              }, {
+                  rango: 10,
+                  price: 2.5
+              }, {
+                  rango: 11,
+                  price: 2.4
+              }, {
+                  rango: 12,
+                  price: 2.3
+              }, {
+                  rango: 13,
+                  price: 2.2
+              }, {
+                  rango: 14,
+                  price: 2.2
+              }, {
+                  rango: 15,
+                  price: 2.1
+              }, {
+                  rango: 16,
+                  price: 2
+              }, {
+                  rango: 17,
+                  price: 2
+              }, {
+                  rango: 18,
+                  price: 1.9
+              }, {
+                  rango: 19,
+                  price: 1.9
+              }, {
+                  rango: 20,
+                  price: 1.7
+              }, {
+                  rango: 21,
+                  price: 1.3
               }]
           }, {
               produto: "desarrollo",
               price: [{
                   rango: 0,
-                  price: 110565
+                  price: 37.04
               }, {
                   rango: 1,
-                  price: 73710
+                  price: 24.7
               }, {
                   rango: 2,
-                  price: 68083
+                  price: 22.85
               }, {
                   rango: 3,
-                  price: 62244
+                  price: 20.83
               }, {
                   rango: 4,
-                  price: 54155
+                  price: 18.14
               }, {
                   rango: 5,
-                  price: 45864
+                  price: 15.29
               }, {
                   rango: 6,
-                  price: 43257
+                  price: 14.49
               }, {
                   rango: 7,
-                  price: 40849
+                  price: 13.78
               }, {
                   rango: 8,
-                  price: 38441
+                  price: 12.94
               }, {
                   rango: 9,
-                  price: 36036
+                  price: 12.1
               }, {
                   rango: 10,
-                  price: 35190
+                  price: 11.76
               }, {
                   rango: 11,
-                  price: 34425
+                  price: 11.59
               }, {
                   rango: 12,
-                  price: 33579
+                  price: 11.26
               }, {
                   rango: 13,
-                  price: 32813
+                  price: 11.09
               }, {
                   rango: 14,
-                  price: 31834
+                  price: 10.75
               }, {
                   rango: 15,
-                  price: 31203
+                  price: 10.42
               }, {
                   rango: 16,
-                  price: 30223
+                  price: 10.08
               }, {
                   rango: 17,
-                  price: 29592
+                  price: 9.91
               }, {
                   rango: 18,
-                  price: 28611
+                  price: 9.58
               }, {
                   rango: 19,
-                  price: 27846
+                  price: 9.41
               }, {
                   rango: 20,
-                  price: 21294
+                  price: 7.22
               }, {
                   rango: 21,
-                  price: 16380
+                  price: 5.54
               }]
           }, {
               produto: "engagement",
               price: [{
                   rango: 0,
-                  price: 71674
+                  price: 23.89
               }, {
                   rango: 1,
-                  price: 47783
+                  price: 15.93
               }, {
                   rango: 2,
-                  price: 44505
+                  price: 14.84
               }, {
                   rango: 3,
-                  price: 41314
+                  price: 13.77
               }, {
                   rango: 4,
-                  price: 36311
+                  price: 12.11
               }, {
                   rango: 5,
-                  price: 31309
+                  price: 10.44
               }, {
                   rango: 6,
-                  price: 29325
+                  price: 9.78
               }, {
                   rango: 7,
-                  price: 27428
+                  price: 9.14
               }, {
                   rango: 8,
-                  price: 25530
+                  price: 8.51
               }, {
                   rango: 9,
-                  price: 23633
+                  price: 7.88
               }, {
                   rango: 10,
-                  price: 23029
+                  price: 7.68
               }, {
                   rango: 11,
-                  price: 22511
+                  price: 7.51
               }, {
                   rango: 12,
-                  price: 21908
+                  price: 7.3
               }, {
                   rango: 13,
-                  price: 21390
+                  price: 7.13
               }, {
                   rango: 14,
-                  price: 20872
+                  price: 6.96
               }, {
                   rango: 15,
-                  price: 20269
+                  price: 6.76
               }, {
                   rango: 16,
-                  price: 19751
+                  price: 6.59
               }, {
                   rango: 17,
-                  price: 19148
+                  price: 6.38
               }, {
                   rango: 18,
-                  price: 18630
+                  price: 6.21
               }, {
                   rango: 19,
-                  price: 18113
+                  price: 6.04
               }, {
                   rango: 20,
-                  price: 15094
+                  price: 5.03
               }, {
                   rango: 21,
-                  price: 11644
+                  price: 3.88
               }]
           }, {
-              produto: "Plan de Sucesión",
+              produto: "Plano de Sucessão",
               price: [{
                   rango: 0,
-                  price: 56160
+                  price: 18.7
               }, {
                   rango: 1,
-                  price: 37440
+                  price: 12.5
               }, {
                   rango: 2,
-                  price: 35280
+                  price: 11.8
               }, {
                   rango: 3,
-                  price: 33120
+                  price: 11.0
               }, {
                   rango: 4,
-                  price: 29520
+                  price: 9.8
               }, {
                   rango: 5,
-                  price: 25920
+                  price: 8.6
               }, {
                   rango: 6,
-                  price: 24120
+                  price: 8.0
               }, {
                   rango: 7,
-                  price: 22320
+                  price: 7.4
               }, {
                   rango: 8,
-                  price: 20520
+                  price: 6.8
               }, {
                   rango: 9,
-                  price: 18720
+                  price: 6.2
               }, {
                   rango: 10,
-                  price: 18180
+                  price: 6.1
               }, {
                   rango: 11,
-                  price: 17820
+                  price: 5.9
               }, {
                   rango: 12,
-                  price: 17280
+                  price: 5.8
               }, {
                   rango: 13,
-                  price: 16920
+                  price: 5.6
               }, {
                   rango: 14,
-                  price: 16560
+                  price: 5.5
               }, {
                   rango: 15,
-                  price: 16020
+                  price: 5.3
               }, {
                   rango: 16,
-                  price: 15660
+                  price: 5.22
               }, {
                   rango: 17,
-                  price: 15120
+                  price: 5.04
               }, {
                   rango: 18,
-                  price: 14760
+                  price: 4.92
               }, {
                   rango: 19,
-                  price: 14400
+                  price: 4.8
               }, {
                   rango: 20,
-                  price: 12960
+                  price: 4.32
               }, {
                   rango: 21,
-                  price: 10080
+                  price: 3.36
               }]
           }]
       }, {
           type: "unico",
           produto: [{
-              produto: "Competencias",
+              produto: "Competências",
               price: [{
                   rango: 0,
-                  price: 87750
+                  price: 30.44
               }, {
                   rango: 1,
-                  price: 58500
+                  price: 19.5
               }, {
                   rango: 2,
-                  price: 55200
+                  price: 18.4
               }, {
                   rango: 3,
-                  price: 51900
+                  price: 17.3
               }, {
                   rango: 4,
-                  price: 46200
+                  price: 15.4
               }, {
                   rango: 5,
-                  price: 40500
+                  price: 13.5
               }, {
                   rango: 6,
-                  price: 37500
+                  price: 12.5
               }, {
                   rango: 7,
-                  price: 34800
+                  price: 11.6
               }, {
                   rango: 8,
-                  price: 32100
+                  price: 10.7
               }, {
                   rango: 9,
-                  price: 29400
+                  price: 9.8
               }, {
                   rango: 10,
-                  price: 28500
+                  price: 9.5
               }, {
                   rango: 11,
-                  price: 27900
+                  price: 9.3
               }, {
                   rango: 12,
-                  price: 27300
+                  price: 9.1
               }, {
                   rango: 13,
-                  price: 26400
+                  price: 8.8
               }, {
                   rango: 14,
-                  price: 25800
+                  price: 8.6
               }, {
                   rango: 15,
-                  price: 25200
+                  price: 8.4
               }, {
                   rango: 16,
-                  price: 24300
+                  price: 8.1
               }, {
                   rango: 17,
-                  price: 23700
+                  price: 7.9
               }, {
                   rango: 18,
-                  price: 23100
+                  price: 7.7
               }, {
                   rango: 19,
-                  price: 22500
+                  price: 7.5
               }, {
                   rango: 20,
-                  price: 20400
+                  price: 6.8
               }, {
                   rango: 21,
-                  price: 15900
+                  price: 5.3
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 41700
+                  price: 15.15
               }, {
                   rango: 1,
-                  price: 30660
+                  price: 10.2
               }, {
                   rango: 2,
-                  price: 28770
+                  price: 9.6
               }, {
                   rango: 3,
-                  price: 27090
+                  price: 9
               }, {
                   rango: 4,
-                  price: 24150
+                  price: 8
               }, {
                   rango: 5,
-                  price: 21210
+                  price: 7.1
               }, {
                   rango: 6,
-                  price: 19740
+                  price: 6.6
               }, {
                   rango: 7,
-                  price: 18270
+                  price: 6.1
               }, {
                   rango: 8,
-                  price: 16800
+                  price: 5.6
               }, {
                   rango: 9,
-                  price: 15330
+                  price: 5.1
               }, {
                   rango: 10,
-                  price: 14910
+                  price: 5
               }, {
                   rango: 11,
-                  price: 14490
+                  price: 4.8
               }, {
                   rango: 12,
-                  price: 14070
+                  price: 4.7
               }, {
                   rango: 13,
-                  price: 13860
+                  price: 4.6
               }, {
                   rango: 14,
-                  price: 13440
+                  price: 4.5
               }, {
                   rango: 15,
-                  price: 13020
+                  price: 4.3
               }, {
                   rango: 16,
-                  price: 12810
+                  price: 4.3
               }, {
                   rango: 17,
-                  price: 12390
+                  price: 4.1
               }, {
                   rango: 18,
-                  price: 11970
+                  price: 4
               }, {
                   rango: 19,
-                  price: 11760
+                  price: 3.9
               }, {
                   rango: 20,
-                  price: 10710
+                  price: 3.6
               }, {
                   rango: 21,
-                  price: 8190
+                  price: 2.7
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 43750
+                  price: 13.5
               }, {
                   rango: 1,
-                  price: 27510
+                  price: 9.2
               }, {
                   rango: 2,
-                  price: 25830
+                  price: 8.6
               }, {
                   rango: 3,
-                  price: 24360
+                  price: 8.1
               }, {
                   rango: 4,
-                  price: 21630
+                  price: 7.2
               }, {
                   rango: 5,
-                  price: 18900
+                  price: 6.3
               }, {
                   rango: 6,
-                  price: 17430
+                  price: 5.8
               }, {
                   rango: 7,
-                  price: 16170
+                  price: 5.4
               }, {
                   rango: 8,
-                  price: 14910
+                  price: 5
               }, {
                   rango: 9,
-                  price: 13650
+                  price: 4.5
               }, {
                   rango: 10,
-                  price: 13230
+                  price: 4.4
               }, {
                   rango: 11,
-                  price: 13020
+                  price: 4.3
               }, {
                   rango: 12,
-                  price: 12600
+                  price: 4.2
               }, {
                   rango: 13,
-                  price: 12390
+                  price: 4.1
               }, {
                   rango: 14,
-                  price: 11970
+                  price: 4
               }, {
                   rango: 15,
-                  price: 11760
+                  price: 3.9
               }, {
                   rango: 16,
-                  price: 11340
+                  price: 3.8
               }, {
                   rango: 17,
-                  price: 11130
+                  price: 3.7
               }, {
                   rango: 18,
-                  price: 10710
+                  price: 3.6
               }, {
                   rango: 19,
-                  price: 10500
+                  price: 3.5
               }, {
                   rango: 20,
-                  price: 9450
+                  price: 3.2
               }, {
                   rango: 21,
-                  price: 7350
+                  price: 2.5
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 31800
+                  price: 12.8
               }, {
                   rango: 1,
-                  price: 21840
+                  price: 7.3
               }, {
                   rango: 2,
-                  price: 20580
+                  price: 6.9
               }, {
                   rango: 3,
-                  price: 19320
+                  price: 6.4
               }, {
                   rango: 4,
-                  price: 17220
+                  price: 5.7
               }, {
                   rango: 5,
-                  price: 15120
+                  price: 5
               }, {
                   rango: 6,
-                  price: 14070
+                  price: 4.7
               }, {
                   rango: 7,
-                  price: 13020
+                  price: 4.3
               }, {
                   rango: 8,
-                  price: 11970
+                  price: 4
               }, {
                   rango: 9,
-                  price: 10920
+                  price: 3.6
               }, {
                   rango: 10,
-                  price: 10500
+                  price: 3.5
               }, {
                   rango: 11,
-                  price: 10290
+                  price: 3.4
               }, {
                   rango: 12,
-                  price: 10080
+                  price: 3.4
               }, {
                   rango: 13,
-                  price: 9870
+                  price: 3.3
               }, {
                   rango: 14,
-                  price: 9660
+                  price: 3.2
               }, {
                   rango: 15,
-                  price: 9240
+                  price: 3.1
               }, {
                   rango: 16,
-                  price: 9030
+                  price: 3
               }, {
                   rango: 17,
-                  price: 8820
+                  price: 2.9
               }, {
                   rango: 18,
-                  price: 8610
+                  price: 2.9
               }, {
                   rango: 19,
-                  price: 8400
+                  price: 2.8
               }, {
                   rango: 20,
-                  price: 7560
+                  price: 2.5
               }, {
                   rango: 21,
-                  price: 5880
-              }]
-          }, {
-              produto: "2646",
-              price: [{
-                  rango: 0,
-                  price: 15e3
-              }, {
-                  rango: 1,
-                  price: 1e4
-              }, {
-                  rango: 2,
-                  price: 9e3
-              }, {
-                  rango: 3,
-                  price: 8e3
-              }, {
-                  rango: 4,
-                  price: 7500
-              }, {
-                  rango: 5,
-                  price: 7e3
-              }, {
-                  rango: 6,
-                  price: 6500
-              }, {
-                  rango: 7,
-                  price: 6e3
-              }, {
-                  rango: 8,
-                  price: 5500
-              }, {
-                  rango: 9,
-                  price: 5e3
-              }, {
-                  rango: 10,
-                  price: 4900
-              }, {
-                  rango: 11,
-                  price: 4800
-              }, {
-                  rango: 12,
-                  price: 4700
-              }, {
-                  rango: 13,
-                  price: 4600
-              }, {
-                  rango: 14,
-                  price: 4500
-              }, {
-                  rango: 15,
-                  price: 4400
-              }, {
-                  rango: 16,
-                  price: 4300
-              }, {
-                  rango: 17,
-                  price: 4200
-              }, {
-                  rango: 18,
-                  price: 4100
-              }, {
-                  rango: 19,
-                  price: 4e3
-              }, {
-                  rango: 20,
-                  price: 3500
-              }, {
-                  rango: 21,
-                  price: 3e3
+                  price: 2
               }]
           }]
       }];
@@ -1821,67 +1714,67 @@ function calculate_price(){
       console.log("PRICE_TOTAL   " + price_total);
     price_persona=price_persona+price;
     if(produto_pr[0]){
-      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competencias, PID, 2x Clima, Reconocimiento Plan de Sucesión + Implementación Gratis</div>');
-      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementación Gratis)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
+      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competências, PDI, 2x Clima, Medalhas de Mérito, Plano de Sucessão + Implementação Grátis</div>');
+      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competências; PDI; 2x Clima; Medalhas de Mérito + Implementación Grátis)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
 
-      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competencias; PID; 2x Clima; Reconocimiento + Implementación Gratis)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competências; PDI; 2x Clima; Medalhas de Mérito + Implementação Grátis)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
     }else{
         var tempSideText = "";
         //FLEX DESEMPEÑO
         if(produto_pr[1]){
           if (tempSideText == ""){
-              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
           } else {
               tempSideText = tempSideText + " + ";
           }
-          tempSideText = tempSideText + 'Metas, Competencias ';
+          tempSideText = tempSideText + 'Metas, Competências ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desempeño(Metas; Competencias + Implementación(20%))</td><td>"+((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desempenho(Metas; Competências + Implementação(20%))</td><td>"+((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Desempeño', produto2 : 'Flex Desempeño (Metas; Competencias; + Implementación(20%)', precio_u:((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+          json.push({produto : 'Flex Desempenho', produto2 : 'Flex Desempenho (Metas; Competências; + Implementação(20%)', precio_u:((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         //FLEX DESARROLLO
         if(produto_pr[2]){
           if (tempSideText == ""){
-              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
           } else {
               tempSideText = tempSideText + " + ";
           }
-          tempSideText = tempSideText + 'PID, Plan de Sucesión ';
+          tempSideText = tempSideText + 'PDI, Plano de Sucessão ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desarrollo(PID; Plan de Sucesión; + Implementación(20%))</td><td>"+((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(PID; Plano de Sucessão; + Implementação(20%))</td><td>"+((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Derarrollo', produto2 : 'Flex Desarrollo (PID; Plan de Sucesión; + Implementación(20%)', precio_u:((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (PDI; Plano de Sucessão; + Implementação(20%)', precio_u:((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         //FLEX ENGAGEMENT
         if(produto_pr[3]){
           if (tempSideText == ""){
-              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
+              tempSideText = '<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">';
           } else {
               tempSideText = tempSideText + " + ";
           }
-          tempSideText = tempSideText + 'Reconocimiento, Clima ';
+          tempSideText = tempSideText + 'Reconhecimento, Clima ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desarrollo(Reconocimiento; Clima + Implementación(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(Reconhecimento; Clima + Implementação(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Derarrollo', produto2 : 'Flex Desarrollo (Reconocimiento; Clima; + Implementación(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (Reconhecimento; Clima; + Implementação(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         if (tempSideText != ""){
-              tempSideText = tempSideText + "+ Implementación(20%)</div>";
+              tempSideText = tempSideText + "+ Implementação(20%)</div>";
         }
         $(".incl").html(tempSideText);
     }
 
   }
   else{
-    $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Incluye</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names"></div>');
+    $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names"></div>');
   }
 
   var total = $("input[name='produto']:checked").length;
   if(total>0 && produto_pr==3){
-    $(".names").html("Metas, Competencias, ");
+    $(".names").html("Metas, Competências, ");
   } else if(total>0 && produto_pr==9){
-    $(".names").html("Competencias, PID, ");
+    $(".names").html("Competências, PDI, ");
   }
 
   $("input[name='produto']:checked").each(function(index) {
@@ -1889,7 +1782,7 @@ function calculate_price(){
 
     if (index === total - 1) {
       $(".names").append(prices[type].produto[$(this).attr('value')].produto);
-      $(".names").append(" + Implementación(20%)");
+      $(".names").append(" + Implementação(20%)");
     }else{
       $(".names").append(prices[type].produto[$(this).attr('value')].produto + ", ");
     }
@@ -1913,30 +1806,17 @@ function calculate_price(){
     var price_un=price*nr*competencias;
     var price_un2=price*competencias;
 
-    $(".table_precios").append("<tr class='comp'><td>"+competencias+"x Competencias</td><td>"+price_un2.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
+    $(".table_precios").append("<tr class='comp'><td>"+competencias+"x Competências</td><td>"+price_un2.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
 
-    json.push({produto :+competencias+"x Competencias",produto2 :+competencias+"x Competencias", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+    json.push({produto :+competencias+"x CompetÊncias",produto2 :+competencias+"x Competências", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
 
-    $(".name_competencias").html(competencias+ "x Competencias ");
+    $(".name_competencias").html(competencias+ "x Competências ");
   }else{
     $(".name_competencias").html("");
   }
 
-  if(evaluacion2636>0){
-    var price=(prices[1].produto[4].price[rango_nr].price * 1.05) * 1.05;
-    price_total=price_total+(price*nr*evaluacion2636);
-    price_persona=price_persona+(price*evaluacion2636);
-    var price_un=price*nr*evaluacion2636;
-    var price_un2=price*evaluacion2636;
 
-    $(".table_precios").append("<tr class='comp'><td>"+evaluacion2636+"x 2646</td><td>"+price_un2.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
-    $(".name_2646").html(evaluacion2636+ "x 2646 ");
-
-    json.push({produto :+evaluacion2636+"x 2646",produto2 :+evaluacion2636+"x 2646", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
-  }else{
-    $(".name_2646").html("");
-  }
-
+    console.log("CLIMAA     " + price_total);
   if(clima>0){
     var price_un1=0;
     var price_un2=0;
@@ -2020,8 +1900,7 @@ function calculate_price(){
   var price_new=addCommas(price_total.toFixed(2));
   var price_new2=addCommas(price_persona.toFixed(4));
   $(".price").html(price_new);
-  console.log("PRICEEEEEE : " + price_new);
-  $(".emp_div_price").html("("+price_new2 + "$ por empleado)");
+  $(".emp_div_price").html("("+price_new2 + "€ por colaborador)");
   converter();
 }
 
@@ -2039,9 +1918,9 @@ function reset(){
   $(".name_competencias").html("");
 
   $(".price").html("0.00");
-  $(".emp_div_price").html("(0$ por empleado)");
+  $(".emp_div_price").html("(0€ por colaborador)");
   $(".input_emp").val('0');
-  $(".emp_div").html("0 empleados");
+  $(".emp_div").html("0 colaboradores");
 
   $("#nr_comp").html("0");
   $("#nr_clima").html("0");
@@ -2114,7 +1993,7 @@ function exportTableToCSV($table, filename) {
 // This must be a hyperlink
 $("#export").click(function (event) {
   // var outputFile = 'export'
-  var outputFile = window.prompt("Nombre del archivo") || 'export';
+  var outputFile = window.prompt("Nome do ficheiro") || 'export';
   outputFile = outputFile.replace('.csv','') + '.csv'
 
   // CSV
@@ -2180,7 +2059,6 @@ function converter(){
   var price=0;
   var price_per=0;
   var symbol="$";
-  var moneda = "usd"
   if(moneda == "usd"){
     price=price_total;
     price_per=price_persona;
@@ -2233,9 +2111,8 @@ function converter(){
   var price_new=addCommas(price.toFixed(2));
   var price_new2=addCommas(price_per.toFixed(4));
   $(".price").html(price_new);
-  console.log("asoidhaosd  " + moneda);
   $(".price_moeda").html(symbol);
-  $(".emp_div_price").html("(" + price_new2 + symbol + " por empleado)");
+  $(".emp_div_price").html("(" + price_new2 + symbol + " por colaborador)");
 }
 
 function addCommas(nStr){
