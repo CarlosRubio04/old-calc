@@ -1739,10 +1739,10 @@ function calculate_price(){
       console.log("PRICE_TOTAL   " + price_total);
     price_persona=price_persona+price;
     if(produto_pr[0]){
-      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competências, PDI, 2x Clima, Medalhas de Mérito, Plano de Sucessão + Implementação Grátis</div>');
-      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competências; PDI; 2x Clima; Medalhas de Mérito + Implementación Grátis)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
+      $(".incl").html('<div class="centrar font600 fontsize13 margintop30">Inclui</div><div class="centrar font400 fontsize13 lineheight150 margintop20 names">Metas, Competências, PDI, 2x Clima, Medalhas de Mérito, Plano de Sucessão</div>');
+      $(".table_precios").append("<tr class='p2'><td>Flex Total(Metas; Competências; PDI; 2x Clima; Medalhas de Mérito)</td><td>"+price.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
 
-      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competências; PDI; 2x Clima; Medalhas de Mérito + Implementação Grátis)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+      json.push({produto : 'Flex Total',produto2 : 'Flex Total (Metas; Competências; PDI; 2x Clima; Medalhas de Mérito)', precio_u:price.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
     }else{
         var tempSideText = "";
         //FLEX DESEMPEÑO
@@ -1754,9 +1754,9 @@ function calculate_price(){
           }
           tempSideText = tempSideText + 'Metas, Competências ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desempenho(Metas; Competências + Implementação(20%))</td><td>"+((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desempenho(Metas; Competências )</td><td>"+((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Desempenho', produto2 : 'Flex Desempenho (Metas; Competências; + Implementação(20%)', precio_u:((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
+          json.push({produto : 'Flex Desempenho', produto2 : 'Flex Desempenho (Metas; Competências; ', precio_u:((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[3].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         //FLEX DESARROLLO
         if(produto_pr[2]){
@@ -1767,9 +1767,9 @@ function calculate_price(){
           }
           tempSideText = tempSideText + 'PDI, Plano de Sucessão ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(PID; Plano de Sucessão; + Implementação(20%))</td><td>"+((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(PID; Plano de Sucessão; )</td><td>"+((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (PDI; Plano de Sucessão; + Implementação(20%)', precio_u:((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
+          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (PDI; Plano de Sucessão; ', precio_u:((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[9].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         //FLEX ENGAGEMENT
         if(produto_pr[3]){
@@ -1780,12 +1780,12 @@ function calculate_price(){
           }
           tempSideText = tempSideText + 'Reconhecimento, Clima ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(Reconhecimento; Clima + Implementação(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(Reconhecimento; Clima )</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (Reconhecimento; Clima; + Implementação(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
+          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (Reconhecimento; Clima; ', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         if (tempSideText != ""){
-              tempSideText = tempSideText + "+ Implementação(20%)</div>";
+              tempSideText = tempSideText + "</div>";
         }
         $(".incl").html(tempSideText);
     }
@@ -1807,7 +1807,7 @@ function calculate_price(){
 
     if (index === total - 1) {
       $(".names").append(prices[type].produto[$(this).attr('value')].produto);
-      $(".names").append(" + Implementação(20%)");
+      $(".names").append(" ");
     }else{
       $(".names").append(prices[type].produto[$(this).attr('value')].produto + ", ");
     }
