@@ -1295,47 +1295,47 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 
 	if(length==1){
 		var data = [
-		    [json[0].produto,json[0].nr, json[0].precio_u, json[0].precio_t+ "$"]
+		    [json[0].produto,json[0].nr, json[0].precio_u, "R$" + json[0].precio_t]
 		];
 	}
 	else if(length==2){
 		var data = [
-		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "$"]
+		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
+		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "R$"]
 		];
 	}
 	else if(length==3){
 		var data = [
-		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto, json[2].nr, json[2].precio_u, json[2].precio_t + "$"]
+		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
+		    [json[1].produto, json[1].nr, "R$" + json[1].precio_u, "R$" + json[1].precio_t],
+		    [json[2].produto, json[2].nr, json[2].precio_u, "R$" + json[2].precio_t]
 		];
 	}
 	else if(length==4){
 		var data = [
-		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto, json[3].nr, json[3].precio_u, json[3].precio_t + "$"]
+		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
+		    [json[1].produto, json[1].nr, "R$" + json[1].precio_u, "R$" + json[1].precio_t],
+		    [json[2].produto, json[2].nr, "R$" + json[2].precio_u, "R$" + json[2].precio_t],
+		    [json[3].produto, json[3].nr, json[3].precio_u, "R$" + json[3].precio_t]
 		];
 	}
 	else if(length==5){
 		var data = [
-		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto, json[4].nr, json[4].precio_u, json[4].precio_t + "$"]
+		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
+		    [json[1].produto, json[1].nr, "R$" + json[1].precio_u, "R$" + json[1].precio_t],
+		    [json[2].produto, json[2].nr, "R$" + json[2].precio_u, "R$" + json[2].precio_t],
+		    [json[3].produto, json[3].nr, "R$" + json[3].precio_u, "R$" + json[3].precio_t],
+		    [json[4].produto, json[4].nr, json[4].precio_u, "R$" + json[4].precio_t]
 		];
 	}
 	else if(length==6){
 		var data = [
-		    [json[0].produto, json[0].nr, json[0].precio_u + "$", json[0].precio_t + "$"],
-		    [json[1].produto, json[1].nr, json[1].precio_u + "$", json[1].precio_t + "$"],
-		    [json[2].produto, json[2].nr, json[2].precio_u + "$", json[2].precio_t + "$"],
-		    [json[3].produto, json[3].nr, json[3].precio_u + "$", json[3].precio_t + "$"],
-		    [json[4].produto, json[4].nr, json[4].precio_u + "$", json[4].precio_t + "$"],
-		    [json[5].produto, json[5].nr, json[5].precio_u, json[5].precio_t + "$"]
+		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
+		    [json[1].produto, json[1].nr, "R$" + json[1].precio_u, "R$" + json[1].precio_t],
+		    [json[2].produto, json[2].nr, "R$" + json[2].precio_u, "R$" + json[2].precio_t],
+		    [json[3].produto, json[3].nr, "R$" + json[3].precio_u, "R$" + json[3].precio_t],
+		    [json[4].produto, json[4].nr, "R$" + json[4].precio_u, "R$" + json[4].precio_t],
+		    [json[5].produto, json[5].nr, json[5].precio_u, "R$" + json[5].precio_t]
 		];
 	}
 
@@ -1413,7 +1413,7 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
     doc.setFontSize(7);
 	doc.setTextColor(0, 0, 0);
 	doc.setFontStyle("bold");
-	doc.text(30,(offsetMargin - 5), "Preços em €");
+	doc.text(30,(offsetMargin - 5), "Preços em reais");
 
 
     doc.autoTable(columns, data, {
@@ -1612,6 +1612,4 @@ function volver() {
 	$(".calculator_box .container").css("display","block");
 	$(".form_propuesta").css("display","none");
     calculate_price();
-
-
 }

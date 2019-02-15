@@ -192,7 +192,7 @@
 	        	<div class="left clear margintop30 width100">
 	        		<h5>Observações <small>(opcional)</small></h5>
 	        		<div class="left margintop20 width100">
-                <textarea class="text_area" id="obs">A forma de pagamento é através de cartão de crédito usando a plataforma PayPal ou PayU. Acsendo fará um incremento anual de preços de 3%.</textarea>
+                <textarea class="text_area" id="obs">A forma de pagamento será através de boleto ou transferência bancaria. Proposta válida por 20 dias</textarea>
 	        		</div>
 	        	</div>
 
@@ -1925,7 +1925,7 @@ function calculate_price(){
   var price_new=addCommas(price_total.toFixed(2));
   var price_new2=addCommas(price_persona.toFixed(4));
   $(".price").html(price_new);
-  $(".emp_div_price").html("("+price_new2 + "€ por colaborador)");
+  $(".emp_div_price").html("(R$ "+price_new2 + " por colaborador)");
   converter();
 }
 
@@ -1943,7 +1943,7 @@ function reset(){
   $(".name_competencias").html("");
 
   $(".price").html("0.00");
-  $(".emp_div_price").html("(0€ por colaborador)");
+  $(".emp_div_price").html("(R$ 0 por colaborador)");
   $(".input_emp").val('0');
   $(".emp_div").html("0 colaboradores");
 
