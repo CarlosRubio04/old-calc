@@ -37,10 +37,10 @@
                   0.00
                 </div>
                 <div class="price_moeda">
-                  $
+                  R$
                 </div>
                 <p class="fontsize13 margintop20 font600 fontbranco descr_price">
-                  Preço em EUR
+                  Preço em BRL
                 </p>
               </div>
 
@@ -118,8 +118,9 @@
               <div class="left">
                 <h5>Moeda</h5>
                 <div class="left margintop20">
-                  <input type="radio" name="currency" value="eur" class="left" checked="true" data-labelauty="EUR"/>
-                  <!--<input type="radio" name="currency" value="eur" class="left left20 bottom10 curr" data-labelauty="EUR"/>
+                  <input type="radio" name="currency" value="blr" class="left" checked="true" data-labelauty="BLR"/>
+                  <!--<input type="radio" name="currency" value="eur" class="left" checked="true" data-labelauty="EUR"/>
+                  <input type="radio" name="currency" value="eur" class="left left20 bottom10 curr" data-labelauty="EUR"/>
                   <input type="radio" name="currency" value="crc" class="left left20 bottom10 curr" data-labelauty="CRC"/>
                   <input type="radio" name="currency" value="dop" class="left left20 bottom10 curr" data-labelauty="DOP"/>
                   <input type="radio" name="currency" value="ecs" class="left left20 bottom10 curr" data-labelauty="ECS"/>
@@ -136,7 +137,7 @@
             <div id="dvData" class="left margintop20">
               <table class="table_precios">
                 <tr style="margin-bottom:30px">
-                  <th>Preço em Euros</th>
+                  <th>Preço em BRL</th>
                   <th></th>
                   <th></th>
                   <th></th>
@@ -253,7 +254,7 @@ $(document).ready(function(){
   $(":radio").labelauty();
   $(":checkbox").labelauty();
   $(".tipo_div").html("Assinatura anual");
-  $(".descr_price").html("Preço em EUR ao ano");
+  $(".descr_price").html("Preço em BRL ao ano");
   $("#comp_eval").css("display","none");
   var clima=0;
   var comp=0;
@@ -275,12 +276,12 @@ $(document).ready(function(){
   $("input[name='tipo']").change(function(){
     var type = $("input[name='tipo']:checked").val();
     if(type==0){
-      $(".descr_price").html("Preço em EUR ao ano");
+      $(".descr_price").html("Preço em BRL ao ano");
       $(".sub").css("display","block");
       $("#comp_eval").css("display","none");
       $(".tipo_div").html("Subscrição Anual");
     }else{
-      $(".descr_price").html("Preço em EUR");
+      $(".descr_price").html("Preço em BRL");
       $(".sub").css("display","none");
       $("#comp_eval").css("display","block");
       $(".tipo_div").html("Avaliação Única");
@@ -559,829 +560,851 @@ function calculate_price(){
               produto: "Competências",
               price: [{
                   rango: 0,
-                  price: 37.44
+                  price: 134.26
               }, {
                   rango: 1,
-                  price: 24.96
+                  price: 89.51
               }, {
                   rango: 2,
-                  price: 23.52
+                  price: 84.34
               }, {
                   rango: 3,
-                  price: 22.08
+                  price: 79.18
               }, {
                   rango: 4,
-                  price: 19.68
+                  price: 70.57
               }, {
                   rango: 5,
-                  price: 17.28
+                  price: 61.97
               }, {
                   rango: 6,
-                  price: 16.08
+                  price: 57.66
               }, {
                   rango: 7,
-                  price: 14.88
+                  price: 53.36
               }, {
                   rango: 8,
-                  price: 13.68
+                  price: 49.06
               }, {
                   rango: 9,
-                  price: 12.48
+                  price: 44.75
               }, {
                   rango: 10,
-                  price: 12.12
+                  price: 43.46
               }, {
                   rango: 11,
-                  price: 11.88
+                  price: 42.60
               }, {
                   rango: 12,
-                  price: 11.52
+                  price: 41.31
               }, {
                   rango: 13,
-                  price: 11.28
+                  price: 40.45
               }, {
                   rango: 14,
-                  price: 11.04
+                  price: 39.59
               }, {
                   rango: 15,
-                  price: 10.68
+                  price: 38.30
               }, {
                   rango: 16,
-                  price: 10.44
+                  price: 37.44
               }, {
                   rango: 17,
-                  price: 10.08
+                  price: 36.15
               }, {
                   rango: 18,
-                  price: 9.84
+                  price: 35.29
               }, {
                   rango: 19,
-                  price: 9.6
+                  price: 34.43
               }, {
                   rango: 20,
-                  price: 8.64
+                  price: 30.98
               }, {
                   rango: 21,
-                  price: 6.72
+                  price: 24.10
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 13.1
+                  price: 41.24
               }, {
                   rango: 1,
-                  price: 7.1
+                  price: 25.35
               }, {
                   rango: 2,
-                  price: 6.7
+                  price: 24.10
               }, {
                   rango: 3,
-                  price: 6.3
+                  price: 22.59
               }, {
                   rango: 4,
-                  price: 5.6
+                  price: 20.08
               }, {
                   rango: 5,
-                  price: 4.9
+                  price: 17.57
               }, {
                   rango: 6,
-                  price: 4.5
+                  price: 16.32
               }, {
                   rango: 7,
-                  price: 4.2
+                  price: 15.06
               }, {
                   rango: 8,
-                  price: 3.8
+                  price: 13.81
               }, {
                   rango: 9,
-                  price: 3.5
+                  price: 12.55
               }, {
                   rango: 10,
-                  price: 3.4
+                  price: 12.05
               }, {
                   rango: 11,
-                  price: 3.3
+                  price: 11.80
               }, {
                   rango: 12,
-                  price: 3.2
-              }, {
+                  price: 11.55
+            }, {
                   rango: 13,
-                  price: 3.2
-              }, {
+                  price: 11.30
+            }, {
                   rango: 14,
-                  price: 3.1
-              }, {
+                  price: 11.04
+            }, {
                   rango: 15,
-                  price: 2.9
-              }, {
+                  price: 10.54
+            }, {
                   rango: 16,
-                  price: 2.9
-              }, {
+                  price: 10.29
+            }, {
                   rango: 17,
-                  price: 2.8
-              }, {
+                  price: 10.04
+            }, {
                   rango: 18,
-                  price: 2.7
-              }, {
+                  price: 10.65
+            }, {
                   rango: 19,
-                  price: 2.7
-              }, {
+                  price: 9.54
+            }, {
                   rango: 20,
-                  price: 2.5
-              }, {
+                  price: 8.79
+            }, {
                   rango: 21,
-                  price: 1.9
-              }]
+                  price: 6.78
+            }]
           }, {
               produto: "total",
               price: [{
                   rango: 0,
-                  price: 95.57
+                  price: 342.6925656
               }, {
                   rango: 1,
-                  price: 63.71
+                  price: 228.4617104
               }, {
                   rango: 2,
-                  price: 59.34
+                  price: 212.7910516
               }, {
                   rango: 3,
-                  price: 55.09
+                  price: 197.5327785
               }, {
                   rango: 4,
-                  price: 48.42
+                  price: 173.6144045
               }, {
                   rango: 5,
-                  price: 41.75
+                  price: 149.6960305
               }, {
                   rango: 6,
-                  price: 39.1
+                  price: 140.211158
               }, {
                   rango: 7,
-                  price: 36.57
+                  price: 131.1386713
               }, {
                   rango: 8,
-                  price: 34.04
+                  price: 122.0661846
               }, {
                   rango: 9,
-                  price: 31.51
+                  price: 112.9936979
               }, {
                   rango: 10,
-                  price: 30.71
+                  price: 110.1069976
               }, {
                   rango: 11,
-                  price: 30.02
+                  price: 107.6326831
               }, {
                   rango: 12,
-                  price: 29.21
+                  price: 104.7459827
               }, {
                   rango: 13,
-                  price: 28.52
+                  price: 102.2716682
               }, {
                   rango: 14,
-                  price: 27.83
+                  price: 99.79735364
               }, {
                   rango: 15,
-                  price: 27.03
+                  price: 96.91065333
               }, {
                   rango: 16,
-                  price: 26.34
+                  price: 94.43633877
               }, {
                   rango: 17,
-                  price: 25.53
+                  price: 91.54963846
               }, {
                   rango: 18,
-                  price: 24.84
+                  price: 89.07532391
               }, {
                   rango: 19,
-                  price: 24.15
+                  price: 86.60100936
               }, {
                   rango: 20,
-                  price: 20.13
+                  price: 72.1675078
               }, {
                   rango: 21,
-                  price: 15.53
+                  price: 55.67207744
               }]
           }, {
               produto: "Desempenho",
               price: [{
                   rango: 0,
-                  price: 64.8
-              }, {
+                  price: 232.37
+                }, {
                   rango: 1,
-                  price: 43.2
-              }, {
+                  price: 154.91
+                }, {
                   rango: 2,
-                  price: 39.84
+                  price: 142.86
               }, {
                   rango: 3,
-                  price: 36.48
+                  price: 130.82
               }, {
                   rango: 4,
-                  price: 31.68
+                  price: 113.60
               }, {
                   rango: 5,
-                  price: 26.88
+                  price: 96.39
+
               }, {
                   rango: 6,
-                  price: 25.44
+                  price: 91.23
               }, {
                   rango: 7,
-                  price: 24
-              }, {
+                  price: 86.06
+            }, {
                   rango: 8,
-                  price: 22.56
+                  price: 80.90
               }, {
                   rango: 9,
-                  price: 21.12
+                  price: 75.74
+
               }, {
                   rango: 10,
-                  price: 20.64
+                  price: 74.01
               }, {
                   rango: 11,
-                  price: 20.16
+                  price: 72.29
               }, {
                   rango: 12,
-                  price: 19.68
+                  price: 70.57
               }, {
                   rango: 13,
-                  price: 19.2
+                  price: 68.85
               }, {
                   rango: 14,
-                  price: 18.72
+                  price: 67.13
               }, {
                   rango: 15,
-                  price: 18.24
+                  price: 65.41
               }, {
                   rango: 16,
-                  price: 17.76
+                  price: 63.69
               }, {
                   rango: 17,
-                  price: 17.28
+                  price: 61.97
               }, {
                   rango: 18,
-                  price: 16.8
+                  price: 60.24
               }, {
                   rango: 19,
-                  price: 16.32
+                  price: 58.52
               }, {
                   rango: 20,
-                  price: 12.48
+                  price: 44.75
               }, {
                   rango: 21,
-                  price: 9.6
-              }]
+                  price: 34.43
+             }]
           }, {
               produto: "Metas",
               price: [{
                   rango: 0,
-                  price: 37.44
+                  price: 134.26
               }, {
                   rango: 1,
-                  price: 24.96
+                  price: 89.51
               }, {
                   rango: 2,
-                  price: 23.52
+                  price: 84.34
               }, {
                   rango: 3,
-                  price: 22.08
+                  price: 79.18
               }, {
                   rango: 4,
-                  price: 19.68
+                  price: 70.57
               }, {
                   rango: 5,
-                  price: 17.28
+                  price: 61.97
               }, {
                   rango: 6,
-                  price: 16.08
+                  price: 57.66
               }, {
                   rango: 7,
-                  price: 14.88
+                  price: 53.36
               }, {
                   rango: 8,
-                  price: 13.68
+                  price: 49.06
               }, {
                   rango: 9,
-                  price: 12.48
+                  price: 44.75
               }, {
                   rango: 10,
-                  price: 12.12
+                  price: 43.46
               }, {
                   rango: 11,
-                  price: 11.88
+                  price: 42.60
               }, {
                   rango: 12,
-                  price: 11.52
+                  price: 41.31
               }, {
                   rango: 13,
-                  price: 11.28
+                  price: 40.45
               }, {
                   rango: 14,
-                  price: 11.04
+                  price: 39.59
               }, {
                   rango: 15,
-                  price: 10.68
+                  price: 38.30
               }, {
                   rango: 16,
-                  price: 10.44
+                  price: 37.44
               }, {
                   rango: 17,
-                  price: 10.08
+                  price: 36.15
               }, {
                   rango: 18,
-                  price: 9.84
+                  price: 35.29
               }, {
                   rango: 19,
-                  price: 9.6
-              }, {
+                  price: 34.43
+             }, {
                   rango: 20,
-                  price: 8.64
+                  price: 30.98
               }, {
                   rango: 21,
-                  price: 6.72
+                  price: 24.10
               }]
           }, {
               produto: "PDI",
               price: [{
                   rango: 0,
-                  price: 23.4
+                  price: 83.91
               }, {
                   rango: 1,
-                  price: 15.6
+                  price: 55.94
               }, {
                   rango: 2,
-                  price: 14.76
+                  price: 52.936
               }, {
                   rango: 3,
-                  price: 13.8
+                  price: 49.49
               }, {
                   rango: 4,
-                  price: 12.36
+                  price: 44.326
               }, {
                   rango: 5,
-                  price: 10.8
+                  price: 38.73
               }, {
                   rango: 6,
-                  price: 9.96
+                  price: 35.72
               }, {
                   rango: 7,
-                  price: 9.24
+                  price: 33.13
               }, {
                   rango: 8,
-                  price: 8.52
+                  price: 30.55
               }, {
                   rango: 9,
-                  price: 7.8
-              }, {
+                  price: 27.97
+                }, {
                   rango: 10,
-                  price: 7.56
+                  price: 27.11
               }, {
                   rango: 11,
-                  price: 7.44
+                  price: 26.68
               }, {
                   rango: 12,
-                  price: 7.2
-              }, {
+                  price: 25.82
+                }, {
                   rango: 13,
-                  price: 7.08
+                  price: 25.39
               }, {
                   rango: 14,
-                  price: 6.84
+                  price: 24.53
               }, {
                   rango: 15,
-                  price: 6.72
+                  price: 24.10
               }, {
                   rango: 16,
-                  price: 6.48
+                  price: 23.24
               }, {
                   rango: 17,
-                  price: 6.36
+                  price: 22.81
               }, {
                   rango: 18,
-                  price: 6.12
+                  price: 21.95
               }, {
                   rango: 19,
-                  price: 6
-              }, {
+                  price: 21.52
+                }, {
                   rango: 20,
-                  price: 5.4
-              }, {
+                  price: 19.36
+                }, {
                   rango: 21,
-                  price: 4.2
+                  price: 15.06
               }]
           }, {
               produto: "Medalhas de Mérito",
               price: [{
                   rango: 0,
-                  price: 7.5
+                  price: 26.89
               }, {
                   rango: 1,
-                  price: 5
-              }, {
+                  price: 17.93
+                }, {
                   rango: 2,
-                  price: 4.7
+                  price: 16.85
               }, {
                   rango: 3,
-                  price: 4.4
+                  price: 15.78
               }, {
                   rango: 4,
-                  price: 3.9
+                  price: 13.99
               }, {
                   rango: 5,
-                  price: 3.4
+                  price: 12.19
               }, {
                   rango: 6,
-                  price: 3.1
+                  price: 11.12
               }, {
                   rango: 7,
-                  price: 2.9
+                  price: 10.40
               }, {
                   rango: 8,
-                  price: 2.6
+                  price: 9.32
               }, {
                   rango: 9,
-                  price: 2.4
+                  price: 8.61
               }, {
                   rango: 10,
-                  price: 2.3
+                  price: 8.25
               }, {
                   rango: 11,
-                  price: 2.2
+                  price: 7.89
               }, {
                   rango: 12,
-                  price: 2.2
+                  price: 7.89
               }, {
                   rango: 13,
-                  price: 2.1
+                  price: 7.53
               }, {
                   rango: 14,
-                  price: 2.1
+                  price: 7.53
               }, {
                   rango: 15,
-                  price: 2
-              }, {
+                  price: 7.17
+             }, {
                   rango: 16,
-                  price: 1.9
+                  price: 6.81
               }, {
                   rango: 17,
-                  price: 1.9
+                  price: 6.81
               }, {
                   rango: 18,
-                  price: 1.8
+                  price: 6.45
               }, {
                   rango: 19,
-                  price: 1.8
+                  price: 6.45
               }, {
                   rango: 20,
-                  price: 1.6
+                  price: 5.74
+
               }, {
                   rango: 21,
-                  price: 1.2
+                  price: 4.30
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 11.5
+                  price: 41.24
               }, {
                   rango: 1,
-                  price: 6.3
+                  price: 22.59
               }, {
                   rango: 2,
-                  price: 6
+                  price: 21.59
               }, {
                   rango: 3,
-                  price: 5.7
+                  price: 20.33
               }, {
                   rango: 4,
-                  price: 5
+                  price: 18.07
               }, {
                   rango: 5,
-                  price: 4.4
+                  price: 15.81
               }, {
                   rango: 6,
-                  price: 4.1
+                  price: 14.56
               }, {
                   rango: 7,
-                  price: 3.8
+                  price: 13.55
               }, {
                   rango: 8,
-                  price: 3.4
+                  price: 12.30
               }, {
                   rango: 9,
-                  price: 3.2
+                  price: 11.30
               }, {
                   rango: 10,
-                  price: 3
+                  price: 10.79
+
               }, {
                   rango: 11,
-                  price: 2.9
+                  price: 10.54
               }, {
                   rango: 12,
-                  price: 2.9
+                  price: 10.29
               }, {
                   rango: 13,
-                  price: 2.8
+                  price: 10.04
               }, {
                   rango: 14,
-                  price: 2.7
+                  price: 9.79
+
               }, {
                   rango: 15,
-                  price: 2.7
+                  price: 9.54
+
               }, {
                   rango: 16,
-                  price: 2.6
+                  price: 9.29
+
               }, {
                   rango: 17,
-                  price: 2.5
+                  price: 9.04
+
               }, {
                   rango: 18,
-                  price: 2.5
+                  price: 8.79
+
               }, {
                   rango: 19,
-                  price: 2.4
+                  price: 8.53
+
               }, {
                   rango: 20,
-                  price: 2.2
+                  price: 7.78
+
               }, {
                   rango: 21,
-                  price: 1.7
+                  price: 6.02
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 9.4
+                  price: 27.97
               }, {
                   rango: 1,
-                  price: 5
-              }, {
+                  price: 18.07
+               }, {
                   rango: 2,
-                  price: 4.8
+                  price: 17.07
               }, {
                   rango: 3,
-                  price: 4.5
+                  price: 16.07
               }, {
                   rango: 4,
-                  price: 4
+                  price: 14.31
               }, {
                   rango: 5,
-                  price: 3.5
+                  price: 12.55
               }, {
                   rango: 6,
-                  price: 3.2
+                  price: 11.55
               }, {
                   rango: 7,
-                  price: 3
+                  price: 10.79
               }, {
                   rango: 8,
-                  price: 2.7
+                  price: 9.79
+
               }, {
                   rango: 9,
-                  price: 2.5
+                  price: 9.04
+
               }, {
                   rango: 10,
-                  price: 2.5
+                  price: 8.79
+
               }, {
                   rango: 11,
-                  price: 2.4
+                  price: 8.53
+
               }, {
                   rango: 12,
-                  price: 2.3
+                  price: 8.28
+
               }, {
                   rango: 13,
-                  price: 2.2
+                  price: 8.03
+
               }, {
                   rango: 14,
-                  price: 2.2
+                  price: 7.78
+
               }, {
                   rango: 15,
-                  price: 2.1
+                  price: 7.53
+
               }, {
                   rango: 16,
-                  price: 2
-              }, {
+                  price: 7.28
+             }, {
                   rango: 17,
-                  price: 2
-              }, {
+                  price: 7.03
+             }, {
                   rango: 18,
-                  price: 1.9
+                  price: 6.78
+
               }, {
                   rango: 19,
-                  price: 1.9
+                  price: 6.78
+
               }, {
                   rango: 20,
-                  price: 1.7
+                  price: 6.02
+
               }, {
                   rango: 21,
-                  price: 1.3
+                  price: 4.77
               }]
           }, {
               produto: "desarrollo",
               price: [{
                   rango: 0,
-                  price: 37.04
+                  price: 132.16
               }, {
                   rango: 1,
-                  price: 24.7
+                  price: 88.11
               }, {
                   rango: 2,
-                  price: 22.85
+                  price: 81.38
               }, {
                   rango: 3,
-                  price: 20.83
+                  price: 74.40
               }, {
                   rango: 4,
-                  price: 18.14
+                  price: 64.73
               }, {
                   rango: 5,
-                  price: 15.29
+                  price: 54.82
               }, {
                   rango: 6,
-                  price: 14.49
+                  price: 51.71
               }, {
                   rango: 7,
-                  price: 13.78
+                  price: 48.83
               }, {
                   rango: 8,
-                  price: 12.94
+                  price: 45.95
               }, {
                   rango: 9,
-                  price: 12.1
+                  price: 43.07
               }, {
                   rango: 10,
-                  price: 11.76
+                  price: 42.06
               }, {
                   rango: 11,
-                  price: 11.59
+                  price: 41.15
               }, {
                   rango: 12,
-                  price: 11.26
+                  price: 40.14
               }, {
                   rango: 13,
-                  price: 11.09
+                  price: 39.22
               }, {
                   rango: 14,
-                  price: 10.75
+                  price: 38.05
               }, {
                   rango: 15,
-                  price: 10.42
+                  price: 37.30
               }, {
                   rango: 16,
-                  price: 10.08
+                  price: 36.13
               }, {
                   rango: 17,
-                  price: 9.91
+                  price: 35.37
               }, {
                   rango: 18,
-                  price: 9.58
+                  price: 34.20
               }, {
                   rango: 19,
-                  price: 9.41
+                  price: 33.28
               }, {
                   rango: 20,
-                  price: 7.22
+                  price: 25.45
               }, {
                   rango: 21,
-                  price: 5.54
+                  price: 19.58
               }]
           }, {
               produto: "engagement",
               price: [{
                   rango: 0,
-                  price: 23.89
+                  price: 85.67
               }, {
                   rango: 1,
-                  price: 15.93
+                  price: 57.12
               }, {
                   rango: 2,
-                  price: 14.84
+                  price: 53.20
               }, {
                   rango: 3,
-                  price: 13.77
+                  price: 49.38
               }, {
                   rango: 4,
-                  price: 12.11
+                  price: 43.40
               }, {
                   rango: 5,
-                  price: 10.44
+                  price: 37.42
               }, {
                   rango: 6,
-                  price: 9.78
+                  price: 35.05
               }, {
                   rango: 7,
-                  price: 9.14
+                  price: 32.79
               }, {
                   rango: 8,
-                  price: 8.51
+                  price: 30.52
               }, {
                   rango: 9,
-                  price: 7.88
+                  price: 28.25
               }, {
                   rango: 10,
-                  price: 7.68
+                  price: 27.53
               }, {
                   rango: 11,
-                  price: 7.51
+                  price: 26.91
               }, {
                   rango: 12,
-                  price: 7.3
+                  price: 26.19
               }, {
                   rango: 13,
-                  price: 7.13
+                  price: 25.57
               }, {
                   rango: 14,
-                  price: 6.96
+                  price: 24.95
               }, {
                   rango: 15,
-                  price: 6.76
+                  price: 24.23
               }, {
                   rango: 16,
-                  price: 6.59
+                  price: 23.61
               }, {
                   rango: 17,
-                  price: 6.38
+                  price: 22.89
               }, {
                   rango: 18,
-                  price: 6.21
+                  price: 22.27
               }, {
                   rango: 19,
-                  price: 6.04
+                  price: 21.65
               }, {
                   rango: 20,
-                  price: 5.03
+                  price: 18.04
               }, {
                   rango: 21,
-                  price: 3.88
+                  price: 13.92
               }]
           }, {
               produto: "Plano de Sucessão",
               price: [{
                   rango: 0,
-                  price: 18.7
+                  price: 67.13
               }, {
                   rango: 1,
-                  price: 12.5
+                  price: 44.75
               }, {
                   rango: 2,
-                  price: 11.8
+                  price: 42.17
               }, {
                   rango: 3,
-                  price: 11.0
+                  price: 39.59
               }, {
                   rango: 4,
-                  price: 9.8
+                  price: 35.29
               }, {
                   rango: 5,
-                  price: 8.6
+                  price: 30.98
               }, {
                   rango: 6,
-                  price: 8.0
+                  price: 28.83
               }, {
                   rango: 7,
-                  price: 7.4
+                  price: 26.68
               }, {
                   rango: 8,
-                  price: 6.8
+                  price: 24.53
               }, {
                   rango: 9,
-                  price: 6.2
+                  price: 22.38
               }, {
                   rango: 10,
-                  price: 6.1
+                  price: 21.73
               }, {
                   rango: 11,
-                  price: 5.9
+                  price: 21.30
               }, {
                   rango: 12,
-                  price: 5.8
+                  price: 20.66
               }, {
                   rango: 13,
-                  price: 5.6
+                  price: 20.22
               }, {
                   rango: 14,
-                  price: 5.5
+                  price: 19.79
               }, {
                   rango: 15,
-                  price: 5.3
+                  price: 19.15
               }, {
                   rango: 16,
-                  price: 5.22
+                  price: 18.72
               }, {
                   rango: 17,
-                  price: 5.04
+                  price: 18.07
               }, {
                   rango: 18,
-                  price: 4.92
+                  price: 17.64
               }, {
                   rango: 19,
-                  price: 4.8
+                  price: 17.21
               }, {
                   rango: 20,
-                  price: 4.32
+                  price: 15.49
               }, {
                   rango: 21,
-                  price: 3.36
+                  price: 12.05
               }]
           }]
       }, {
@@ -1390,280 +1413,282 @@ function calculate_price(){
               produto: "Competências",
               price: [{
                   rango: 0,
-                  price: 30.44
+                  price: 104.89
               }, {
                   rango: 1,
-                  price: 19.5
+                  price: 69.93
               }, {
                   rango: 2,
-                  price: 18.4
+                  price: 65.98
               }, {
                   rango: 3,
-                  price: 17.3
+                  price: 62.04
               }, {
                   rango: 4,
-                  price: 15.4
+                  price: 55.22
               }, {
                   rango: 5,
-                  price: 13.5
+                  price: 48.41
               }, {
                   rango: 6,
-                  price: 12.5
+                  price: 44.82
               }, {
                   rango: 7,
-                  price: 11.6
+                  price: 41.60
               }, {
                   rango: 8,
-                  price: 10.7
+                  price: 38.37
               }, {
                   rango: 9,
-                  price: 9.8
+                  price: 35.14
               }, {
                   rango: 10,
-                  price: 9.5
+                  price: 34.07
               }, {
                   rango: 11,
-                  price: 9.3
+                  price: 33.35
               }, {
                   rango: 12,
-                  price: 9.1
+                  price: 32.63
               }, {
                   rango: 13,
-                  price: 8.8
+                  price: 31.56
               }, {
                   rango: 14,
-                  price: 8.6
+                  price: 30.84
               }, {
                   rango: 15,
-                  price: 8.4
+                  price: 30.12
               }, {
                   rango: 16,
-                  price: 8.1
+                  price: 29.05
               }, {
                   rango: 17,
-                  price: 7.9
+                  price: 28.33
               }, {
                   rango: 18,
-                  price: 7.7
+                  price: 27.61
               }, {
                   rango: 19,
-                  price: 7.5
+                  price: 26.89
               }, {
                   rango: 20,
-                  price: 6.8
+                  price: 24.38
               }, {
                   rango: 21,
-                  price: 5.3
+                  price: 19.01
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 15.15
+                  price: 49.84
               }, {
                   rango: 1,
-                  price: 10.2
+                  price: 36.65
               }, {
                   rango: 2,
-                  price: 9.6
+                  price: 34.39
               }, {
                   rango: 3,
-                  price: 9
+                  price: 32.38
               }, {
                   rango: 4,
-                  price: 8
+                  price: 28.87
               }, {
                   rango: 5,
-                  price: 7.1
+                  price: 25.35
               }, {
                   rango: 6,
-                  price: 6.6
+                  price: 23.60
               }, {
                   rango: 7,
-                  price: 6.1
+                  price: 21.84
               }, {
                   rango: 8,
-                  price: 5.6
+                  price: 20.08
               }, {
                   rango: 9,
-                  price: 5.1
+                  price: 18.32
               }, {
                   rango: 10,
-                  price: 5
+                  price: 17.82
               }, {
                   rango: 11,
-                  price: 4.8
+                  price: 17.32
               }, {
                   rango: 12,
-                  price: 4.7
+                  price: 16.82
               }, {
                   rango: 13,
-                  price: 4.6
+                  price: 16.57
               }, {
                   rango: 14,
-                  price: 4.5
+                  price: 16.07
               }, {
                   rango: 15,
-                  price: 4.3
+                  price: 15.56
               }, {
                   rango: 16,
-                  price: 4.3
+                  price: 15.31
               }, {
                   rango: 17,
-                  price: 4.1
+                  price: 14.81
               }, {
                   rango: 18,
-                  price: 4
+                  price: 14.31
               }, {
                   rango: 19,
-                  price: 3.9
+                  price: 14.06
               }, {
                   rango: 20,
-                  price: 3.6
+                  price: 12.80
               }, {
                   rango: 21,
-                  price: 2.7
+                  price: 9.79
+                }]
+          }, {
+              produto: "Clima",
+              price: [{
+                  rango: 0,
+                  price: 52.30
+              }, {
+                  rango: 1,
+                  price: 32.88
+              }, {
+                  rango: 2,
+                  price: 30.88
+              }, {
+                  rango: 3,
+                  price: 29.12
+              }, {
+                  rango: 4,
+                  price: 25.85
+              }, {
+                  rango: 5,
+                  price: 22.59
+              }, {
+                  rango: 6,
+                  price: 20.83
+              }, {
+                  rango: 7,
+                  price: 19.33
+              }, {
+                  rango: 8,
+                  price: 17.82
+              }, {
+                  rango: 9,
+                  price: 16.32
+              }, {
+                  rango: 10,
+                  price: 15.81
+              }, {
+                  rango: 11,
+                  price: 15.56
+              }, {
+                  rango: 12,
+                  price: 15.06
+              }, {
+                  rango: 13,
+                  price: 14.81
+              }, {
+                  rango: 14,
+                  price: 14.31
+              }, {
+                  rango: 15,
+                  price: 14.06
+              }, {
+                  rango: 16,
+                  price: 13.55
+              }, {
+                  rango: 17,
+                  price: 13.30
+              }, {
+                  rango: 18,
+                  price: 12.80
+              }, {
+                  rango: 19,
+                  price: 12.55
+              }, {
+                  rango: 20,
+                  price: 11.30
+              }, {
+                  rango: 21,
+                  price: 8.79
               }]
           }, {
               produto: "Clima",
               price: [{
                   rango: 0,
-                  price: 13.5
+                  price: 38.01120908
               }, {
                   rango: 1,
-                  price: 9.2
+                  price: 26.10581152
               }, {
                   rango: 2,
-                  price: 8.6
+                  price: 24.59970701
               }, {
                   rango: 3,
-                  price: 8.1
+                  price: 23.09360249
               }, {
                   rango: 4,
-                  price: 7.2
+                  price: 20.58342831
               }, {
                   rango: 5,
-                  price: 6.3
+                  price: 18.07325413
               }, {
                   rango: 6,
-                  price: 5.8
+                  price: 16.81816703
               }, {
                   rango: 7,
-                  price: 5.4
+                  price: 15.56307994
               }, {
                   rango: 8,
-                  price: 5
+                  price: 14.30799285
               }, {
                   rango: 9,
-                  price: 4.5
+                  price: 13.05290576
               }, {
                   rango: 10,
-                  price: 4.4
+                  price: 12.55087092
               }, {
                   rango: 11,
-                  price: 4.3
+                  price: 12.2998535
+
               }, {
                   rango: 12,
-                  price: 4.2
+                  price: 12.04883608
               }, {
                   rango: 13,
-                  price: 4.1
+                  price: 11.79781867
               }, {
                   rango: 14,
-                  price: 4
+                  price: 11.54680125
               }, {
                   rango: 15,
-                  price: 3.9
+                  price: 11.04476641
               }, {
                   rango: 16,
-                  price: 3.8
+                  price: 10.79374899
               }, {
                   rango: 17,
-                  price: 3.7
+                  price: 10.54273157
               }, {
                   rango: 18,
-                  price: 3.6
+                  price: 10.29171416
               }, {
                   rango: 19,
-                  price: 3.5
+                  price: 10.04069674
               }, {
                   rango: 20,
-                  price: 3.2
+                  price: 9.036627063
               }, {
                   rango: 21,
-                  price: 2.5
-              }]
-          }, {
-              produto: "Clima",
-              price: [{
-                  rango: 0,
-                  price: 12.8
-              }, {
-                  rango: 1,
-                  price: 7.3
-              }, {
-                  rango: 2,
-                  price: 6.9
-              }, {
-                  rango: 3,
-                  price: 6.4
-              }, {
-                  rango: 4,
-                  price: 5.7
-              }, {
-                  rango: 5,
-                  price: 5
-              }, {
-                  rango: 6,
-                  price: 4.7
-              }, {
-                  rango: 7,
-                  price: 4.3
-              }, {
-                  rango: 8,
-                  price: 4
-              }, {
-                  rango: 9,
-                  price: 3.6
-              }, {
-                  rango: 10,
-                  price: 3.5
-              }, {
-                  rango: 11,
-                  price: 3.4
-              }, {
-                  rango: 12,
-                  price: 3.4
-              }, {
-                  rango: 13,
-                  price: 3.3
-              }, {
-                  rango: 14,
-                  price: 3.2
-              }, {
-                  rango: 15,
-                  price: 3.1
-              }, {
-                  rango: 16,
-                  price: 3
-              }, {
-                  rango: 17,
-                  price: 2.9
-              }, {
-                  rango: 18,
-                  price: 2.9
-              }, {
-                  rango: 19,
-                  price: 2.8
-              }, {
-                  rango: 20,
-                  price: 2.5
-              }, {
-                  rango: 21,
-                  price: 2
+                  price: 7.028487716
               }]
           }]
       }];
+
 
   var rango_nr;
   price_total=0;
@@ -2107,6 +2132,11 @@ function converter(){
     price=rate_pab*price_total;
     price_per=rate_pab*price_persona;
     symbol="‎PAB"
+  }
+  else if(moneda == "blr"){
+    price=rate_pab*price_total;
+    price_per=rate_pab*price_persona;
+    symbol="‎BRL"
   }
   var price_new=addCommas(price.toFixed(2));
   var price_new2=addCommas(price_per.toFixed(4));
