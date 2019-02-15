@@ -33,11 +33,11 @@
           <div class="box_price">
             <div class="header">
               <div class="centrar margintop20">
-                <div class="price">
-                  0.00
-                </div>
                 <div class="price_moeda">
                   R$
+                </div>
+                <div class="price">
+                  0.00
                 </div>
                 <p class="fontsize13 margintop20 font600 fontbranco descr_price">
                   Preço em BRL
@@ -2136,13 +2136,13 @@ function converter(){
   else if(moneda == "blr"){
     price=rate_pab*price_total;
     price_per=rate_pab*price_persona;
-    symbol="‎BRL"
+    symbol="‎R$"
   }
   var price_new=addCommas(price.toFixed(2));
   var price_new2=addCommas(price_per.toFixed(4));
   $(".price").html(price_new);
   $(".price_moeda").html(symbol);
-  $(".emp_div_price").html("(" + price_new2 + symbol + " por colaborador)");
+  $(".emp_div_price").html("(" + symbol + price_new2 + " por colaborador)");
 }
 
 function addCommas(nStr){
