@@ -1301,7 +1301,7 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 	else if(length==2){
 		var data = [
 		    [json[0].produto, json[0].nr, "R$" + json[0].precio_u, "R$" + json[0].precio_t],
-		    [json[1].produto, json[1].nr, json[1].precio_u, json[1].precio_t + "R$"]
+		    [json[1].produto, json[1].nr, json[1].precio_u, "R$" + json[1].precio_t]
 		];
 	}
 	else if(length==3){
