@@ -227,7 +227,7 @@ function generarp() {
 	}
 
 	doc.setFontType("normal");
-	doc.text(30, 240, "Bogotá,\n\nACSENDO SAS");
+	doc.text(30, 240, "ACSENDO SAS");
 
 	// Apresentação Empresa
 
@@ -419,7 +419,7 @@ function generarp() {
     doc.text(50,205, "- sendgrid.info");
     doc.text(50,210, "- sendgrid.com");
     doc.text(50,215, "- sendgrid.net");
-    doc.text(50,220, "- Domínio Acsendo: 50.31.40.103");
+    doc.text(50,220, "- Domínio Acsendo: 50.31.40.103 e 168.245.115.154");
     doc.text(50,225, "- support.acsendo.com");
 
     doc.setFontType("bold");

@@ -436,7 +436,7 @@ function generarp() {
     doc.text(50,225, "- sendgrid.info");
     doc.text(50,230, "- sendgrid.com");
     doc.text(50,235, "- sendgrid.net");
-    doc.text(50,240, "- Dominio Acsendo: 50.31.40.103");
+    doc.text(50,240, "- Dominio Acsendo: 50.31.40.103 y 168.245.115.154");
     doc.text(50,245, "- support.acsendo.com");
 
     doc.setFontType("bold");
