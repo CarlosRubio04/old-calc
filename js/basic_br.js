@@ -1069,7 +1069,8 @@ function generarp() {
             doc.text(40,128, text5_split);
 
 
-        } else if (!produtos[3] && ($("input[name='climaInp'][value='7']").is(":checked")) ){
+		} 
+		if (!produtos[3] && ($("input[name='climaInp'][value='7']").is(":checked")) ){
             /*
             CLIMA
             */
