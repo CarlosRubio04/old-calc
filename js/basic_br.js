@@ -1385,7 +1385,7 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
             offsetMargin+=7;
         }
     }
-    data2.push(["Implementação", "· Revisão dos modelos de avaliação\n· Configuração dos parâmetros no sistema",]);
+    data2.push(["Assistência personalizada", "· Revisão dos modelos de avaliação\n· Planejamento e execução do cronograma de trabalho\n· Assessoria personalizada em temas técnicos e estratégicos",]);
 
 
 
@@ -1410,13 +1410,6 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 	});
 
 
-
-    doc.setFontSize(7);
-	doc.setTextColor(0, 0, 0);
-	doc.setFontStyle("bold");
-	doc.text(30,(offsetMargin - 5), "Preços em reais");
-
-
     doc.autoTable(columns, data, {
 	    tableWidth: 'auto',
 	    startY:offsetMargin,
@@ -1435,6 +1428,11 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
 	        }
 	    }
 	});
+
+	doc.setFontSize(7);
+	doc.setTextColor(0, 0, 0);
+	doc.setFontStyle("bold");
+	doc.text(153,(offsetMargin + 37), "Preços em reais");
 
 
 	if (obs.length > 1) {

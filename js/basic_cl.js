@@ -1275,7 +1275,7 @@ function generarp() {
 	doc.setFont("verdana");
 
 
-	var title1 ="PRECIOS DE MÓDULOS ESPECÍFICOS";
+	var title1 ="PROPUESTA DE SERVICIOS";
 	doc.setFontSize(14);
 	doc.setFontStyle("bold");
 	doc.setTextColor(30, 141, 159);
@@ -1388,7 +1388,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
             offsetMargin+=7;
         }
     }
-    data2.push(["Implementación", "· Revisión de modelos de evaluación\n· Configuración de parámetros en el sistema",]);
+    data2.push(["Asistencia personalizada", "· Revisión de modelos de evaluación\n· Planificación y ejecución de cronograma de trabajo\n· Asesoría personalizada en temas técnicos y estratégicos",]);
 
 
 
@@ -1413,13 +1413,6 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	});
 
 
-
-    doc.setFontSize(7);
-	doc.setTextColor(0, 0, 0);
-	doc.setFontStyle("bold");
-	doc.text(30,(offsetMargin - 5), "Precios en CLP");
-
-
     doc.autoTable(columns, data, {
 	    tableWidth: 'auto',
 	    startY:offsetMargin,
@@ -1437,7 +1430,12 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 	           cell.styles.fontStyle = 'bold';
 	        }
 	    }
-	});
+    });
+    
+    doc.setFontSize(7);
+	doc.setTextColor(0, 0, 0);
+	doc.setFontStyle("bold");
+	doc.text(155,(offsetMargin + 28), "Precios en CLP");
 
 
 	if (obs.length > 1) {
