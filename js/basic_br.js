@@ -503,7 +503,7 @@ function generarp() {
 					doc.setFontSize(9.5);
 					doc.setFontStyle("normal");
 					doc.setTextColor(50, 50, 50);
-					var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos-forte e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
+					var text5='Esta ferramenta permite avaliar as competências dos colaboradores e obter um relatório detalhado que permite identificar os pontos fortes e as oportunidades de melhoria (gaps). Este resultado se consegue através de uma avaliação 360º que pode incluir líderes, pares, colaboradores e auto avaliação.';
 
 					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 					doc.text(30,97, text5_split);
@@ -532,7 +532,7 @@ function generarp() {
 					doc.setFontSize(9.5);
 					doc.setFontStyle("normal");
 					doc.setTextColor(50, 50, 50);
-					var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claro e rastreando o seu progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador o que facilitará toda a tomada de decisões estratégicas.';
+					var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claros e acompanhando esse progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador, o que facilitará toda a tomada de decisões estratégicas.';
 
 					var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 					doc.text(30,206, text5_split);
@@ -627,7 +627,7 @@ function generarp() {
 			doc.setFontSize(9.5);
 			doc.setFontStyle("normal");
 			doc.setTextColor(50, 50, 50);
-			var text5='A ferramenta do Plano de Desenvolvimento Individual permite que você criar e atribuir atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o quê e para qu devem melhorar.';
+			var text5='A ferramenta Plano de Desenvolvimento Individual permite que você crie e atribua atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o que e para quê devem melhorar.';
 
 			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 			doc.text(30,97, text5_split);
@@ -661,7 +661,7 @@ function generarp() {
 			doc.setFontSize(9.5);
 			doc.setFontStyle("normal");
 			doc.setTextColor(50, 50, 50);
-			var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir se antecipar às alterações de cargos de seus colaboradores. Desta maneira você pode garantir que quando um colaborador se desligue a empresa já tenha colaboradores mapeados  e garantir que para cada potencial retirada você tem candidatos com as competências mais indicadas pronto para os substituirnecessárias para substituição imeadiata.';
+			var text5='Com a ferramenta Plano de Sucessão a sua organização vai conseguir antecipar às alterações de cargos de seus colaboradores. Desta maneira você pode garantir que quando um colaborador se desligue a empresa já tenha colaboradores mapeados com as competências necessárias para substituição imediata.';
 
 			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
 			doc.text(30,192, text5_split);
@@ -794,7 +794,7 @@ function generarp() {
 			doc.text(30,213, "Resultados");
 
 			doc.setFontStyle("normal");
-			var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, todas as  medalhas distribuídas enviadas na empresa.\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
+			var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, além de todas as medalhas distribuídas e enviadas na empresa\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
 
 			var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
 			doc.text(40,223, text5_split);
@@ -892,7 +892,7 @@ function generarp() {
             doc.setFontSize(9.5);
             doc.setFontStyle("normal");
             doc.setTextColor(50, 50, 50);
-            var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claros e rastreando cada progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador, o que facilitará toda a tomada de decisões estratégicas.';
+            var text5='A avaliação de metas permite saber se cada funcionário está ou não cumprindo com os objetivos do seu cargo. Definindo objetivos claros e acompanhando esse progresso, você vai conseguir alinhar as metas estratégicas com o desempenho de cada colaborador, o que facilitará toda a tomada de decisões estratégicas.';
 
             var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
             doc.text(30,97, text5_split);
@@ -947,7 +947,7 @@ function generarp() {
             doc.setFontSize(9.5);
             doc.setFontStyle("normal");
             doc.setTextColor(50, 50, 50);
-            var text5='A ferramenta do Plano de Desenvolvimento Individual permite a você criar e atribuir atividades de desenvolvimento aos colaboradores e trabalhar para fechar as gaps de competências e metas identificadas. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências, Clima para que os colaboradores saibam o quê e para que devem melhorar.';
+            var text5='A ferramenta Plano de Desenvolvimento Individual permite que você crie e atribua atividades de desenvolvimento aos colaboradores. Desta maneira você consegue cobrir os gaps de competências e metas identificadas individualmente. O sistema permite que você decida se as atividades podem estar ligadas a processos de Metas, Competências ou Clima, para que os colaboradores saibam o que e para quê devem melhorar.';
 
             var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
             doc.text(30,97, text5_split);
@@ -1063,7 +1063,7 @@ function generarp() {
             doc.text(30,118, "Resultados");
 
             doc.setFontStyle("normal");
-            var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos e medalhas recebidas e quais as medalhas mais enviadas na empresa\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
+            var text5='1. Resultados web em que o administrador pode ver os colaboradores com mais pontos, além de todas as medalhas distribuídas e enviadas na empresa\n\n2. Planilha de dados com o consolidado de medalhas recebidas e enviadas para cada membro da empresa.';
 
             var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
             doc.text(40,128, text5_split);
@@ -1163,7 +1163,7 @@ function generarp() {
 
     doc.setFontStyle("normal");
     doc.setTextColor(50, 50, 50);
-    var text5='Todas as modificações (desenvolvimentos feitos à medida) que sejam solicitados nos relatórios em PDF, os resultados Web ou nas funcionalidades da plataforma podem ter um custo adicional.\n\nOs desenvolvimentos serão solicitados ao departamento comercial que coordenará uma reunião com o gerente de produto e a área de tecnologia para fazer um levantamento formal dos requerimentos, estudar a viabilidade do desenvolvimento e orçar o mesmo, se for o caso.\n\nCom base nos requerimentos e no estudo feito será enviada uma proposta detalhada com o número de horas de desenvolvimento e a data proposta para a entrega\n\nObs: A hora de desenvolvimento tem um custo de setenta e cinco dólares.';
+    var text5='Todas as modificações (desenvolvimentos feitos à medida) que sejam solicitados nos relatórios em PDF, nos resultados Web ou nas funcionalidades da plataforma podem ter um custo adicional.\n\nOs desenvolvimentos serão solicitados ao departamento comercial que coordenará uma reunião com o gerente de produto e a área de tecnologia para fazer um levantamento formal dos requerimentos, estudar a viabilidade do desenvolvimento e orçar o mesmo, se for o caso.\n\nCom base nos requerimentos e no estudo feito será enviada uma proposta detalhada com o número de horas de desenvolvimento e a data proposta para a entrega.\n\nObs: A hora de desenvolvimento tem um custo de $ 75,00 (dólares) + impostos.';
 
     var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
     doc.text(30,80, text5_split);

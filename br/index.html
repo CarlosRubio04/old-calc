@@ -1755,9 +1755,9 @@ function calculate_price(){
           }
           tempSideText = tempSideText + 'Reconhecimento, Clima ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Desenvolvimento(Reconhecimento; Clima + Implementação(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Engagement(Reconhecimento; Clima + Implementação(20%))</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)+"</td></tr>");
 
-          json.push({produto : 'Flex Desenvolvimento', produto2 : 'Flex Desenvolvimento (Reconhecimento; Clima; + Implementação(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
+          json.push({produto : 'Flex Engagement', produto2 : 'Flex Engagement (Reconhecimento; Clima; + Implementação(20%)', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(2), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(2)});
         }
         if (tempSideText != ""){
               tempSideText = tempSideText + "+ Implementação(20%)</div>";

@@ -225,7 +225,7 @@ function generarp() {
 		doc.text(120, 210,name_com_sup+"\n\n"+cargo_com_sup);
 	}
 	doc.setFontType("normal");
-	doc.text(30, 240, "Bogotá,\n\nACSENDO SAS");
+	doc.text(30, 240, "ACSENDO SAS");
 
 	// Apresentação Empresa
 
