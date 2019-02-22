@@ -109,13 +109,13 @@
                   <h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
                 </div>
                 <div class="left bottom20 width100">
-                  <h6 class="left margintop5">2646</h6>
+                  <input type="checkbox" name="2646Inp" value="9" class="left prod" data-labelauty="2646"/>
                   <div id="minus_2646" class=" left left10 bot-minus"></div>
                   <div id="plus_2646" class=" left left20 bot-plus"></div>
                   <h4 class="left left20 color_nr_ind" id="nr_2646">0</h4>
                 </div>
                 <div id="comp_eval" class="left bottom20 width100">
-                  <h6 class="left margintop5">Competencias</h6>
+                  <input type="checkbox" name="comptInp" value="8" class="left prod" data-labelauty="Competencias"/>
                   <div id="minus_comp" class=" left left10 bot-minus"></div>
                   <div id="plus_comp" class=" left left20 bot-plus"></div>
                   <h4 class="left left20 color_nr_ind" id="nr_comp">0</h4>
@@ -451,6 +451,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(clima>0){
           clima=clima-1;
+          if(clima==0) {
+            $("input[name='climaInp'][value='7']").attr('checked', false);
+          }
         }
         $("#nr_clima").html(clima);
         calculate_price();
@@ -460,9 +463,7 @@ $(document).ready(function(){
   $("#plus_comp").click(function(){
     if (deretchoAClima) {
         comp=comp+1;
-        if(clima==0) {
-            $("input[name='climaInp'][value='7']").attr('checked', false);
-          }
+        $("input[name='comptInp'][value='8']").attr('checked', true);
         $("#nr_comp").html(comp);
         calculate_price();
     }
@@ -472,6 +473,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(comp>0){
           comp=comp-1;
+          if(comp==0) {
+            $("input[name='comptInp'][value='8']").attr('checked', false);
+          }
         }
         $("#nr_comp").html(comp);
         calculate_price();
@@ -480,6 +484,7 @@ $(document).ready(function(){
   $("#plus_2646").click(function(){
     if (deretchoAClima) {
         eval2646=eval2646+1;
+        $("input[name='2646Inp'][value='9']").attr('checked', true);
         $("#nr_2646").html(eval2646);
         calculate_price();
     }
@@ -489,6 +494,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(eval2646>0){
           eval2646=eval2646-1;
+          if(eval2646==0) {
+            $("input[name='2646Inp'][value='9']").attr('checked', false);
+          }
         }
         $("#nr_2646").html(eval2646);
         calculate_price();
