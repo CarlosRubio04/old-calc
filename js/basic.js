@@ -1085,7 +1085,7 @@ function generarp() {
 
 
 		}
-		if (!produtos[3] && typeHere == 0 && ($("input[name='climaInp'][value='7']").is(":checked")) ){
+		if (!produtos[3] && ($("input[name='climaInp'][value='7']").is(":checked")) ){
             /*
             CLIMA
             */
@@ -1147,7 +1147,6 @@ function generarp() {
 
 	if(typeHere == 1) {
 
-		console.log($("input[name='comptInp'][value='8']").is(":checked"));
 		if (($("input[name='comptInp'][value='8']").is(":checked"))) {
             /*
             COMPETENCIAS
@@ -1199,60 +1198,7 @@ function generarp() {
             doc.text(40,124, text5_split);
 
 
-        }
-
-		if (($("input[name='climaInp'][value='7']").is(":checked"))){
-            /*
-            CLIMA
-            */
-
-            doc.addPage();
-
-            doc.addImage(logo, 'JPEG', 165, 10, 31, 6);
-            doc.setDrawColor(37,162,171);
-            doc.setLineWidth(0.4);
-            doc.line(50, 273, 160, 273);
-
-            doc.setFontSize(7);
-            doc.setTextColor(100, 100, 100);
-            var footer="Cra. 12 No. 96 - 49 | Bogotá D.C | Colombia";
-            var footer1="(571) 466 05 29  -  (571) 300 26 04";
-            var textWidth1 = doc.getStringUnitWidth(footer) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset1 = (doc.internal.pageSize.width - textWidth1) / 2;
-            doc.text(textOffset1, 280, footer);
-            var textWidth2 = doc.getStringUnitWidth(footer1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset2 = (doc.internal.pageSize.width - textWidth2) / 2;
-            doc.text(textOffset2, 285, footer1);
-
-            doc.addImage(logo_clima, 'JPEG', 95, 60, 20, 20);
-            var title1 ="Clima laboral";
-            doc.setFontSize(10);
-            doc.setFontStyle("bold");
-            doc.setTextColor(59, 190, 194);
-
-            var textWidth_title1 = doc.getStringUnitWidth(title1) * doc.internal.getFontSize() / doc.internal.scaleFactor;
-            var textOffset_title1 = (doc.internal.pageSize.width - textWidth_title1) / 2;
-
-            doc.text(textOffset_title1, 87, title1);
-
-            doc.setFontSize(9.5);
-            doc.setFontStyle("normal");
-            doc.setTextColor(50, 50, 50);
-            var text5='Esta herramienta permite identificar la percepción de los colaboradores sobre las condiciones de trabajo para así identificar áreas de mejora que resulten en acciones específicas que aumenten la satisfacción y la productividad del talento humano. El cliente envía al área de soporte su cuestionario de clima laboral y Acsendo lo implementa en la plataforma.';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 60);
-            doc.text(30,97, text5_split);
-
-            doc.setFontStyle("bold");
-            doc.text(30,119, "Entregables");
-
-            doc.setFontStyle("normal");
-            var text5='1. Reporte en PDF con los resultados generales de la compañía y de cada departamento.\n\n2. Hoja de datos en Excel con toda la información del proceso.';
-
-            var text5_split=doc.splitTextToSize(text5, doc.internal.pageSize.width - 70);
-            doc.text(40,129, text5_split);
-		}
-		
+        }	
 		
 	} 
 
