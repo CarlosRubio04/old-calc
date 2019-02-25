@@ -1473,24 +1473,45 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
     }
 
 
-    doc.autoTable(columns, data, {
-	    tableWidth: 'auto',
-	    startY:offsetMargin,
-	    margin: 30,
-	    headerStyles: {
-	        fillColor: [6, 40, 51],
-	        textColor: [255, 255, 255],
-	        rowHeight: 10,
-	        fontSize: 8
-	    },
-	    styles: {cellPadding: 2, valign: 'middle', halign: 'center',columnWidth: 'auto',overflow: 'linebreak',},
-	    bodyStyles: {rowHeight: 8, textColor: [0, 0, 0], fontSize: 8, valign: 'middle'},
-	    createdCell: function (cell, data) {
-	        if (cell.raw === 'TOTAL') {
-	           cell.styles.fontStyle = 'bold';
-	        }
-	    }
-    });
+    if (typeHere == 1) {
+		doc.autoTable(columns, data, {
+			tableWidth: 'auto',
+			startY: 55,
+			margin: 30,
+			headerStyles: {
+				fillColor: [6, 40, 51],
+				textColor: [255, 255, 255],
+				rowHeight: 10,
+				fontSize: 8
+			},
+			styles: {cellPadding: 2, valign: 'middle', halign: 'center',columnWidth: 'auto',overflow: 'linebreak',},
+			bodyStyles: {rowHeight: 8, textColor: [0, 0, 0], fontSize: 8, valign: 'middle'},
+			createdCell: function (cell, data) {
+				if (cell.raw === 'TOTAL') {
+				   cell.styles.fontStyle = 'bold';
+				}
+			}
+		});
+	} else {
+		doc.autoTable(columns, data, {
+			tableWidth: 'auto',
+			startY:offsetMargin,
+			margin: 30,
+			headerStyles: {
+				fillColor: [6, 40, 51],
+				textColor: [255, 255, 255],
+				rowHeight: 10,
+				fontSize: 8
+			},
+			styles: {cellPadding: 2, valign: 'middle', halign: 'center',columnWidth: 'auto',overflow: 'linebreak',},
+			bodyStyles: {rowHeight: 8, textColor: [0, 0, 0], fontSize: 8, valign: 'middle'},
+			createdCell: function (cell, data) {
+				if (cell.raw === 'TOTAL') {
+				cell.styles.fontStyle = 'bold';
+				}
+			}
+		});
+	}
     
     // doc.setFontSize(7);
 	// doc.setTextColor(0, 0, 0);
