@@ -66,7 +66,7 @@ function generarp() {
 	else if(id_com==2){
 			name_com="Francisco Mendes";
 			cargo_com="Director de Mercadeo";
-			numero_com="(+351) 916 772 019";
+			// numero_com="(+351) 916 772 019";
 			mail_com="fvieira@acsendo.com";
 			skype_com="skype:franciscoscm";
 	}
