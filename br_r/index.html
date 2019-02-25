@@ -40,7 +40,7 @@
                   0.00
                 </div>
                 <p class="fontsize13 margintop20 font600 fontbranco descr_price">
-                  Preço em R$
+                    Preço em reais ao ano
                 </p>
               </div>
 
@@ -259,7 +259,7 @@ $(document).ready(function(){
   $(":radio").labelauty();
   $(":checkbox").labelauty();
   $(".tipo_div").html("Assinatura anual");
-  $(".descr_price").html("Preço em BRL ao ano");
+  $(".descr_price").html("Preço em reais ao ano");
   $("#comp_eval").css("display","none");
   var clima=0;
   var comp=0;
@@ -281,7 +281,7 @@ $(document).ready(function(){
   $("input[name='tipo']").change(function(){
     var type = $("input[name='tipo']:checked").val();
     if(type==0){
-      $(".descr_price").html("Preço em BRL ao ano");
+      $(".descr_price").html("Preço em reais ao ano");
       $(".sub").css("display","block");
       $("#comp_eval").css("display","none");
       $(".tipo_div").html("Subscrição Anual");
@@ -1842,7 +1842,7 @@ function calculate_price(){
 
     $(".table_precios").append("<tr class='comp'><td>"+competencias+"x Competências</td><td>"+price_un2.toFixed(2)+"</td><td>"+nr+"</td><td>"+price_un.toFixed(2)+"</td></tr>");
 
-    json.push({produto :+competencias+"x CompetÊncias",produto2 :+competencias+"x Competências", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
+    json.push({produto :+competencias+"x Competências",produto2 :+competencias+"x Competências", precio_u:price_un2.toFixed(2), nr: nr,precio_t:price_un.toFixed(2)});
 
     $(".name_competencias").html(competencias+ "x Competências ");
   }else{

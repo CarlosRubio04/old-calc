@@ -321,7 +321,7 @@ function generarp() {
 	doc.setFontType("italic");
 	doc.text(50,247, "Implementación de las evaluaciones");
 	doc.setFontType("normal");
-	var text4='Proceso en el que se crean y definen las condiciones para realizar las evaluaciones que se quieren aplicar dentro de la organización, ya sean de clima laboral, competencias, metas o plan individual de desarrollo.';
+	var text4='Proceso en el que se crean y definen las condiciones para realizar las evaluaciones que se quieren aplicar dentro de la organización, ya sean de clima organizacional, competencias, metas o plan individual de desarrollo.';
 
 	var text4_split=doc.splitTextToSize(text4, doc.internal.pageSize.width - 80);
 	doc.text(50,255, text4_split);
@@ -1332,7 +1332,7 @@ function generarp() {
 	doc.setFont("verdana");
 
 
-	var title1 ="PREÇO DOS MÓDULOS";
+	var title1 ="PROPOSTA DE SERVIÇOS";
 	doc.setFontSize(14);
 	doc.setFontStyle("bold");
 	doc.setTextColor(30, 141, 159);
@@ -1435,14 +1435,14 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
     }
 
     if (produtos[3]){
-        data2.push(["Engagement", "· Clima laboral\n· Medalhas de Mérito", " ", " "]);
+        data2.push(["Engagement", "· Clima organizacional\n· Medalhas de Mérito", " ", " "]);
         offsetMargin+=16;
     } else {
         if ($("input[name='produto'][value='6']").is(":checked") ){
             data2.push(["Engagement", "· Medalhas de Mérito", " ", " "]);
             offsetMargin+=7;
         } else if ($("input[name='produto'][value='7']").is(":checked") ){
-            data2.push(["Engagement", "· Clima laboral", " ", " "]);
+            data2.push(["Engagement", "· Clima organizacional", " ", " "]);
             offsetMargin+=7;
         }
     }
