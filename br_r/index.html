@@ -107,10 +107,10 @@
                   <h4 class="left left20 color_nr_ind" id="nr_clima">0</h4>
                 </div>
                 <div id="comp_eval" class="left bottom20 width100">
-                  <h6 class="left margintop5">Competências</h6>
-                  <div id="minus_comp" class=" left left10 bot-minus"></div>
-                  <div id="plus_comp" class=" left left20 bot-plus"></div>
-                  <h4 class="left left20 color_nr_ind" id="nr_comp">0</h4>
+                    <input type="checkbox" name="comptInp" value="8" class="left prod" data-labelauty="Competencias"/>
+                    <div id="minus_comp" class=" left left10 bot-minus"></div>
+                    <div id="plus_comp" class=" left left20 bot-plus"></div>
+                    <h4 class="left left20 color_nr_ind" id="nr_comp">0</h4>
                 </div>
                 <!--<div class="left bottom20 width100">
                 <h6 class="left margintop5">Cultura</h6><div id="plus_culture" class=" left left20 bot-plus"></div><div id="minus_culture" class=" left left10 bot-minus"></div><h4 class="left left20 color_nr_ind" id="nr_culture">0</h4>
@@ -451,6 +451,7 @@ $(document).ready(function(){
     if (deretchoAClima) {
         comp=comp+1;
         $("#nr_comp").html(comp);
+        $("input[name='comptInp'][value='8']").attr('checked', true);
         calculate_price();
     }
   });
@@ -459,6 +460,9 @@ $(document).ready(function(){
     if (deretchoAClima) {
         if(comp>0){
           comp=comp-1;
+          if(clima==0) {
+            $("input[name='comptInp'][value='8']").attr('checked', false);
+          }
         }
         $("#nr_comp").html(comp);
         calculate_price();

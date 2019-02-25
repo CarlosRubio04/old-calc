@@ -1347,7 +1347,7 @@ function generarp() {
 	//doc.setFontStyle("normal");
 	//doc.text(65,55, json[0].nr);
 	doc.setFontSize(8);
-	var columns = ["ÍTEM", "NR EMPLEADOS", "PRECIO POR EMPLEADO", "PRECIO"];
+	var columns = ["ÍTEM", "NR EMPLEADOS", "PRECIO POR EMPLEADO", "PRECIO EN CLP"];
 var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
 
 	//var text5='Nota: Acsendo maneja un rango de precios de un 10% sobre el número de empleados definido inicialmente.\n\n* La forma de pago es por medio de tarjeta de crédito usando la plataforma de PayU.\n\n** Acsendo realizara un incremento de precios anual del 3%.';
