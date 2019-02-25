@@ -1429,7 +1429,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
         if ($("input[name='produto'][value='5']").is(":checked") ){
             data2.push(["Desarrollo", "· Plan de Desarrollo Individual", " ", " "]);
             offsetMargin+=7;
-        } else if ($("input[name='produto'][value='11']").is(":checked") ){
+        } else if ($("input[name='climaInp'][value='7']").is(":checked") ){
             data2.push(["Desarrollo", "· Plan de Sucesión", " ", " "]);
             offsetMargin+=7;
         }

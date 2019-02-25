@@ -1441,7 +1441,7 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
         if ($("input[name='produto'][value='6']").is(":checked") ){
             data2.push(["Engagement", "· Medalhas de Mérito", " ", " "]);
             offsetMargin+=7;
-        } else if ($("input[name='produto'][value='7']").is(":checked") ){
+        } else if ($("input[name='climaInp'][value='7']").is(":checked") ){
             data2.push(["Engagement", "· Clima organizacional", " ", " "]);
             offsetMargin+=7;
         }

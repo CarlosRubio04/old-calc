@@ -1454,7 +1454,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
         if ($("input[name='produto'][value='6']").is(":checked") ){
             data2.push(["Engagement", "· Reconocimiento", " ", " "]);
             offsetMargin+=7;
-        } else if ($("input[name='produto'][value='7']").is(":checked") ){
+        } else if ($("input[name='climaInp'][value='7']").is(":checked") ){
             data2.push(["Engagement", "· Clima laboral", " ", " "]);
             offsetMargin+=7;
         }
