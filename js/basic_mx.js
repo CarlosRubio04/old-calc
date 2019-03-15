@@ -181,6 +181,13 @@ function generarp() {
 			skype_com="skype:francisco77j";
 	}
 
+	else if(id_com==17){
+		name_com="Evangelina Gutierrez";
+		cargo_com="Sales Representative";
+		numero_com="(+52) 55 91665004";
+		mail_com="egutierrez@acsendo.com";
+		skype_com="skype:eva_gtz";
+	}
 
 
     // Folha de Rosto
@@ -1448,7 +1455,7 @@ var columns2 = ["MÓDULO", "HERRAMIENTAS", "", ""];
     }
 
     if (produtos[3]){
-        data2.push(["Engagement", "· Clima laboral\n· Reconocimiento", " ", " "]);
+        data2.push(["Engagement", "· 2x Clima laboral\n· Reconocimiento", " ", " "]);
         offsetMargin+=16;
     } else {
         if ($("input[name='produto'][value='6']").is(":checked") ){

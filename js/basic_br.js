@@ -1435,7 +1435,7 @@ var columns2 = ["MÓDULO", "FERRAMENTAS", "", ""];
     }
 
     if (produtos[3]){
-        data2.push(["Engagement", "· Clima organizacional\n· Medalhas de Mérito", " ", " "]);
+        data2.push(["Engagement", "· 2x Clima organizacional\n· Medalhas de Mérito", " ", " "]);
         offsetMargin+=16;
     } else {
         if ($("input[name='produto'][value='6']").is(":checked") ){

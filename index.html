@@ -182,6 +182,7 @@
                       <option value="14">Astrid Niño</option>
                       <option value="15">Ivan Manosalva</option>
                       <option value="16">Francisco Toledo</option>
+                      <option value="17">Evangelina Gutierrez</option>
                   </select>
 	        	</div>
 	        	<div class="left clear margintop30 width100">
@@ -1761,9 +1762,9 @@ function calculate_price(){
           }
           tempSideText = tempSideText + 'Reconocimiento, Clima ';
 
-          $(".table_precios").append("<tr class='p3'><td>Flex Engagement(Reconocimiento; Clima )</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
+          $(".table_precios").append("<tr class='p3'><td>Flex Engagement(Reconocimiento; 2x Clima )</td><td>"+((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4)+"</td><td>"+nr+"</td><td>"+(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)+"</td></tr>");
 
-          json.push({produto : 'Flex Engagement', produto2 : 'Flex Engagement (Reconocimiento; Clima; ', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
+          json.push({produto : 'Flex Engagement', produto2 : 'Flex Engagement (Reconocimiento; 2x Clima; ', precio_u:((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05).toFixed(4), nr: nr,precio_t:(((prices[type].produto[10].price[rango_nr].price * 1.05) * 1.05) * nr).toFixed(4)});
         }
         if (tempSideText != ""){
               tempSideText = tempSideText + "</div>";
